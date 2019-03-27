@@ -1,0 +1,12 @@
+{% set activities = h.recently_changed_packages_activity_stream_main() %}
+
+<div class="latest-updates">
+    <div class="latest-updates-title">Останні оновлення</div>
+    <div class="text-mode">
+        <div class="text-mode__title">Тестовий режим</div>
+        <div class="text-mode__content">Даний ресурс знаходиться на стадії розробки, функціонал окремих елементів може бути обмежений</div><a class="text-mode__linc" href="#">Зрозуміло, сховати</a>
+    </div>
+</div>
+{% for activity in activities %}
+    {% snippet 'home/snippets/activity_item.html', activity=activity %}
+{% endfor %}

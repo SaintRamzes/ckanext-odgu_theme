@@ -6,6 +6,10 @@
 {% block maintag %}{% endblock %}
 {% block toolbar %}{% endblock %}
 
+{%- block header %}
+    {% include "home/snippets/header.html" %}
+{% endblock -%}
+
 {% block main_content %}
     {% block search %}
         {% snippet 'home/snippets/search.html' %}
@@ -21,62 +25,26 @@
                 {% endblock %}
 
 
-{#                <div class="data-partners">#}
-{#                    <div class="data-partners-title">Партнери відкритих даних</div>#}
-{#                    <div class="data-partners-card">#}
-{#                        <div class="data-partners__img"><img src="/images/news-articles-card.png" alt=""></div><a class="data-partners__title" href="#">Вінницька міська рада</a>#}
-{#                    </div>#}
-{#                    <div class="data-partners-card">#}
-{#                        <div class="data-partners__img"><img src="/images/news-articles-card.png" alt=""></div><a class="data-partners__title" href="#">Вінницька міська рада</a>#}
-{#                    </div>#}
-{#                    <div class="data-partners-card">#}
-{#                        <div class="data-partners__img"><img src="/images/news-articles-card.png" alt=""></div><a class="data-partners__title" href="#">Державне агентство з питань електронного урядування</a>#}
-{#                    </div>#}
-{#                </div>#}
+                {#                <div class="data-partners">#}
+                {#                    <div class="data-partners-title">Партнери відкритих даних</div>#}
+                {#                    <div class="data-partners-card">#}
+                {#                        <div class="data-partners__img"><img src="/images/news-articles-card.png" alt=""></div><a class="data-partners__title" href="#">Вінницька міська рада</a>#}
+                {#                    </div>#}
+                {#                    <div class="data-partners-card">#}
+                {#                        <div class="data-partners__img"><img src="/images/news-articles-card.png" alt=""></div><a class="data-partners__title" href="#">Вінницька міська рада</a>#}
+                {#                    </div>#}
+                {#                    <div class="data-partners-card">#}
+                {#                        <div class="data-partners__img"><img src="/images/news-articles-card.png" alt=""></div><a class="data-partners__title" href="#">Державне агентство з питань електронного урядування</a>#}
+                {#                    </div>#}
+                {#                </div>#}
             </div>
             <div class="column-right">
-                <div class="latest-updates">
-                    <div class="latest-updates-title">Останні оновлення</div>
-                    <div class="text-mode">
-                        <div class="text-mode__title">Тестовий режим</div>
-                        <div class="text-mode__content">Даний ресурс знаходиться на стадії розробки, функціонал окремих елементів може бути обмежений</div><a class="text-mode__linc" href="#">Зрозуміло, сховати</a>
-                    </div>
-                </div>
-                {{ h.recently_changed_packages_activity_stream_main()|safe }}
-                <div class="updates-block">
-                    <div class="updates-block__date">10 жовтня 2018, 13:40</div><a class="updates__title" href="#">Статистика надходжень інформаційних запитів</a>
-                    <div class="updates__content">Апарат міської ради та її виконавчого комітету</div>
-                </div>
-                <div class="updates-block">
-                    <div class="updates-block__date">10 жовтня 2018, 13:40</div><a class="updates__title" href="#">Статистика надходжень інформаційних запитів</a>
-                    <div class="updates__content">Апарат міської ради та її виконавчого комітету</div>
-                </div>
-                <div class="updates-block">
-                    <div class="updates-block__date">10 жовтня 2018, 13:40</div><a class="updates__title" href="#">Статистика надходжень інформаційних запитів</a>
-                    <div class="updates__content">Апарат міської ради та її виконавчого комітету</div>
-                </div>
-                <div class="updates-block">
-                    <div class="updates-block__date">10 жовтня 2018, 13:40</div><a class="updates__title" href="#">Статистика надходжень інформаційних запитів</a>
-                    <div class="updates__content">Апарат міської ради та її виконавчого комітету</div>
-                </div>
-                <div class="updates-block">
-                    <div class="updates-block__date">10 жовтня 2018, 13:40</div><a class="updates__title" href="#">Статистика надходжень інформаційних запитів</a>
-                    <div class="updates__content">Апарат міської ради та її виконавчого комітету</div>
-                </div>
-                <div class="updates-block">
-                    <div class="updates-block__date">10 жовтня 2018, 13:40</div><a class="updates__title" href="#">Статистика надходжень інформаційних запитів</a>
-                    <div class="updates__content">Апарат міської ради та її виконавчого комітету</div>
-                </div>
-                <div class="updates-block">
-                    <div class="updates-block__date">10 жовтня 2018, 13:40</div><a class="updates__title" href="#">Статистика надходжень інформаційних запитів</a>
-                    <div class="updates__content">Апарат міської ради та її виконавчого комітету</div>
-                </div>
-                <div class="updates-block">
-                    <div class="updates-block__date">10 жовтня 2018, 13:40</div><a class="updates__title" href="#">Статистика надходжень інформаційних запитів</a>
-                    <div class="updates__content">Апарат міської ради та її виконавчого комітету</div>
-                </div>
+                {% block activity_list %}
+                    {% snippet 'home/snippets/activity_list.html' %}
+                {% endblock %}
             </div>
-        </div
+        </div>
+    </div>
 
 
 

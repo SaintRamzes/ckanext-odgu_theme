@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="20px" viewBox="0 0 18 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52 (66869) - http://www.bohemiancoding.com/sketch -->
+    <title>icn-calendar</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Desktop-Pages" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.5">
+        <g id="Service-Page---Tab-1" transform="translate(-1456.000000, -609.000000)" fill="#1059D3">
+            <g id="Center-Info" transform="translate(1165.000000, 510.000000)">
+                <g id="BTN---Sercondary" transform="translate(28.000000, 85.000000)">
+                    <path d="M265,20 L265,19 C265,18.448 265.448,18 266,18 L278,18 C278.552,18 279,18.448 279,19 L279,20 L265,20 Z M277,24 L279,24 L279,22 L277,22 L277,24 Z M277,32 L277,30 L279,30 L279,31 C279,31.552 278.552,32 278,32 L277,32 Z M273,32 L275,32 L275,30 L273,30 L273,32 Z M265,30 L267,30 L267,32 L266,32 C265.448,32 265,31.552 265,31 L265,30 Z M265,24 L267,24 L267,22 L265,22 L265,24 Z M269,24 L271,24 L271,22 L269,22 L269,24 Z M273,24 L275,24 L275,22 L273,22 L273,24 Z M265,28 L267,28 L267,26 L265,26 L265,28 Z M269,32 L271,32 L271,30 L269,30 L269,32 Z M269,28 L271,28 L271,26 L269,26 L269,28 Z M277,28 L279,28 L279,26 L277,26 L277,28 Z M273,28 L275,28 L275,26 L273,26 L273,28 Z M277,16 L277,14 L275,14 L275,16 L269,16 L269,14 L267,14 L267,16 L266,16 C264.343,16 263,17.343 263,19 L263,31 C263,32.657 264.343,34 266,34 L278,34 C279.657,34 281,32.657 281,31 L281,19 C281,17.343 279.657,16 278,16 L277,16 Z" id="icn-calendar"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

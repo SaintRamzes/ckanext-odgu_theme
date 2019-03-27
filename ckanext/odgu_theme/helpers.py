@@ -1,12 +1,13 @@
 import copy
+import datetime
 import re
 
+import pytz
 from ckan import logic, model
-from ckan.common import config, c, is_flask_request
-from ckan.lib import base
-from ckan.lib.activity_streams import activity_stream_actions_with_detail, activity_stream_string_functions, \
-    activity_stream_string_icons, activity_snippet_functions
-from ckan.lib.helpers import check_access, map_pylons_to_flask_route_name, _link_active, _link_to
+import ckan.plugins.toolkit as toolkit
+from ckan.common import config, c
+from ckan.lib.helpers import check_access, map_pylons_to_flask_route_name, _link_active, _link_to, \
+    _datestamp_to_datetime
 from ckan.logic.action.get import recently_changed_packages_activity_list
 from webhelpers.html import literal
 
@@ -43,7 +44,7 @@ def _make_menu_item(menu_item, title, **kw):
     This function is called by wrapper functions.
     '''
     menu_item = map_pylons_to_flask_route_name(menu_item)
-    _menu_items = config['routes.named_routes']
+    _menu_items = toolkit.config['routes.named_routes']
     if menu_item not in _menu_items:
         raise Exception('menu item `%s` cannot be found' % menu_item)
     item = copy.copy(_menu_items[menu_item])
@@ -107,84 +108,117 @@ def recently_changed_packages_activity_stream_main(limit=None):
         data_dict = {'limit': limit}
     else:
         data_dict = {}
-    context = {'model': model, 'session': model.Session, 'user': c.user}
+    context = {'model': model, 'session': model.Session, 'user': toolkit.c.user}
     activity_stream = recently_changed_packages_activity_list(context, data_dict)
-    offset = int(data_dict.get('offset', 0))
-    extra_vars = {
-        'controller': 'package',
-        'action': 'activity',
-        'offset': offset,
+    return activity_stream
+
+
+def render_datetime_ukr(datetime_, date_format=None, with_hours=False):
+    '''Render a datetime object or timestamp string as a localised date or
+    in the requested format.
+    If timestamp is badly formatted, then a blank string is returned.
+
+    :param datetime_: the date
+    :type datetime_: datetime or ISO string format
+    :param date_format: a date format
+    :type date_format: string
+    :param with_hours: should the `hours:mins` be shown
+    :type with_hours: bool
+
+    :rtype: string
+    '''
+    datetime_ = _datestamp_to_datetime(datetime_)
+    if not datetime_:
+        return ''
+
+    # if date_format was supplied we use it
+    if date_format:
+
+        # See http://bugs.python.org/issue1777412
+        if datetime_.year < 1900:
+            year = str(datetime_.year)
+
+            date_format = re.sub('(?<!%)((%%)*)%y',
+                                 r'\g<1>{year}'.format(year=year[-2:]),
+                                 date_format)
+            date_format = re.sub('(?<!%)((%%)*)%Y',
+                                 r'\g<1>{year}'.format(year=year),
+                                 date_format)
+
+            datetime_ = datetime.datetime(2016, datetime_.month, datetime_.day,
+                                          datetime_.hour, datetime_.minute,
+                                          datetime_.second)
+
+            return datetime_.strftime(date_format)
+
+        return datetime_.strftime(date_format)
+    # the localised date
+    return localised_nice_date(datetime_,  with_hours=with_hours)
+
+
+def _month_jan(day):
+    return toolkit._('January {}').format(day)
+
+
+def _month_feb(day):
+    return toolkit._('February {}').format(day)
+
+
+def _month_mar(day):
+    return toolkit._('March {}').format(day)
+
+
+def _month_apr(day):
+    return toolkit._('April {}').format(day)
+
+
+def _month_may(day):
+    return toolkit._('May {}').format(day)
+
+
+def _month_june(day):
+    return toolkit._('June {}').format(day)
+
+
+def _month_july(day):
+    return toolkit._('July {}').format(day)
+
+
+def _month_aug(day):
+    return toolkit._('August {}').format(day)
+
+
+def _month_sept(day):
+    return toolkit._('September {}').format(day)
+
+
+def _month_oct(day):
+    return toolkit._('October {}').format(day)
+
+
+def _month_nov(day):
+    return toolkit._('November {}').format(day)
+
+
+def _month_dec(day):
+    return toolkit._('December {}').format(day)
+
+
+_MONTH_FUNCTIONS = [_month_jan, _month_feb, _month_mar, _month_apr,
+                   _month_may, _month_june, _month_july, _month_aug,
+                   _month_sept, _month_oct, _month_nov, _month_dec]
+
+
+def localised_nice_date(datetime_, with_hours=False):
+
+    details = {
+        'min': datetime_.minute,
+        'hour': datetime_.hour,
+        'month_day': _MONTH_FUNCTIONS[datetime_.month - 1](datetime_.day),
+        'year': datetime_.year,
     }
-    return activity_list_to_html_main(
-        context, activity_stream, extra_vars)
 
-
-def activity_list_to_html_main(context, activity_stream, extra_vars):
-    """Return the given activity stream as a snippet of HTML.
-
-    :param activity_stream: the activity stream to render
-    :type activity_stream: list of activity dictionaries
-    :param extra_vars: extra variables to pass to the activity stream items
-        template when rendering it
-    :type extra_vars: dictionary
-
-    :rtype: HTML-formatted string
-
-    """
-
-    activity_list = []
-    for activity in activity_stream:
-        detail = None
-        activity_type = activity['activity_type']
-        # Some activity types may have details.
-        if activity_type in activity_stream_actions_with_detail:
-            details = logic.get_action('activity_detail_list')(context=context,
-                data_dict={'id': activity['id']})
-            # If an activity has just one activity detail then render the
-            # detail instead of the activity.
-            if len(details) == 1:
-                detail = details[0]
-                object_type = detail['object_type']
-
-                if object_type == 'PackageExtra':
-                    object_type = 'package_extra'
-
-                new_activity_type = '%s %s' % (detail['activity_type'],
-                                            object_type.lower())
-                if new_activity_type in activity_stream_string_functions:
-                    activity_type = new_activity_type
-
-        if not activity_type in activity_stream_string_functions:
-            raise NotImplementedError("No activity renderer for activity "
-                "type '%s'" % activity_type)
-
-        if activity_type in activity_stream_string_icons:
-            activity_icon = activity_stream_string_icons[activity_type]
-        else:
-            activity_icon = activity_stream_string_icons['undefined']
-
-        activity_msg = activity_stream_string_functions[activity_type](context,
-                activity)
-
-        # Get the data needed to render the message.
-        matches = re.findall('\{([^}]*)\}', activity_msg)
-        data = {}
-        for match in matches:
-            snippet = activity_snippet_functions[match](activity, detail)
-            data[str(match)] = snippet
-
-        activity_list.append({'msg': activity_msg,
-                              'type': activity_type.replace(' ', '-').lower(),
-                              'icon': activity_icon,
-                              'data': data,
-                              'timestamp': activity['timestamp'],
-                              'is_new': activity.get('is_new', False)})
-    extra_vars['activities'] = activity_list
-
-    # TODO: Do this properly without having to check if it's Flask or not
-    if is_flask_request():
-        return base.render('home/activity_stream_items.html',
-                           extra_vars=extra_vars)
+    if with_hours:
+        return toolkit._('{month_day}, {year}, {hour:02}:{min:02}').format(**details)
     else:
-        return literal(base.render('home/activity_stream_items.html',
-                       extra_vars=extra_vars))
+        return toolkit._('{month_day}, {year}').format(**details)

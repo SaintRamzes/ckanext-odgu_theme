@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ckanext-odgu_theme 0.0.1\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2019-03-26 17:11+0200\n"
+"POT-Creation-Date: 2019-03-28 01:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,6 +17,62 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.3.4\n"
+
+#: ckanext/odgu_theme/helpers.py:160
+msgid "January {}"
+msgstr ""
+
+#: ckanext/odgu_theme/helpers.py:164
+msgid "February {}"
+msgstr ""
+
+#: ckanext/odgu_theme/helpers.py:168
+msgid "March {}"
+msgstr ""
+
+#: ckanext/odgu_theme/helpers.py:172
+msgid "April {}"
+msgstr ""
+
+#: ckanext/odgu_theme/helpers.py:176
+msgid "May {}"
+msgstr ""
+
+#: ckanext/odgu_theme/helpers.py:180
+msgid "June {}"
+msgstr ""
+
+#: ckanext/odgu_theme/helpers.py:184
+msgid "July {}"
+msgstr ""
+
+#: ckanext/odgu_theme/helpers.py:188
+msgid "August {}"
+msgstr ""
+
+#: ckanext/odgu_theme/helpers.py:192
+msgid "September {}"
+msgstr ""
+
+#: ckanext/odgu_theme/helpers.py:196
+msgid "October {}"
+msgstr ""
+
+#: ckanext/odgu_theme/helpers.py:200
+msgid "November {}"
+msgstr ""
+
+#: ckanext/odgu_theme/helpers.py:204
+msgid "December {}"
+msgstr ""
+
+#: ckanext/odgu_theme/helpers.py:222
+msgid "{month_day}, {year}, {hour:02}:{min:02}"
+msgstr ""
+
+#: ckanext/odgu_theme/helpers.py:224
+msgid "{month_day}, {year}"
+msgstr ""
 
 #: ckanext/odgu_theme/templates/error_document_template.html:3
 #, python-format
@@ -41,57 +97,69 @@ msgid ""
 "href=\"http://ckan.org\">CKAN</a>"
 msgstr ""
 
-#: ckanext/odgu_theme/templates/header.html:13
+#: ckanext/odgu_theme/templates/header.html:25
+#: ckanext/odgu_theme/templates/home/snippets/header.html:25
 msgid "Sysadmin settings"
 msgstr ""
 
-#: ckanext/odgu_theme/templates/header.html:15
+#: ckanext/odgu_theme/templates/header.html:27
+#: ckanext/odgu_theme/templates/home/snippets/header.html:27
 msgid "Admin"
 msgstr ""
 
-#: ckanext/odgu_theme/templates/header.html:21
+#: ckanext/odgu_theme/templates/header.html:33
+#: ckanext/odgu_theme/templates/home/snippets/header.html:33
 msgid "View profile"
 msgstr ""
 
-#: ckanext/odgu_theme/templates/header.html:28
+#: ckanext/odgu_theme/templates/header.html:40
+#: ckanext/odgu_theme/templates/home/snippets/header.html:40
 #, python-format
 msgid "Dashboard (%(num)d new item)"
 msgid_plural "Dashboard (%(num)d new items)"
 msgstr[0] ""
 msgstr[1] ""
 
-#: ckanext/odgu_theme/templates/header.html:31
+#: ckanext/odgu_theme/templates/header.html:43
+#: ckanext/odgu_theme/templates/home/snippets/header.html:43
 #: ckanext/odgu_theme/templates/user/dashboard.html:6
 msgid "Dashboard"
 msgstr ""
 
-#: ckanext/odgu_theme/templates/header.html:38
+#: ckanext/odgu_theme/templates/header.html:50
+#: ckanext/odgu_theme/templates/home/snippets/header.html:50
 #: ckanext/odgu_theme/templates/user/dashboard.html:16
 msgid "Edit settings"
 msgstr ""
 
-#: ckanext/odgu_theme/templates/header.html:40
+#: ckanext/odgu_theme/templates/header.html:52
+#: ckanext/odgu_theme/templates/home/snippets/header.html:52
 msgid "Settings"
 msgstr ""
 
-#: ckanext/odgu_theme/templates/header.html:45
-#: ckanext/odgu_theme/templates/header.html:47
+#: ckanext/odgu_theme/templates/header.html:57
+#: ckanext/odgu_theme/templates/header.html:59
+#: ckanext/odgu_theme/templates/home/snippets/header.html:57
+#: ckanext/odgu_theme/templates/home/snippets/header.html:59
 msgid "Log out"
 msgstr ""
 
-#: ckanext/odgu_theme/templates/header.html:57
+#: ckanext/odgu_theme/templates/header.html:69
+#: ckanext/odgu_theme/templates/home/snippets/header.html:69
 #: ckanext/odgu_theme/templates/user/logout_first.html:14
 msgid "Log in"
 msgstr ""
 
-#: ckanext/odgu_theme/templates/header.html:59
+#: ckanext/odgu_theme/templates/header.html:71
+#: ckanext/odgu_theme/templates/home/snippets/header.html:71
 #: ckanext/odgu_theme/templates/user/new.html:3
 msgid "Register"
 msgstr ""
 
 #: ckanext/odgu_theme/templates/group/read_base.html:17
 #: ckanext/odgu_theme/templates/group/snippets/info.html:36
-#: ckanext/odgu_theme/templates/header.html:112
+#: ckanext/odgu_theme/templates/header.html:128
+#: ckanext/odgu_theme/templates/home/snippets/header.html:117
 #: ckanext/odgu_theme/templates/organization/bulk_process.html:20
 #: ckanext/odgu_theme/templates/organization/edit_base.html:23
 #: ckanext/odgu_theme/templates/organization/read_base.html:17
@@ -111,7 +179,8 @@ msgstr ""
 msgid "Datasets"
 msgstr ""
 
-#: ckanext/odgu_theme/templates/header.html:112
+#: ckanext/odgu_theme/templates/header.html:128
+#: ckanext/odgu_theme/templates/home/snippets/header.html:117
 #: ckanext/odgu_theme/templates/organization/edit_base.html:5
 #: ckanext/odgu_theme/templates/organization/edit_base.html:8
 #: ckanext/odgu_theme/templates/organization/index.html:3
@@ -133,7 +202,8 @@ msgstr ""
 #: ckanext/odgu_theme/templates/group/members.html:3
 #: ckanext/odgu_theme/templates/group/read_base.html:3
 #: ckanext/odgu_theme/templates/group/read_base.html:6
-#: ckanext/odgu_theme/templates/header.html:112
+#: ckanext/odgu_theme/templates/header.html:128
+#: ckanext/odgu_theme/templates/home/snippets/header.html:117
 #: ckanext/odgu_theme/templates/package/group_list.html:5
 #: ckanext/odgu_theme/templates/package/read_base.html:20
 #: ckanext/odgu_theme/templates/revision/diff.html:16
@@ -144,10 +214,11 @@ msgstr ""
 #: ckanext/odgu_theme/templates/admin/config.html:25
 #: ckanext/odgu_theme/templates/group/about.html:3
 #: ckanext/odgu_theme/templates/group/read_base.html:19
-#: ckanext/odgu_theme/templates/header.html:112
+#: ckanext/odgu_theme/templates/header.html:128
 #: ckanext/odgu_theme/templates/home/about.html:3
 #: ckanext/odgu_theme/templates/home/about.html:6
 #: ckanext/odgu_theme/templates/home/about.html:16
+#: ckanext/odgu_theme/templates/home/snippets/header.html:117
 #: ckanext/odgu_theme/templates/organization/about.html:3
 #: ckanext/odgu_theme/templates/organization/read_base.html:19
 #: ckanext/odgu_theme/templates/user/edit_user_form.html:14
@@ -156,18 +227,6 @@ msgstr ""
 
 #: ckanext/odgu_theme/templates/page.html:6
 msgid "Skip to content"
-msgstr ""
-
-#: ckanext/odgu_theme/templates/activity_streams/activity_stream_items.html:9
-msgid "Load less"
-msgstr ""
-
-#: ckanext/odgu_theme/templates/activity_streams/activity_stream_items.html:17
-msgid "Load more"
-msgstr ""
-
-#: ckanext/odgu_theme/templates/activity_streams/activity_stream_items.html:23
-msgid "No activities are within this activity stream"
 msgstr ""
 
 #: ckanext/odgu_theme/templates/admin/base.html:3
@@ -835,6 +894,18 @@ msgstr ""
 #: ckanext/odgu_theme/templates/revision/read.html:56
 #: ckanext/odgu_theme/templates/revision/snippets/revisions_list.html:8
 msgid "Log Message"
+msgstr ""
+
+#: ckanext/odgu_theme/templates/home/activity_stream_items.html:10
+msgid "Load less"
+msgstr ""
+
+#: ckanext/odgu_theme/templates/home/activity_stream_items.html:18
+msgid "Load more"
+msgstr ""
+
+#: ckanext/odgu_theme/templates/home/activity_stream_items.html:24
+msgid "No activities are within this activity stream"
 msgstr ""
 
 #: ckanext/odgu_theme/templates/home/index.html:4

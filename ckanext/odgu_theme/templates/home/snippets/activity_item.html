@@ -1,10 +1,13 @@
-<li class="item {{ activity.type|lower }}">
-  {% if activity.is_new %}
-    <span class="new" title="{{ _('New activity item') }}">{{ _('New activity item') }}</span>
-  {% endif %}
-  <i class="fa icon fa-{{ activity.icon }}"></i>
-  <p>
-    {{ h.literal(activity.msg.format(**activity.data)) }}
-    <span class="date" title="{{ h.render_datetime(activity.timestamp, with_hours=True) }}">{{ h.time_ago_from_timestamp(activity.timestamp) }}</span>
-  </p>
-</li>
+{% set truncate = truncate or 180 %}
+{% set truncate_title = truncate_title or 80 %}
+{% set package = activity.data.package %}
+{% set title = package.title or package.name %}
+{% set notes = h.markdown_extract(package.notes, extract_length=truncate) %}
+<div class="updates-block">
+{#    <div class="updates-block__date">{{ h.render_datetime(activity.timestamp, date_format='%d %B %Y, %R', with_hours=True) }}</div>#}
+    <div class="updates-block__date">{{ h.render_datetime_ukr(activity.timestamp, with_hours=True) }}</div>
+    <a class="updates__title" href="{{ h.url_for(package.type + '_read', controller='package', action='read', id=package.name) }}">{{ h.truncate(title, truncate_title) }}</a>
+    {% if notes %}
+        <div class="updates__content">{{ notes|urlize }}</div>
+    {% endif %}
+</div>

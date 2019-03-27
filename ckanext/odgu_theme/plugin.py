@@ -29,5 +29,6 @@ class Odgu_ThemePlugin(Odgu_ThemePluginBase):
             'build_main': helpers.build_main,
             'get_all_groups': helpers.get_all_groups,
             'recently_changed_packages_activity_stream_main': helpers.recently_changed_packages_activity_stream_main,
+            'render_datetime_ukr': helpers.render_datetime_ukr,
         }
 
