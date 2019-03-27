@@ -1,0 +1,91 @@
+{% extends "page.html" %}
+{% set homepage_style = ( g.homepage_style or '1' ) %}
+
+{% block subtitle %}{{ _("Welcome") }}{% endblock %}
+
+{% block maintag %}{% endblock %}
+{% block toolbar %}{% endblock %}
+
+{% block main_content %}
+    {% block search %}
+        {% snippet 'home/snippets/search.html' %}
+    {% endblock %}
+    <div class="main-page-content">
+        <div class="section-wraper">
+            <div class="column-left">
+                {% block featured_group %}
+                    {% snippet 'home/snippets/featured_group.html' %}
+                {% endblock %}
+                {% block recent_posts %}
+                    {% snippet 'home/snippets/recent_posts.html' %}
+                {% endblock %}
+
+
+{#                <div class="data-partners">#}
+{#                    <div class="data-partners-title">Партнери відкритих даних</div>#}
+{#                    <div class="data-partners-card">#}
+{#                        <div class="data-partners__img"><img src="/images/news-articles-card.png" alt=""></div><a class="data-partners__title" href="#">Вінницька міська рада</a>#}
+{#                    </div>#}
+{#                    <div class="data-partners-card">#}
+{#                        <div class="data-partners__img"><img src="/images/news-articles-card.png" alt=""></div><a class="data-partners__title" href="#">Вінницька міська рада</a>#}
+{#                    </div>#}
+{#                    <div class="data-partners-card">#}
+{#                        <div class="data-partners__img"><img src="/images/news-articles-card.png" alt=""></div><a class="data-partners__title" href="#">Державне агентство з питань електронного урядування</a>#}
+{#                    </div>#}
+{#                </div>#}
+            </div>
+            <div class="column-right">
+                <div class="latest-updates">
+                    <div class="latest-updates-title">Останні оновлення</div>
+                    <div class="text-mode">
+                        <div class="text-mode__title">Тестовий режим</div>
+                        <div class="text-mode__content">Даний ресурс знаходиться на стадії розробки, функціонал окремих елементів може бути обмежений</div><a class="text-mode__linc" href="#">Зрозуміло, сховати</a>
+                    </div>
+                </div>
+                {{ h.recently_changed_packages_activity_stream_main()|safe }}
+                <div class="updates-block">
+                    <div class="updates-block__date">10 жовтня 2018, 13:40</div><a class="updates__title" href="#">Статистика надходжень інформаційних запитів</a>
+                    <div class="updates__content">Апарат міської ради та її виконавчого комітету</div>
+                </div>
+                <div class="updates-block">
+                    <div class="updates-block__date">10 жовтня 2018, 13:40</div><a class="updates__title" href="#">Статистика надходжень інформаційних запитів</a>
+                    <div class="updates__content">Апарат міської ради та її виконавчого комітету</div>
+                </div>
+                <div class="updates-block">
+                    <div class="updates-block__date">10 жовтня 2018, 13:40</div><a class="updates__title" href="#">Статистика надходжень інформаційних запитів</a>
+                    <div class="updates__content">Апарат міської ради та її виконавчого комітету</div>
+                </div>
+                <div class="updates-block">
+                    <div class="updates-block__date">10 жовтня 2018, 13:40</div><a class="updates__title" href="#">Статистика надходжень інформаційних запитів</a>
+                    <div class="updates__content">Апарат міської ради та її виконавчого комітету</div>
+                </div>
+                <div class="updates-block">
+                    <div class="updates-block__date">10 жовтня 2018, 13:40</div><a class="updates__title" href="#">Статистика надходжень інформаційних запитів</a>
+                    <div class="updates__content">Апарат міської ради та її виконавчого комітету</div>
+                </div>
+                <div class="updates-block">
+                    <div class="updates-block__date">10 жовтня 2018, 13:40</div><a class="updates__title" href="#">Статистика надходжень інформаційних запитів</a>
+                    <div class="updates__content">Апарат міської ради та її виконавчого комітету</div>
+                </div>
+                <div class="updates-block">
+                    <div class="updates-block__date">10 жовтня 2018, 13:40</div><a class="updates__title" href="#">Статистика надходжень інформаційних запитів</a>
+                    <div class="updates__content">Апарат міської ради та її виконавчого комітету</div>
+                </div>
+                <div class="updates-block">
+                    <div class="updates-block__date">10 жовтня 2018, 13:40</div><a class="updates__title" href="#">Статистика надходжень інформаційних запитів</a>
+                    <div class="updates__content">Апарат міської ради та її виконавчого комітету</div>
+                </div>
+            </div>
+        </div
+
+
+
+    {#    <div class="homepage layout-{{ homepage_style }}">#}
+    {#        <div class="container">#}
+    {#            {{ self.flash() }}#}
+    {#        </div>#}
+    {#        {% block primary_content %}#}
+    {#            {% snippet "home/layout{0}.html".format(homepage_style) %}#}
+    {#        {% endblock %}#}
+    {#    </div>#}
+{% endblock %}

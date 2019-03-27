@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="9px" height="16px" viewBox="0 0 9 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>Fill 1</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M7.3643,15.5566 L0.2933,8.4856 C-0.0977,8.0946 -0.0977,7.4616 0.2933,7.0716 L7.3643,-0.0004 L8.7783,1.4136 L2.4143,7.7786 L8.7783,14.1426 L7.3643,15.5566 Z" id="path-1"></path>
+    </defs>
+    <g id="Index" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-485.000000, -1752.000000)" id="News+Faq">
+            <g transform="translate(405.000000, 1223.000000)">
+                <g id="News" transform="translate(0.000000, 47.000000)">
+                    <g id="All-News" transform="translate(0.000000, 479.000000)">
+                        <g id="Icons/icn-more" transform="translate(80.000000, 3.000000)">
+                            <mask id="mask-2" fill="white">
+                                <use xlink:href="#path-1"></use>
+                            </mask>
+                            <use id="Fill-1" fill="#273043" transform="translate(4.389175, 7.778100) scale(-1, 1) translate(-4.389175, -7.778100) " xlink:href="#path-1"></use>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

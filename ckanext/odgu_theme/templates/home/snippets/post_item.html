@@ -1,0 +1,29 @@
+{% set type = post.page_type %}
+<div class="news-articles-card">
+    {% if type == 'blog' %}
+        {% set url = h.url_for(controller='ckanext.pages.controller:PagesController', action='blog_show', page='/' + post.name) %}
+        <div class="news-articles-card__type">Новина</div>
+    {% elif type == 'page' %}
+        {% set url = h.url_for(controller='ckanext.pages.controller:PagesController', action='pages_show', page='/' + post.name) %}
+        <div class="news-articles-card__type">Стаття</div>
+    {% endif %}
+    {% if post.image_url %}
+        <div class="news-articles-card__img">
+            <img src="{{ post.image_url }}" alt="">
+        </div>
+    {% endif %}
+    <a class="news-articles-card__title" href="{{ url }}">{{ post.title }}</a>
+    <div class="updates-block__date">{{ h.render_datetime(post.publish_date) }}</div>
+</div>
+{#<div class="blog-item">#}
+{#    <div class="blog-title">#}
+{#        <a href="" ></a>#}
+{#    </div>#}
+{#    {% if page.publish_date %}#}
+{#        <div class="blog-date">#}
+{#            {{ h.render_datetime(page.publish_date) }}#}
+{#        </div>#}
+{#    {% endif %}#}
+
+
+

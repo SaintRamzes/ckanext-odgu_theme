@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="7px" viewBox="0 0 10 7" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>24px/outlined/icn-more-m</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M10.707,7.0508 L9.293,8.4648 L12.828,11.9998 L9.293,15.5348 L10.707,16.9488 L14.949,12.7068 C15.34,12.3168 15.34,11.6838 14.949,11.2928 L10.707,7.0508 Z" id="path-1"></path>
+    </defs>
+    <g id="Index" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Center-Region-Filter-Drop" transform="translate(-342.000000, -21.000000)">
+            <g id="Title-and-Filter" transform="translate(20.000000, 0.000000)">
+                <g id="24px/outlined/icn-more-s" transform="translate(327.000000, 24.000000) rotate(90.000000) translate(-327.000000, -24.000000) translate(315.000000, 12.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Fill-3" fill="#273043" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    <g id="colors/primary" mask="url(#mask-2)" fill="#1E54A8" fill-rule="evenodd">
+                        <rect id="Rectangle" x="0" y="0" width="24" height="24"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,7 @@
+{% set posts = h.get_recent_posts() %}
+<div class="news-articles">
+    <div class="news-articles-title">Новини та статті</div>
+    {% for post in posts %}
+        {% snippet 'home/snippets/post_item.html', post=post %}
+    {% endfor %}
+</div>

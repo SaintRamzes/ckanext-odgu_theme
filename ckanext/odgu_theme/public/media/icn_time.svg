@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52 (66869) - http://www.bohemiancoding.com/sketch -->
+    <title>Icons/icn-time</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M10.996,11.9966 L10.996,6.9966 L12.996,6.9966 L12.996,10.9966 L14.996,10.9966 L14.996,12.9966 L11.996,12.9966 C11.444,12.9966 10.996,12.5486 10.996,11.9966 Z M11.996,20.993 C7.035,20.993 3,16.958 3,11.997 C3,7.036 7.035,3 11.996,3 C16.957,3 20.992,7.036 20.992,11.997 C20.992,16.958 16.957,20.993 11.996,20.993 Z M11.996,5 C8.139,5 5,8.139 5,11.997 C5,15.854 8.139,18.993 11.996,18.993 C15.853,18.993 18.992,15.854 18.992,11.997 C18.992,8.139 15.853,5 11.996,5 Z" id="path-1"></path>
+    </defs>
+    <g id="Icons/icn-time" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="Combined-Shape" fill="#273043" xlink:href="#path-1"></use>
+        <g id="Colors/color-blue" mask="url(#mask-2)" fill="#1059D3" fill-rule="nonzero">
+            <rect id="Rectangle" x="0" y="0" width="24" height="24"></rect>
+        </g>
+    </g>
+</svg>

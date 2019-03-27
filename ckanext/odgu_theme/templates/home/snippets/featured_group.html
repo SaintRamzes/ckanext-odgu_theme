@@ -1,0 +1,7 @@
+{% set groups = h.get_all_groups() %}
+<div class="data-groups">
+    <div class="data-groups-title">Групи наборів даних</div>
+    {% for group in groups %}
+        {% snippet 'home/snippets/group_item.html', group=group %}
+    {% endfor %}
+</div>

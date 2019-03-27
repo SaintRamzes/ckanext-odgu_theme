@@ -1,0 +1,12 @@
+{% set has_more_length = g.activity_list_limit|int %}
+{% set has_more = activities|length > has_more_length %}
+
+{% block activity_stream %}
+  {% if activities %}
+      {% block activity_stream_inner %}
+        {% for activity in activities %}
+            {% snippet 'home/snippets/activity_item.html', activity=activity %}
+        {% endfor %}
+      {% endblock %}
+  {% endif %}
+{% endblock %}
