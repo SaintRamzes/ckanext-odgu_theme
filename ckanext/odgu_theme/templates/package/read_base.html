@@ -55,6 +55,10 @@
         {% snippet "package/snippets/tags.html", tags=pkg.tags %}
     {% endblock %}
 
+    {% block package_groups %}
+            {% snippet 'package/snippets/groups.html', groups=pkg.groups %}
+    {% endblock %}
+
     {% block package_social %}
         {% snippet "snippets/social.html" %}
     {% endblock %}
