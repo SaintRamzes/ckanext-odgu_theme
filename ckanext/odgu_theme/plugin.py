@@ -9,7 +9,7 @@ if toolkit.check_ckan_version(min_version='2.5'):
     class Odgu_ThemePluginBase(plugins.SingletonPlugin, DefaultTranslation):
         plugins.implements(plugins.ITranslation, inherit=True)
 else:
-    class IssuesPluginBase(p.SingletonPlugin):
+    class Odgu_ThemePluginBase(plugins.SingletonPlugin):
         pass
 
 

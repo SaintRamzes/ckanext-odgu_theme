@@ -1,6 +1,7 @@
 {# Allows the DOCTYPE to be set on a page by page basis #}
 {%- block doctype %}<!DOCTYPE html>{% endblock -%}
-{% set header_extra_class = header_extra_class|default('') %}
+{#{% set header_type = header_type|default(0) %}#}
+{% set header_type = header_type|default(0) %}
 {# Allows custom attributes to be added to the <html> tag #}
 {%- block htmltag -%}
     {% set lang = h.lang() %}

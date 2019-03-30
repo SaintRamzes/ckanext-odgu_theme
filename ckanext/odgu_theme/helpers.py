@@ -2,10 +2,8 @@ import copy
 import datetime
 import re
 
-import pytz
-from ckan import logic, model
 import ckan.plugins.toolkit as toolkit
-from ckan.common import config, c
+from ckan import logic, model
 from ckan.lib.helpers import check_access, map_pylons_to_flask_route_name, _link_active, _link_to, \
     _datestamp_to_datetime
 from ckan.logic.action.get import recently_changed_packages_activity_list

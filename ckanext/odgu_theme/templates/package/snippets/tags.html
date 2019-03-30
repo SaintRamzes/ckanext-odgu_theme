@@ -1,5 +1,7 @@
 {% if tags %}
-  <section class="tags">
-    {% snippet 'snippets/tag_list.html', tags=tags, _class='tag-list well' %}
-  </section>
+    <div class="tag-wraper">
+        <div class="subscribers">Мітки</div>
+        {% snippet 'snippets/tag_list.html', tags=tags, _class='tag-list well' %}
+    </div>
+
 {% endif %}

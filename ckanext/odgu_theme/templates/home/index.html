@@ -1,14 +1,15 @@
 {% extends "page.html" %}
 {% set homepage_style = ( g.homepage_style or '1' ) %}
+{% set header_type = 1 %}
 
 {% block subtitle %}{{ _("Welcome") }}{% endblock %}
 
 {% block maintag %}{% endblock %}
 {% block toolbar %}{% endblock %}
 
-{%- block header %}
-    {% include "home/snippets/header.html" %}
-{% endblock -%}
+{#{%- block header %}#}
+{#    {% snippet "header.html", header_type=header_type %}#}
+{#{% endblock -%}#}
 
 {% block main_content %}
     {% block search %}

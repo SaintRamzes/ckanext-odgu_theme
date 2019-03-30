@@ -79,7 +79,7 @@
     {% endblock %}
     <div class="header">
         <div class="section-wraper">
-            <div class="top-header">
+            <div class="top-header{% if header_type == 1 %} top-header__main-page{% endif %}">
                 {% block header_logo %}
                     <div class="logo-header">
                         {#                        <a href=""><img src="/images/logo.jpg" alt=""></a>#}
@@ -102,19 +102,21 @@
                     </div>
                 {% endblock %}
                 {% block header_site_search %}
-                    <div class="header-search">
-                        <form class="section site-search simple-input"
-                              action="{% url_for controller='package', action='search' %}" method="get">
-                            {#                        <div class="field">#}
-                            {#                            <label for="field-sitewide-search">#}
-                            {#                                {% block header_site_search_label %}{{ _('Search Datasets') }}{% endblock %}</label>#}
-                            {#                            <input id="field-sitewide-search" type="text" class="form-control" name="q"#}
-                            {#                                   placeholder="{{ _('Search') }}"/>#}
-                            {#                            <button class="btn-search" type="submit"><i class="fa fa-search"></i></button>#}
-                            {#                        </div>#}
-                            <input type="text" name="q" placeholder="Пошук наборів данних">
-                        </form>
-                    </div>
+                    {% if header_type != 1 %}
+                        <div class="header-search">
+                            <form class="section site-search simple-input"
+                                  action="{% url_for controller='package', action='search' %}" method="get">
+                                {#                        <div class="field">#}
+                                {#                            <label for="field-sitewide-search">#}
+                                {#                                {% block header_site_search_label %}{{ _('Search Datasets') }}{% endblock %}</label>#}
+                                {#                            <input id="field-sitewide-search" type="text" class="form-control" name="q"#}
+                                {#                                   placeholder="{{ _('Search') }}"/>#}
+                                {#                            <button class="btn-search" type="submit"><i class="fa fa-search"></i></button>#}
+                                {#                        </div>#}
+                                <input type="text" name="q" placeholder="Пошук наборів данних">
+                            </form>
+                        </div>
+                    {% endif %}
                 {% endblock %}
 
 
