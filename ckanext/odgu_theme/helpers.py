@@ -8,24 +8,37 @@ from ckan.lib.helpers import check_access, map_pylons_to_flask_route_name, _link
     _datestamp_to_datetime
 from ckan.logic.action.get import recently_changed_packages_activity_list
 from webhelpers.html import literal
+from markupsafe import Markup, escape
 
 
 def build_main(*args):
     ''' build a set of menu items.
 
     args: tuples of (menu type, title) eg ('login', _('Login'))
-    outputs <li><a href="...">title</a></li>
+    outputs <div class="main-menu__item"><a href="...">title</a></div>
     '''
     output = ''
+    l_start = '<div class="main-menu__item">'
+    l_end = '</div>'
     for item in args:
         menu_item, title = item[:2]
         if len(item) == 3 and not check_access(item[2]):
             continue
-        output += _make_menu_item(menu_item, title)
+        output += _make_menu_item(menu_item, title, l_start, l_end, l_start, l_end)
     return output
 
 
-def _make_menu_item(menu_item, title, **kw):
+def get_tab_link(menu_item, title=None, img=None, **kw):
+    ''' build a set of menu items.
+
+    args: tuples of (menu type, title) eg ('login', _('Login'))
+    outputs <div class="main-menu__item"><a href="...">title</a></div>
+    '''
+
+    return _make_menu_link(menu_item, title, icon=None, **kw)
+
+
+def _make_menu_item(menu_item, title, literal_start, literal_end, literal_start_active, literal_end_active, **kw):
     ''' build a navigation item used for example breadcrumbs
 
     outputs <div class="main-menu__item"><a href="..."></i> title</a></li>
@@ -55,8 +68,35 @@ def _make_menu_item(menu_item, title, **kw):
                             % (menu_item, need))
     link = _link_to(title, menu_item, suppress_active_class=True, **item)
     if active:
-        return literal('<div class="main-menu__item">') + link + literal('</div>')
-    return literal('<div class="main-menu__item">') + link + literal('</div>')
+        return literal(literal_start_active) + link + literal(literal_end_active)
+    return literal(literal_start) + link + literal(literal_end)
+
+
+def _make_menu_link(menu_item, title, **kw):
+    ''' build a navigation item used for example breadcrumbs
+
+    outputs <div class="main-menu__item"><a href="..."></i> title</a></li>
+
+    :param menu_item: the name of the defined menu item defined in
+    config/routing as the named route of the same name
+    :type menu_item: string
+    :param title: text used for the link
+    :type title: string
+    :param **kw: additional keywords needed for creating url eg id=...
+
+    :rtype: HTML literal
+
+    This function is called by wrapper functions.
+    '''
+    menu_item = map_pylons_to_flask_route_name(menu_item)
+    _menu_items = toolkit.config['routes.named_routes']
+    if menu_item not in _menu_items:
+        raise Exception('menu item `%s` cannot be found' % menu_item)
+    item = copy.copy(_menu_items[menu_item])
+    item.update(kw)
+    # link = _link_to(title, menu_item, **item)
+    link = toolkit.url_for(menu_item, id=item['id'], action=item['action'], controller=item['controller'])
+    return link
 
 
 def get_all_groups():
@@ -220,3 +260,10 @@ def localised_nice_date(datetime_, with_hours=False):
         return toolkit._('{month_day}, {year}, {hour:02}:{min:02}').format(**details)
     else:
         return toolkit._('{month_day}, {year}').format(**details)
+
+
+def mail_to_c(email_address, name):
+    email = escape(email_address)
+    author = escape(name)
+    html = Markup(u'<a class=position-information-name href=mailto:{0}>{1}</a>'.format(email, author))
+    return html

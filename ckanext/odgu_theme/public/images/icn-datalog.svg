@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>Icons/icn-datalog</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Icons/icn-datalog" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M11.0039,5.9961 L13.0039,5.9961 L13.0039,10.9961 L16.0039,10.9961 L16.0039,12.9961 L12.0039,12.9961 C11.4519,12.9961 11.0039,12.5491 11.0039,11.9961 L11.0039,5.9961 Z M12,2 C17.514,2 22,6.486 22,12 C22,17.514 17.514,22 12,22 C11.448,22 11,21.553 11,21 C11,20.447 11.448,20 12,20 C16.411,20 20,16.411 20,12 C20,7.589 16.411,4 12,4 C7.589,4 4,7.589 4,12 C4,14.362 5.066,16.579 6.833,18.086 L6.833,15 C6.833,14.447 7.281,14 7.833,14 C8.386,14 8.833,14.447 8.833,15 L8.833,20 C8.833,20.553 8.386,21 7.833,21 L3,21 C2.448,21 2,20.553 2,20 C2,19.447 2.448,19 3,19 L4.869,19 C3.061,17.152 2,14.645 2,12 C2,6.486 6.486,2 12,2 Z" id="Combined-Shape" fill="#003094"></path>
+    </g>
+</svg>

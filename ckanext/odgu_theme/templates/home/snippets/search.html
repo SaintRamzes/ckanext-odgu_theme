@@ -11,13 +11,13 @@
             </form>
         </div>
         <div class="tag-wraper">
-            <div class="tag-title">{{ _('Popular tags') }}:</div>
             <div class="tag_items">
+                <div class="tag-title">{{ _('Popular tags') }}:</div>
                 {% for tag in tags %}
                     <a  href="{% url_for controller='package', action='search', tags=tag.name %}">{{ h.truncate(tag.display_name, 22) }}</a>
                 {% endfor %}
+                <div class="tag-all-link">Усі мітки</div>
             </div>
-            <div class="tag-all-link"> <a href="">Усі мітки</a></div>
         </div>
     </div>
 </div>

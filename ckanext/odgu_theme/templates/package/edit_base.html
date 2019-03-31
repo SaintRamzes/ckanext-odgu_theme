@@ -8,7 +8,7 @@
 {% block breadcrumb_content %}
   {{ super() }}
   {% if pkg %}
-    <li class="active">{% link_for _('Edit'), controller='package', action='edit', id=pkg.name %}</li>
+    {% link_for _('Edit'), controller='package', action='edit', id=pkg.name %}
   {% endif %}
 {% endblock %}
 
@@ -17,8 +17,8 @@
 {% endblock %}
 
 {% block content_primary_nav %}
-  {{ h.build_nav_icon('dataset_edit', _('Edit metadata'), id=pkg.name) }}
-  {{ h.build_nav_icon('dataset_resources', _('Resources'), id=pkg.name) }}
+    {% snippet 'snippets/tab_item.html', tab_url=h.get_tab_link('dataset_edit', id=pkg.name), tab_title= _('Edit metadata'), tab_icon='/images/icn-dataset_1.svg' %}
+    {% snippet 'snippets/tab_item.html', tab_url=h.get_tab_link('dataset_resources', id=pkg.name), tab_title= _('Resources'), tab_icon='/images/icn-dataset_1.svg' %}
 {% endblock %}
 
 {% block secondary_content %}

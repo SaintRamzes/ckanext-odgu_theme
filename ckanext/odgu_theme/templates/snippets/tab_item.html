@@ -1,0 +1,5 @@
+{% set cu=h.url_for(h.current_url()) %}
+<a class="tab-header-item{% if cu == tab_url %} tab-header-item-active{% endif %}" href="{{ tab_url }}">
+    <div class="tab-header-item-icon"><img src="{{ tab_icon }}" alt=""></div>
+    <div class="tab-header-item-title">{{ tab_title }}</div>
+</a>

@@ -15,10 +15,68 @@
     {% endif %}
 {% endblock %}
 
+{% block pre_primary_header %}
+    {% block package_description %}
+        <div class="dataset-title">
+            {% block page_heading %}
+                {{ h.dataset_display_name(pkg) }}
+                {% if pkg.state.startswith('draft') %}
+                    [{{ _('Draft') }}]
+                {% endif %}
+                {% if pkg.state == 'deleted' %}
+                    [{{ _('Deleted') }}]
+                {% endif %}
+            {% endblock %}
+            {#            {% if pkg.private %}#}
+            {#                <span class="dataset-private label label-inverse pull-right">#}
+            {#                    <i class="fa fa-lock"></i>#}
+            {#                    {{ _('Private') }}#}
+            {#                </span>#}
+            {#            {% endif %}#}
+        </div>
+
+        {% block package_notes %}
+            <div class="dataset-rating">
+                <div class="title">Рейтинг</div>
+                <a class="button_minus" href="#"> </a>
+                <div class="rating-count">45</div>
+                <a class="button_plus" href="#"> </a>
+            </div>
+            {% if pkg.notes %}
+                <div class="dataset-decision">
+                    {{ h.render_markdown(h.get_translated(pkg, 'notes')) }}
+                </div>
+            {% endif %}
+        {% endblock %}
+
+
+
+    {% endblock %}
+{% endblock %}
+
 {% block content_primary_nav %}
-    {{ h.build_nav_icon('dataset_read', _('Dataset'), id=pkg.name) }}
-    {{ h.build_nav_icon('dataset_groups', _('Groups'), id=pkg.name) }}
-    {{ h.build_nav_icon('dataset_activity', _('Activity Stream'), id=pkg.name) }}
+    {% snippet 'snippets/tab_item.html', tab_url=h.get_tab_link('dataset_read', id=pkg.name), tab_title=_('Dataset'), tab_icon='/images/icn-dataset_1.svg' %}
+    {% snippet 'snippets/tab_item.html', tab_url=h.get_tab_link('dataset_activity', id=pkg.name), tab_title=_('Activity Stream'), tab_icon='/images/icn-datagroup_1.svg' %}
+    {#    <div class="tab-header-item tab-header-item-active" data-tab-id="tab_1">#}
+    {#        <div class="tab-header-item-icon"><img src="/images/icn-dataset_1.svg" alt=""></div>#}
+    {#        <div class="tab-header-item-title">Набір даних</div>#}
+    {#    </div>#}
+    {#    <div class="tab-header-item" data-tab-id="tab_2">#}
+    {#        <div class="tab-header-item-icon"><img src="/images/icn-datagroup_1.svg" alt="">#}
+    {#        </div>#}
+    {#        <div class="tab-header-item-title">Стрічка активності</div>#}
+    {#    </div>#}
+    {#    <div class="tab-header-item" data-tab-id="tab_3">#}
+    {#        <div class="tab-header-item-icon"><img src="/images/icn-propositions.svg" alt="">#}
+    {#        </div>#}
+    {#        <div class="tab-header-item-title{% if cu == h.url_for('issues_dataset', dataset_id=pkg.id) %} tab-header-item-active{% endif %}">#}
+    {#            <a href="{{ h.url_for('issues_dataset', dataset_id=pkg.id) }}">{{ _('Issues') }}#}
+    {#        {% if h.issue_count(pkg) %} <span class="badge">{{ h.issue_count(pkg) }}</span>{% endif %}</a></div>#}
+    {#    </div>#}
+    {#    {{ h.build_tab_icon('dataset_read',  _('Dataset'), img='/images/icn-dataset_1.svg', id=pkg.name) }}#}
+    {#    {{ h.get_tab_link('dataset_activity', _('Activity Stream'), img='/images/icn-datagroup_1.svg', id=pkg.name) }}#}
+    {#    {{ h.build_tab('issues_dataset', _('Issues'), img='/images/icn-propositions.svg', id=pkg.id) }}#}
+
 {% endblock %}
 
 {% block primary_content_inner %}
@@ -28,7 +86,6 @@
                 <p class="module-content">
                     {% set timestamp = h.render_datetime(c.revision_date, with_hours=True) %}
                     {% set url = h.url_for(controller='package', action='read', id=pkg.name) %}
-
                     {% trans timestamp=timestamp, url=url %}This is an old revision of this dataset, as edited at {{ timestamp }}. It may differ significantly from the <a href="{{ url }}">current revision</a>.{% endtrans %}
                 </p>
             </div>
@@ -56,15 +113,15 @@
     {% endblock %}
 
     {% block package_groups %}
-            {% snippet 'package/snippets/groups.html', groups=pkg.groups %}
+        {% snippet 'package/snippets/groups.html', groups=pkg.groups %}
     {% endblock %}
 
-    {% block package_social %}
-        {% snippet "snippets/social.html" %}
-    {% endblock %}
-
-    {% block package_license %}
-        {% snippet "snippets/license.html", pkg_dict=pkg %}
-    {% endblock %}
+    {#    {% block package_social %}#}
+    {#        {% snippet "snippets/social.html" %}#}
+    {#    {% endblock %}#}
+    {##}
+    {#    {% block package_license %}#}
+    {#        {% snippet "snippets/license.html", pkg_dict=pkg %}#}
+    {#    {% endblock %}#}
 
 {% endblock %}

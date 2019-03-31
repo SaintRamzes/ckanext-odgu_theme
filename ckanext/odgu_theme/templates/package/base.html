@@ -17,11 +17,16 @@
         {% else %}
             {% link_for _('Datasets'), controller='package', action='search' %}
         {% endif %}
-        {#<li{{ self.breadcrumb_content_selected() }}>#}
-        {% link_for dataset|truncate(30), controller='package', action='read', id=pkg.name %}
+        {% if self.breadcrumb_content_selected() %}
+            <a href="">{{ _('Dataset') }}</a>
+        {% else %}
+            {% link_for dataset|truncate(30), controller='package', action='read', id=pkg.name %}
+        {% endif %}
+
+
     {% else %}
-        <li>{% link_for _('Datasets'), controller='package', action='search' %}</li>
-        <li class="active"><a href="">{{ _('Create Dataset') }}</a></li>
+        {% link_for _('Datasets'), controller='package', action='search' %}
+        <a href="">{{ _('Create Dataset') }}</a>
     {% endif %}
 {% endblock %}
 
