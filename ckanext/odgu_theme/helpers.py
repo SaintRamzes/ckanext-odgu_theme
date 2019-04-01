@@ -1,6 +1,7 @@
 import copy
 import datetime
 import re
+from urlparse import urlparse
 
 import ckan.plugins.toolkit as toolkit
 from ckan import logic, model
@@ -267,3 +268,9 @@ def mail_to_c(email_address, name):
     author = escape(name)
     html = Markup(u'<a class=position-information-name href=mailto:{0}>{1}</a>'.format(email, author))
     return html
+
+
+def clean_url(url):
+    o = urlparse(url)
+    url_without_query_string = o.netloc + o.path
+    return url_without_query_string

@@ -32,5 +32,6 @@ class Odgu_ThemePlugin(Odgu_ThemePluginBase):
             'render_datetime_ukr': helpers.render_datetime_ukr,
             'get_tab_link': helpers.get_tab_link,
             'mail_to_c': helpers.mail_to_c,
+            'clean_url': helpers.clean_url,
         }
 

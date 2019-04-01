@@ -11,9 +11,9 @@ Example:
 {% block package_info %}
     {% if pkg %}
         {% block package_info_inner %}
-{#            {% block heading %}#}
-{#                <h1 class="heading">{{ h.dataset_display_name(pkg) }}</h1>#}
-{#            {% endblock %}#}
+            {#            {% block heading %}#}
+            {#                <h1 class="heading">{{ h.dataset_display_name(pkg) }}</h1>#}
+            {#            {% endblock %}#}
 
             <div class="authorization-right">
                 {% block nums %}
@@ -24,18 +24,16 @@ Example:
                 {% endblock %}
                 {% block follow_button %}
                     {% if not hide_follow_button %}
-                        <div class="follow_button">
+                        {% if c.user %}
                             {{ h.follow_button('dataset', pkg.id) }}
-                        </div>
+                        {% else %}
+                            <div class="authorization-content">
+                                <a href="{{ h.url_for('login', came_from=h.full_current_url()) }}">{{ _('Log in') }}</a>, щоб мати змогу стежити за змінами цього набору даних
+                            </div>
+                        {% endif %}
                     {% endif %}
                 {% endblock %}
-                {% if c.user %}
-                    {{ h.follow_button('dataset', pkg.id) }}
-                {% else %}
-                    <div class="authorization-content">
-                        <a href="{{ h.url_for('login', came_from=h.full_current_url()) }}">{{ _('Log in') }}</a>, щоб мати змогу стежити за змінами цього набору даних
-                    </div>
-                {% endif %}
+
             </div>
             {#                <div class="nums">#}
             {#                    <dl>#}

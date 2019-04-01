@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>Icons/icn-plus</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Icons/icn-plus" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M13,11 L13,8 C13,7.447 12.553,7 12,7 C11.447,7 11,7.447 11,8 L11,11 L8,11 C7.447,11 7,11.447 7,12 C7,12.553 7.447,13 8,13 L11,13 L11,16 C11,16.553 11.447,17 12,17 C12.553,17 13,16.553 13,16 L13,13 L16,13 C16.553,13 17,12.553 17,12 C17,11.447 16.553,11 16,11 L13,11 Z" id="Fill-1" fill="#fff"></path>
+    </g>
+</svg>
