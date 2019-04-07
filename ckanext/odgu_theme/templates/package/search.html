@@ -3,9 +3,12 @@
 
 {% block subtitle %}{{ _("Datasets") }}{% endblock %}
 
+{% block wrapper_class %}dataset-catalog-page{% endblock %}
+
 {% block breadcrumb_content %}
-  <li class="active">{{ h.nav_link(_(dataset_type.title() + 's'), controller='package', action='search', named_route=dataset_type + '_search', highlight_actions = 'new index') }}</li>
+  {% link_for _(dataset_type.title() + 's'), controller='package', action='search', named_route=dataset_type + '_search', highlight_actions = 'new index' %}
 {% endblock %}
+
 
 {% block primary_content %}
   <section class="module">

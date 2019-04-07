@@ -5,10 +5,10 @@
 {% block subtitle %}{{ c.group_dict.display_name }} - {{ _('Organizations') }}{% endblock %}
 
 {% block breadcrumb_content %}
-  <li>{% link_for _('Organizations'), controller='organization', action='index', named_route=group_type + '_index' %}</li>
+  {% link_for _('Organizations'), controller='organization', action='index', named_route=group_type + '_index' %}
   {% block breadcrumb_content_inner %}
-    <li>{% link_for organization.display_name|truncate(35), controller='organization', action='read', id=organization.name, named_route=group_type + '_read' %}</li>
-    <li class="active">{% link_for _('Manage'), controller='organization', action='edit', id=organization.name, named_route=group_type + '_edit' %}</li>
+    {% link_for organization.display_name|truncate(35), controller='organization', action='read', id=organization.name, named_route=group_type + '_read' %}
+    {% link_for _('Manage'), controller='organization', action='edit', id=organization.name, named_route=group_type + '_edit' %}
   {% endblock %}
 {% endblock %}
 

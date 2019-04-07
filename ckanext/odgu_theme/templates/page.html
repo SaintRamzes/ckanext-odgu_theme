@@ -31,19 +31,22 @@
             </div>
         {% endblock %}
 
-        <div class="{% block wrapper_class %}{% endblock %}{% if self.secondary()|trim == '' or c.action=='resource_read' %} no-nav{% endif %}">
-            <div class="section-wraper">
-                {#
+        {% if not (self.secondary()|trim == '' or c.action=='resource_read') %}
+            <div class="{% block wrapper_class %}{% endblock %}">
+        {% endif %}
+    <div class="section-wraper">
+        {% block all_section_wraper %}
+            {#
             The pre_primary block can be used to add content to before the
             rendering of the main content columns of the page.
             #}
-                {% block pre_primary %}{% endblock %}
+            {% block pre_primary %}{% endblock %}
 
 
-
+            {% block primary_and_secondary %}
                 {% block primary %}
-                    <div class="column-left">
-                        {#
+
+                    {#
                 The primary_content block can be used to add content to the page.
                 This is the main block that is likely to be used within a template.
 
@@ -55,22 +58,26 @@
                   {% endblock %}
 
                 #}
-                        {% block toolbar %}
-                            {% block breadcrumb %}
-                                {% if self.breadcrumb_content() | trim %}
+                    <div class="column-left">
+                        {% if not (self.secondary()|trim == '' or c.action=='resource_read') %}
 
-                                    <div class="bread-crumbs">
-                                        {% snippet 'snippets/home_breadcrumb_item.html' %}
-                                        {% block breadcrumb_content %}{% endblock %}
-                                    </div>
-                                {% endif %}
+                            {% block toolbar %}
+                                {% block breadcrumb %}
+                                    {% if self.breadcrumb_content() | trim %}
+
+                                        <div class="bread-crumbs">
+                                            {% snippet 'snippets/home_breadcrumb_item.html' %}
+                                            {% block breadcrumb_content %}{% endblock %}
+                                        </div>
+                                    {% endif %}
+                                {% endblock %}
                             {% endblock %}
-                        {% endblock %}
+                        {% endif %}
                         {% block primary_content %}
                             {% block pre_primary_header %}{% endblock %}
-                            <div class="tabs-wraper">
+                            <div class="custom-tab-wraper">
                                 {% block page_header %}
-                                    <div class="tab-header">
+                                    <div class="custom-tab-header">
                                         {% block content_primary_nav %}{% endblock %}
                                     </div>
 
@@ -85,13 +92,13 @@
 
 
                                 {% endblock %}
-                                <div class="tab-content">
+                                <div class="custom-tab-content">
                                     {% if self.page_primary_action() | trim %}
                                         <div class="page_primary_action">
                                             {% block page_primary_action %}{% endblock %}
                                         </div>
                                     {% endif %}
-                                    <div class="tab-content-item tab-content-item-active">
+                                    <div class="custom-tab-content-item custom-tab-content-item-active">
                                         {% block primary_content_inner %}{% endblock %}
                                     </div>
                                 </div>
@@ -116,9 +123,16 @@
                         {% block secondary_content %}{% endblock %}
                     </div>
                 {% endblock %}
-            </div>
+            {% endblock %}
+
+        {% endblock %}
+    </div>
+    {% if not (self.secondary()|trim == '' or c.action=='resource_read') %}
         </div>
+    {% endif %}
     {% endblock %}
+
+
     </main>
     {% endblock -%}
 

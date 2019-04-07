@@ -5,8 +5,8 @@
 {% block subtitle %}{{ _('Revision') }} {{ rev.id }}{% endblock %}
 
 {% block breadcrumb_content %}
-  <li>{% link_for _('Revisions'), controller='revision', action='index' %}</li>
-  <li class="active"><a href="" title="{{ _('Revision') }} {{ rev.id }}">{{ rev.id |truncate(35) }}</a></li>
+  {% link_for _('Revisions'), controller='revision', action='index' %}
+  <a href="" title="{{ _('Revision') }} {{ rev.id }}">{{ rev.id |truncate(35) }}</a>
 {% endblock %}
 
 {% block actions_content %}

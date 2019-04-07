@@ -3,7 +3,7 @@
 {% block subtitle %}{{ _('Groups') }}{% endblock %}
 
 {% block breadcrumb_content %}
-  <li class="active">{% link_for _('Groups'), controller='group', action='index', named_route=group_type + '_index' %}</li>
+  {% link_for _('Groups'), controller='group', action='index', named_route=group_type + '_index' %}
 {% endblock %}
 
 {% block page_header %}{% endblock %}
