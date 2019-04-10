@@ -31,17 +31,17 @@ Example:
 {#    </div>#}
 {#</div>#}
 <div id="dataset-resources" class="data-resources">
-    <h3>{{ _('Data and Resources') }}</h3>
+    <div class="data-resources-title">{{ _('Data and Resources') }}</div>
     {% block resource_list %}
         {% if resources %}
-{#            <ul class="{% block resource_list_class %}resource-list{% endblock %}">#}
-                {% block resource_list_inner %}
-                    {% set can_edit = h.check_access('package_update', {'id':pkg.id }) %}
-                    {% for resource in resources %}
-                        {% snippet 'package/snippets/resource_item.html', pkg=pkg, res=resource, can_edit=can_edit %}
-                    {% endfor %}
-                {% endblock %}
-{#            </ul>#}
+            {#            <ul class="{% block resource_list_class %}resource-list{% endblock %}">#}
+            {% block resource_list_inner %}
+                {% set can_edit = h.check_access('package_update', {'id':pkg.id }) %}
+                {% for resource in resources %}
+                    {% snippet 'package/snippets/resource_item.html', pkg=pkg, res=resource, can_edit=can_edit %}
+                {% endfor %}
+            {% endblock %}
+            {#            </ul>#}
         {% else %}
             {% if h.check_access('resource_create', {'package_id': pkg['id']}) %}
                 {% trans url=h.url_for(controller='package', action='new_resource', id=pkg.name) %}

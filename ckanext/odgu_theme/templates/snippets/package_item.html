@@ -31,7 +31,7 @@ Example:
                     {% endif %}
                 {% endblock %}
                 {% block heading_title %}
-                    {{ h.link_to(h.truncate(title, truncate_title), h.url_for(package.type + '_read', controller='package', action='read', id=package.name)) }}
+                    {{ h.link_to(h.truncate(title, truncate_title), h.url_for(package.type + '_read', controller='package', action='read', id=package.name), class='title') }}
                 {% endblock %}
                 {% block heading_meta %}
                     {% if package.get('state', '').startswith('draft') %}
@@ -49,7 +49,7 @@ Example:
             {% endblock %}
             {% block notes %}
                 {% if notes %}
-                    <div>{{ notes|urlize }}</div>
+                    <div class="file-content">{{ notes|urlize }}</div>
                 {% else %}
                     <p class="empty">{{ _("This dataset has no description") }}</p>
                 {% endif %}
@@ -59,7 +59,7 @@ Example:
                     {% block resources_outer %}
                         {% block resources_inner %}
                             {% for resource in h.dict_list_reduce(package.resources, 'format') %}
-                                <a href="{{ h.url_for(controller='package', action='read', id=package.name) }}" data-format="{{ resource.lower() }}">{{ resource }}</a>
+                                <a class="document-link" href="{{ h.url_for(controller='package', action='read', id=package.name) }}" data-format="{{ resource.lower() }}">{{ resource }}</a>
                             {% endfor %}
                         {% endblock %}
                     {% endblock %}

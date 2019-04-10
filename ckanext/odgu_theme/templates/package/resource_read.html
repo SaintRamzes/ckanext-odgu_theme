@@ -18,7 +18,7 @@
     <a href="">{{ h.resource_display_name(res)|truncate(30) }}</a>
 {% endblock %}
 {% block all_section_wraper %}
-    <div class="data-resource-wraper">
+    <div class="column-full">
         {% block toolbar %}
             {{ super() }}
         {% endblock %}
@@ -173,11 +173,11 @@
             <section class="module">
                 {% block resource_additional_information_inner %}
                     <div class="module-content ">
-                        <div>{{ _('Additional Information') }}</div>
+                        <div>{{ _('Additional Information') }} </div>
                         <table class="table table-striped table-bordered table-condensed" data-module="table-toggle-more">
                             <thead>
                             <tr>
-                                <th scope="col">{{ _('Field') }}2</th>
+                                <th scope="col">{{ _('Field') }}</th>
                                 <th scope="col">{{ _('Value') }}</th>
                             </tr>
                             </thead>
@@ -219,6 +219,12 @@
     {% block resources_list %}
         {% snippet "package/snippets/resources.html", pkg=pkg, active=res.id %}
     {% endblock %}
+
+        {#        <div class="organization-right">#}
+        {#            <div class="subscribers">Організація</div>#}
+        {#            <div class="organization-content"><a href="">Апарат міської ради та її виконавчого#}
+        {#                комітету</a></div>#}
+        {#        </div>#}
 
     {% block resource_license %}
         {% snippet "snippets/social.html" %}
