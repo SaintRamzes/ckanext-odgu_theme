@@ -1,11 +1,22 @@
-<li class="item {{ activity.type|lower }}">
+<div class="activity-string-item {#{{ activity.type|lower }}#}">
     {% if activity.is_new %}
         <span class="new" title="{{ _('New activity item') }}">{{ _('New activity item') }}</span>
     {% endif %}
-    <i class="fa icon fa-{{ activity.icon }}"></i>
-    <p>
-        {{ h.literal(activity.msg.format(**activity.data)) }}
-        <span class="date" title="{{ h.render_datetime(activity.timestamp, with_hours=True) }}">{{ h.time_ago_from_timestamp(activity.timestamp) }}</span>
-    </p>
-</li>
+    <div class="activity-string-item-icon">
+        <img src="/images/icn-datasource.svg" alt="{{ activity.icon }}">
+    </div>
 
+    {{ h.literal(activity.msg.format(**activity.data)) }}
+    <div class="activity-string-date" title="{{ h.render_datetime(activity.timestamp, with_hours=True) }}">{{ h.time_ago_from_timestamp(activity.timestamp) }}</div>
+
+</div>
+
+{#<div class="activity-string-item">#}
+{#    <div class="activity-string-item-icon">#}
+{#        <img src="/images/icn-datasource.svg" alt="">#}
+{#    </div>#}
+{#    <a href="">Іванова Лариса Володимирівна</a> додав ресурс <a href="">Звіт про#}
+{#    задоволення запитів на інформацію за 4 квартал 2018року</a>набору даних<a#}
+{#        href="">Звіти про задоволення запитів на інформацію</a>#}
+{#    <div class="activity-string-date">14 днів тому</div>#}
+{#</div>#}

@@ -2,11 +2,13 @@
 {% set has_more = activities|length > has_more_length %}
 
 {% block activity_stream %}
-  {% if activities %}
-      {% block activity_stream_inner %}
-        {% for activity in activities %}
-            {% snippet 'home/snippets/activity_item.html', activity=activity %}
-        {% endfor %}
-      {% endblock %}
-  {% endif %}
+    {% if activities %}
+        <div class="activity-string-list">
+            {% block activity_stream_inner %}
+                {% for activity in activities %}
+                    {% snippet 'snippets/activity_item.html', activity=activity %}
+                {% endfor %}
+            {% endblock %}
+        </div>
+    {% endif %}
 {% endblock %}

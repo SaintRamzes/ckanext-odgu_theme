@@ -27,7 +27,7 @@ Example:
 
                             <div class="truncated-data-resources">
                                 <div class="truncated-data-resources-icon">
-                                    <img src="/images/label-file-xls.png"alt="">
+                                    <img src="/images/label-file-xls.png" alt="">
                                 </div>
                                 <a class="truncated-data-resources-title" href="{{ h.url_for(controller='package', action=action or 'resource_read', id=pkg.name, resource_id=resource.id) }}">{{ h.resource_display_name(resource)|truncate(25) }}</a>
                                 {% if resource.description %}

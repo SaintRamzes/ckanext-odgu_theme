@@ -37,30 +37,6 @@ within_tertiary
   page and not the left column.
 
 #}
-{#<div class="catalog-filters-list">#}
-{#    <div class="catalog-filters-list__title">Організації</div>#}
-{#    <a class="catalog-filters-list__item" href="#">Департамент інформатизації та телекомунікацій#}
-{#        <span class="catalog-filters-list__count">99</span>#}
-{#    </a>#}
-{#    <a class="catalog-filters-list__item" href="#">Департамент архітектури та#}
-{#        містобудування#}
-{#        <span class="catalog-filters-list__count">1</span></a><a#}
-{#        class="catalog-filters-list__item" href="#">Департамент капітального будівництва<span#}
-{#        class="catalog-filters-list__count">22</span></a><a class="catalog-filters-list__item"#}
-{#                                                            href="#">Департамент земельних#}
-{#    ресурсів<span class="catalog-filters-list__count">12</span></a><a#}
-{#        class="catalog-filters-list__item" href="#">КП «Вінницька трансаортна компанія»<span#}
-{#        class="catalog-filters-list__count">5</span></a><a class="catalog-filters-list__item"#}
-{#                                                           href="#">Департамент архітектури та#}
-{#    містобудування<span class="catalog-filters-list__count">1</span></a><a#}
-{#        class="catalog-filters-list__item" href="#">Департамент капітального будівництва<span#}
-{#        class="catalog-filters-list__count">22</span></a><a class="catalog-filters-list__item"#}
-{#                                                            href="#">Департамент земельних#}
-{#    ресурсів<span class="catalog-filters-list__count">12</span></a><a#}
-{#        class="catalog-filters-list__item" href="#">КП «Вінницька трансаортна компанія»<span#}
-{#        class="catalog-filters-list__count">5</span></a>#}
-{#    <div class="catalog-filters-list__show-more">Показати більше організацій</div>#}
-{#</div>#}
 {% block facet_list %}
     {% set hide_empty = hide_empty or false %}
     {% with items = items or h.get_facet_items_dict(name) %}
@@ -111,10 +87,10 @@ within_tertiary
 
                                 {% if h.get_param_int('_%s_limit' % name) %}
                                     {% if h.has_more_facets(name) %}
-                                        <a href="{{ h.remove_url_param('_%s_limit' % name, replace=0, extras=extras, alternative_url=alternative_url) }}" class="read-more">{{ _('Show More {facet_type}').format(facet_type=title) }}</a>
+                                        <a href="{{ h.remove_url_param('_%s_limit' % name, replace=0, extras=extras, alternative_url=alternative_url) }}" class="catalog-filters-list__show-more">{{ _('Show More {facet_type}').format(facet_type=title) }}</a>
                                     {% endif %}
                                 {% else %}
-                                    <a href="{{ h.remove_url_param('_%s_limit' % name, extras=extras, alternative_url=alternative_url) }}" class="read-more">{{ _('Show Only Popular {facet_type}').format(facet_type=title) }}</a>
+                                    <a href="{{ h.remove_url_param('_%s_limit' % name, extras=extras, alternative_url=alternative_url) }}" class="catalog-filters-list__show-more">{{ _('Show Only Popular {facet_type}').format(facet_type=title) }}</a>
                                 {% endif %}
                                 {#                                <p class="module-footer">#}
                                 {#                                    {% if h.get_param_int('_%s_limit' % name) %}#}
