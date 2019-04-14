@@ -10,5 +10,11 @@
                 {% endfor %}
             {% endblock %}
         </div>
+    {% else %}
+        {% block activity_stream_empty %}
+            <div class="activity-string-list">
+                <p class="empty">{{ _('No activities are within this activity stream') }}</p>
+            </div>
+        {% endblock %}
     {% endif %}
 {% endblock %}

@@ -1,25 +1,52 @@
 {% set views_created = views or resource_preview %}
 {% if views_created %}
-  <ul class="nav {{ extra_class }}" {{ extra_attributes }}>
-    {% if resource_preview %}
-      <li{% if not view_id %} class="active"{% endif %}>
-        <a href="{{ h.url_for(controller='package', action='resource_read', id=pkg.name, resource_id=resource.id) }}" >
-          <i class="fa icon fa-eye-open"></i>
-          {{ _("Resource Preview") }}
-        </a>
-      </li>
-  {% endif %}
+    <div class="custom-tab-header {{ extra_class }}" {{ extra_attributes }}>
+        {% if resource_preview %}
+            {#            <li{% if not view_id %} class="active"{% endif %}>#}
+            <a class="custom-tab-header-item{% if not view_id %} custom-tab-header-item-active{% endif %}"
+               href="{{ h.url_for(controller='package', action='resource_read', id=pkg.name, resource_id=resource.id) }}" >
+{#                <i class="fa icon fa-eye-open"></i>#}
+                <div class="custom-tab-header-item-icon">
+                    <img src="/images/icn-dataset_1.svg" alt="{{ _("Resource Preview") }}">
+                </div>
+                <div class="custom-tab-header-item-title">{{ _("Resource Preview") }}</div>
 
-  {% set current_filters = request.str_GET.get('filters') %}
-  {% for view in views %}
-  	{% set is_selected = true if view_id == view.id else false %}
-    {% snippet "package/snippets/resource_views_list_item.html",
+            </a>
+            {#            </li>#}
+        {% endif %}
+
+        {% set current_filters = request.str_GET.get('filters') %}
+        {% for view in views %}
+            {% set is_selected = true if view_id == view.id else false %}
+            {% snippet "package/snippets/resource_views_list_item.html",
        view=view,
        pkg=pkg,
        is_edit=is_edit,
        is_selected=is_selected,
        current_filters=current_filters
-    %}
-  {% endfor %}
-</ul>
+                    %}
+        {% endfor %}
+    </div>
 {% endif %}
+{#<div class="custom-tab-wraper">#}
+{#    <div class="custom-tab-header">#}
+{#        <a class="custom-tab-header-item custom-tab-header-item-active" href="#">#}
+{#            <div class="custom-tab-header-item-icon"><img src="/images/icn-dataset_1.svg" alt="">#}
+{#            </div>#}
+{#            <div class="custom-tab-header-item-title">Набір даних</div>#}
+{#        </a>#}
+{#        <a class="custom-tab-header-item" href="#">#}
+{#            <div class="custom-tab-header-item-icon"><img src="/images/icn-datagroup_1.svg" alt="">#}
+{#            </div>#}
+{#            <div class="custom-tab-header-item-title">Стрічка активності</div>#}
+{#        </a>#}
+{#        <a class="custom-tab-header-item" href="#">#}
+{#            <div class="custom-tab-header-item-icon"><img src="/images/icn-propositions.svg" alt="">#}
+{#            </div>#}
+{#            <div class="custom-tab-header-item-title">Пропозиції</div>#}
+{#        </a>#}
+{#    </div>#}
+{#    <div class="custom-tab-content">#}
+{#        <div class="custom-tab-content-item custom-tab-content-item-active"></div>#}
+{#    </div>#}
+{#</div>#}
