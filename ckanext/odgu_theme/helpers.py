@@ -29,6 +29,18 @@ def build_main(*args):
     return output
 
 
+def build_nav_link(menu_item, title, **kw):
+    ''' build a set of menu items.
+
+    args: tuples of (menu type, title) eg ('login', _('Login'))
+    outputs <div class="main-menu__item"><a href="...">title</a></div>
+    '''
+    l_start = ''
+    l_end = ''
+
+    return _make_menu_item(menu_item, title, l_start, l_end, l_start, l_end, **kw)
+
+
 def get_tab_link(menu_item, title=None, img=None, **kw):
     ''' build a set of menu items.
 
@@ -98,6 +110,56 @@ def _make_menu_link(menu_item, title, **kw):
     # link = _link_to(title, menu_item, **item)
     link = toolkit.url_for(menu_item, id=item['id'], action=item['action'], controller=item['controller'])
     return link
+
+
+def get_tab(menu_item, title=None, img=None, **kw):
+    ''' build a set of menu items.
+
+    args: tuples of (menu type, title) eg ('login', _('Login'))
+    outputs <div class="main-menu__item"><a href="...">title</a></div>
+    '''
+    link, active = _make_menu_tab(menu_item, title, icon=None, **kw)
+    img_lit = ''
+    active_class = ''
+    if img:
+        img_lit = literal('<div class="custom-tab-header-item-icon"><img src="{}" alt="{}"></div>'.format(img, title))
+    if active:
+        active_class = ' custom-tab-header-item-active'
+
+    return literal('<a class="custom-tab-header-item{}" href="{}">{}<div class="custom-tab-header-item-title">'
+                   '{}</div></a>'.format(active_class, link, img_lit, title))
+
+
+def _make_menu_tab(menu_item, title, **kw):
+    ''' build a navigation item used for example breadcrumbs
+
+    outputs <div class="main-menu__item"><a href="..."></i> title</a></li>
+
+    :param menu_item: the name of the defined menu item defined in
+    config/routing as the named route of the same name
+    :type menu_item: string
+    :param title: text used for the link
+    :type title: string
+    :param **kw: additional keywords needed for creating url eg id=...
+
+    :rtype: HTML literal
+
+    This function is called by wrapper functions.
+    '''
+    menu_item = map_pylons_to_flask_route_name(menu_item)
+    _menu_items = toolkit.config['routes.named_routes']
+    if menu_item not in _menu_items:
+        raise Exception('menu item `%s` cannot be found' % menu_item)
+    item = copy.copy(_menu_items[menu_item])
+    item.update(kw)
+    # link = _link_to(title, menu_item, **item)
+    if 'offset' in item:
+        link = toolkit.url_for(menu_item, id=item['id'], action=item['action'], controller=item['controller'], offset=item['offset'])
+    else:
+        link = toolkit.url_for(menu_item, id=item['id'], action=item['action'], controller=item['controller'])
+    active = _link_active(item)
+
+    return link, active
 
 
 def get_all_groups():
@@ -244,8 +306,8 @@ def _month_dec(day):
 
 
 _MONTH_FUNCTIONS = [_month_jan, _month_feb, _month_mar, _month_apr,
-                   _month_may, _month_june, _month_july, _month_aug,
-                   _month_sept, _month_oct, _month_nov, _month_dec]
+                    _month_may, _month_june, _month_july, _month_aug,
+                    _month_sept, _month_oct, _month_nov, _month_dec]
 
 
 def localised_nice_date(datetime_, with_hours=False):

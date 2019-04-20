@@ -5,8 +5,8 @@
 {% block subtitle %}{{ user.display_name }} - {{ _('Users') }}{% endblock %}
 
 {% block breadcrumb_content %}
-  {{ h.build_nav('user.index', _('Users')) }}
-  {{ h.build_nav('user.read', user.display_name|truncate(35), id=user.name) }}
+  {{ h.build_nav_link('user.index', _('Users')) }}
+  {{ h.build_nav_link('user.read', user.display_name|truncate(35), id=user.name) }}
 {% endblock %}
 
 {% block content_action %}
@@ -16,8 +16,8 @@
 {% endblock %}
 
 {% block content_primary_nav %}
-  {{ h.build_nav_icon('user.read', _('Datasets'), id=user.name) }}
-  {{ h.build_nav_icon('user.activity', _('Activity Stream'), id=user.name) }}
+  {{ h.get_tab('user.read', _('Datasets'), id=user.name) }}
+  {{ h.get_tab('user.activity', _('Activity Stream'), id=user.name) }}
 {% endblock %}
 
 {% block secondary_content %}

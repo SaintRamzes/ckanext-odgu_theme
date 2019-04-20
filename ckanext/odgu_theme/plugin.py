@@ -27,6 +27,8 @@ class Odgu_ThemePlugin(Odgu_ThemePluginBase):
     def get_helpers(self):
         return {
             'build_main': helpers.build_main,
+            'build_nav_link': helpers.build_nav_link,
+            'get_tab': helpers.get_tab,
             'get_all_groups': helpers.get_all_groups,
             'recently_changed_packages_activity_stream_main': helpers.recently_changed_packages_activity_stream_main,
             'render_datetime_ukr': helpers.render_datetime_ukr,

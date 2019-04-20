@@ -3,7 +3,7 @@
 {% block subtitle %}{{ _('All Users') }}{% endblock %}
 
 {% block breadcrumb_content %}
-  <li class="active">{{ h.nav_link(_('Users'), named_route='user.index') }}</li>
+  {{ h.nav_link(_('Users'), named_route='user.index') }}
 {% endblock %}
 
 {% block primary_content %}

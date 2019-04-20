@@ -17,8 +17,10 @@
 {% endblock %}
 
 {% block content_primary_nav %}
-    {% snippet 'snippets/tab_item.html', tab_url=h.get_tab_link('dataset_edit', id=pkg.name), tab_title= _('Edit metadata'), tab_icon='/images/icn-dataset_1.svg' %}
-    {% snippet 'snippets/tab_item.html', tab_url=h.get_tab_link('dataset_resources', id=pkg.name), tab_title= _('Resources'), tab_icon='/images/icn-dataset_1.svg' %}
+{#    {% snippet 'snippets/tab_item.html', tab_url=h.get_tab_link('dataset_edit', id=pkg.name), tab_title= _('Edit metadata'), tab_icon='/images/icn-dataset_1.svg' %}#}
+{#    {% snippet 'snippets/tab_item.html', tab_url=h.get_tab_link('dataset_resources', id=pkg.name), tab_title= _('Resources'), tab_icon='/images/icn-dataset_1.svg' %}#}
+    {{ h.get_tab('dataset_edit', _('Edit metadata'), id=pkg.name, img='/images/icn-dataset_1.svg') }}
+    {{ h.get_tab('dataset_resources', _('Resources'), id=pkg.name, img='/images/icn-dataset_1.svg') }}
 {% endblock %}
 
 {% block secondary_content %}

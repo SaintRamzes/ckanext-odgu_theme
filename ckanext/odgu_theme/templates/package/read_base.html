@@ -55,8 +55,10 @@
 {% endblock %}
 
 {% block content_primary_nav %}
-    {% snippet 'snippets/tab_item.html', tab_url=h.get_tab_link('dataset_read', id=pkg.name), tab_title=_('Dataset'), tab_icon='/images/icn-dataset_1.svg' %}
-    {% snippet 'snippets/tab_item.html', tab_url=h.get_tab_link('dataset_activity', id=pkg.name), tab_title=_('Activity Stream'), tab_icon='/images/icn-datagroup_1.svg' %}
+{#    {% snippet 'snippets/tab_item.html', tab_url=h.get_tab_link('dataset_read', id=pkg.name), tab_title=_('Dataset'), tab_icon='/images/icn-dataset_1.svg' %}#}
+    {{ h.get_tab('dataset_read', _('Dataset'), id=pkg.name, img='/images/icn-dataset_1.svg') }}
+    {{ h.get_tab('dataset_activity', _('Activity Stream'), id=pkg.name, img='/images/icn-datagroup_1.svg') }}
+{#    {% snippet 'snippets/tab_item.html', tab_url=h.get_tab_link('dataset_activity', id=pkg.name), tab_title=_('Activity Stream'), tab_icon='/images/icn-datagroup_1.svg' %}#}
     {#    <div class="tab-header-item tab-header-item-active" data-tab-id="tab_1">#}
     {#        <div class="tab-header-item-icon"><img src="/images/icn-dataset_1.svg" alt=""></div>#}
     {#        <div class="tab-header-item-title">Набір даних</div>#}

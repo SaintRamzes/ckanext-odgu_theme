@@ -21,12 +21,12 @@
 {% endblock %}
 
 {% block content_primary_nav %}
-    {{ h.build_nav_icon('resource_edit', _('Edit resource'), id=pkg.name, resource_id=res.id) }}
+    {{ h.get_tab('resource_edit', _('Edit resource'), id=pkg.name, resource_id=res.id) }}
     {% block inner_primary_nav %}{% endblock %}
     {% if res.datastore_active %}
-        {{ h.build_nav_icon('resource_dictionary', _('Data Dictionary'), id=pkg.name, resource_id=res.id) }}
+        {{ h.get_tab('resource_dictionary', _('Data Dictionary'), id=pkg.name, resource_id=res.id) }}
     {% endif %}
-    {{ h.build_nav_icon('views', _('Views'), id=pkg.name, resource_id=res.id) }}
+    {{ h.get_tab('views', _('Views'), id=pkg.name, resource_id=res.id) }}
 {% endblock %}
 
 {% block primary_content_inner %}

@@ -3,7 +3,7 @@
 {% block subtitle %}{{ _('Register') }}{% endblock %}
 
 {% block breadcrumb_content %}
-  <li class="active">{{ h.nav_link(_('Registration'), named_route='user.register') }}</li>
+  {{ h.nav_link(_('Registration'), named_route='user.register') }}
 {% endblock %}
 
 {% block primary_content %}
