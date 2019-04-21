@@ -153,6 +153,7 @@ def _make_menu_tab(menu_item, title, **kw):
     item.update(kw)
     # link = _link_to(title, menu_item, **item)
     kwargs = {'action': item['action'], 'controller': item['controller']}
+    kwargs.update(kw)
     if 'offset' in item:
         kwargs["offset"] = item['offset']
     if 'id' in item:
