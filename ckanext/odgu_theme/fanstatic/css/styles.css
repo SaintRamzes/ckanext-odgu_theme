@@ -13,4 +13,32 @@
 .resource-list {
   margin: inherit; }
 
+.custom-tab-wraper .custom-tab-header-item-list {
+  color: #003094;
+  font-size: 18px;
+  font-weight: 700;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  position: relative;
+  cursor: pointer;
+  margin-right: 40px;
+  top: 2px;
+  margin-left: 20px; }
+  .custom-tab-wraper .custom-tab-header-item-list .custom-tab-header-item-icon {
+    position: absolute;
+    left: 0;
+    top: 5px;
+    width: 24px;
+    height: 24px; }
+
+.group-subject img {
+  width: 48px; }
+
+.activity-string-item span.actor img.gravatar {
+  display: none; }
+
+.top-header .profile-popup {
+  right: -20px;
+  top: -20px; }
+
 /*# sourceMappingURL=styles.css.map */

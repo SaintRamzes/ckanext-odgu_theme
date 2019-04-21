@@ -22,7 +22,7 @@
                         {% block header_account_container_content %}
                             {% if c.userobj %}
                                 <a class="profile-name" href="{{ h.url_for('user.read', id=c.userobj.name) }}" title="{{ _('View profile') }}">
-                                    <div class="profile-name__ava">{{ h.gravatar((c.userobj.email_hash if c and c.userobj else ''), size=22) }}</div>{{ c.userobj.display_name }}
+                                    <div class="profile-name__ava">{{ h.gravatar((c.userobj.email_hash if c and c.userobj else ''), size=24) }}</div>{{ c.userobj.display_name }}
                                 </a>
                                 <div class="open-profile-popup"></div>
                                 <div class="profile-popup" {#data-module="me" data-me="{{ c.userobj.id }}"#}>
