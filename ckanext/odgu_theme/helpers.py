@@ -125,8 +125,8 @@ def get_tab(menu_item, title=None, img=None, **kw):
     if active:
         active_class = ' custom-tab-header-item-active'
 
-    return literal('<a class="custom-tab-header-item{}" href="{}">{}<div class="custom-tab-header-item-title">'
-                   '{}</div></a>'.format(active_class, link, img_lit, title))
+    return literal(u'<a class="custom-tab-header-item{}" href="{}">{}<div class="custom-tab-header-item-title">'
+                   u'{}</div></a>'.format(active_class, link, img_lit, title))
 
 
 def _make_menu_tab(menu_item, title, **kw):
