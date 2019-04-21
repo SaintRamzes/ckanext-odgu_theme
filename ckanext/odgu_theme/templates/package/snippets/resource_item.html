@@ -1,7 +1,7 @@
 {% set url_action = 'resource_edit' if url_is_edit and can_edit else 'resource_read' %}
 {% set url = h.url_for(controller='package', action=url_action, id=pkg.name, resource_id=res.id) %}
 
-<div class="data-resource-name" data-id="{{ res.id }}">
+<div class="data-resource-name resource-item" data-id="{{ res.id }}">
     <a class="data-resource-icon" href="{{ url }}" title="{{ res.name or res.description }}">
         <img src="/images/file-{{ res.format.lower() or 'data' }}.png" alt="{{ h.get_translated(res, 'format') }}">
     </a>
