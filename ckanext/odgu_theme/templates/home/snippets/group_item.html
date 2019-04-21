@@ -2,5 +2,7 @@
 <div class="group-subject">
     <img src="{{ group.image_display_url or h.url_for_static('/images/group-subject-img.png') }}" alt="{{ group.name }}">
     <a class="group-subject-title" href="{{ h.url_for(controller='group', action='read', id=group.name) }}">{{ title }}</a>
-    <div class="group-subject-count">{% trans gc=group.package_count %}{{ gc }} dataset{% pluralize %}{{ gc }} datasets{% endtrans %}</div>
+    {% if group.package_count %}
+        <div class="group-subject-count">{% trans gc=group.package_count %}{{ gc }} dataset{% pluralize %}{{ gc }} datasets{% endtrans %}</div>
+    {% endif %}
 </div>
