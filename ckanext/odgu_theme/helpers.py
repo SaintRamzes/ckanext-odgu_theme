@@ -157,6 +157,8 @@ def _make_menu_tab(menu_item, title, **kw):
         kwargs["offset"] = item['offset']
     if 'id' in item:
         kwargs["id"] = item['id']
+    if 'resource_id' in item:
+        kwargs["resource_id"] = item['resource_id']
     link = toolkit.url_for(menu_item, **kwargs)
     active = _link_active(item)
 
