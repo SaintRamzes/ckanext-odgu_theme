@@ -35,13 +35,9 @@
             {#            {% endif %}#}
         </div>
 
+        {% block package_vote %}{% endblock %}
+
         {% block package_notes %}
-            <div class="dataset-rating">
-                <div class="title">Рейтинг</div>
-                <a class="button_minus" href="#"> </a>
-                <div class="rating-count">45</div>
-                <a class="button_plus" href="#"> </a>
-            </div>
             {% if pkg.notes %}
                 <div class="dataset-decision">
                     {{ h.render_markdown(h.get_translated(pkg, 'notes')) }}
