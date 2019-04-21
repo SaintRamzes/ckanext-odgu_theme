@@ -1,12 +1,11 @@
 {% set truncate = truncate or 180 %}
 {% set truncate_title = truncate_title or 80 %}
-{% set package = activity.data.package %}
-{% set title = package.title or package.name %}
-{% set notes = h.markdown_extract(package.notes, extract_length=truncate) %}
+{% set title = pkg.title or pkg.name %}
+{% set notes = h.markdown_extract(pkg.notes, extract_length=truncate) %}
 <div class="updates-block">
 {#    <div class="updates-block__date">{{ h.render_datetime(activity.timestamp, date_format='%d %B %Y, %R', with_hours=True) }}</div>#}
-    <div class="updates-block__date">{{ h.render_datetime_ukr(activity.timestamp, with_hours=True) }}</div>
-    <a class="updates__title" href="{{ h.url_for(package.type + '_read', controller='package', action='read', id=package.name) }}">{{ h.truncate(title, truncate_title) }}</a>
+    <div class="updates-block__date">{{ h.render_datetime_ukr(pkg.metadata_modified, with_hours=True) }}</div>
+    <a class="updates__title" href="{{ h.url_for(pkg.type + '_read', controller='package', action='read', id=pkg.name) }}">{{ h.truncate(title, truncate_title) }}</a>
     {% if notes %}
         <div class="updates__content">{{ notes|urlize }}</div>
     {% endif %}

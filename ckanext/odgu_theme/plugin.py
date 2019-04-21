@@ -30,7 +30,7 @@ class Odgu_ThemePlugin(Odgu_ThemePluginBase):
             'build_nav_link': helpers.build_nav_link,
             'get_tab': helpers.get_tab,
             'get_all_groups': helpers.get_all_groups,
-            'recently_changed_packages_activity_stream_main': helpers.recently_changed_packages_activity_stream_main,
+            'recently_changed_packages_main': helpers.recently_changed_packages_main,
             'render_datetime_ukr': helpers.render_datetime_ukr,
             'get_tab_link': helpers.get_tab_link,
             'mail_to_c': helpers.mail_to_c,

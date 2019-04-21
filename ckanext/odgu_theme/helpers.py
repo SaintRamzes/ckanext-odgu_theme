@@ -7,7 +7,6 @@ import ckan.plugins.toolkit as toolkit
 from ckan import logic, model
 from ckan.lib.helpers import check_access, map_pylons_to_flask_route_name, _link_active, _link_to, \
     _datestamp_to_datetime
-from ckan.logic.action.get import recently_changed_packages_activity_list
 from webhelpers.html import literal
 from markupsafe import Markup, escape
 
@@ -118,7 +117,7 @@ def get_tab(menu_item, title=None, img=None, **kw):
     args: tuples of (menu type, title) eg ('login', _('Login'))
     outputs <div class="main-menu__item"><a href="...">title</a></div>
     '''
-    link, active = _make_menu_tab(menu_item, title, icon=None, **kw)
+    link, active = _make_menu_tab(menu_item, title, **kw)
     img_lit = ''
     active_class = ''
     if img:
@@ -153,10 +152,12 @@ def _make_menu_tab(menu_item, title, **kw):
     item = copy.copy(_menu_items[menu_item])
     item.update(kw)
     # link = _link_to(title, menu_item, **item)
+    kwargs = {'action': item['action'], 'controller': item['controller']}
     if 'offset' in item:
-        link = toolkit.url_for(menu_item, id=item['id'], action=item['action'], controller=item['controller'], offset=item['offset'])
-    else:
-        link = toolkit.url_for(menu_item, id=item['id'], action=item['action'], controller=item['controller'])
+        kwargs["offset"] = item['offset']
+    if 'id' in item:
+        kwargs["id"] = item['id']
+    link = toolkit.url_for(menu_item, **kwargs)
     active = _link_active(item)
 
     return link, active
@@ -204,14 +205,15 @@ def all_group_org(get_action, list_action):
     return groups_data
 
 
-def recently_changed_packages_activity_stream_main(limit=None):
+def recently_changed_packages_main(limit=5):
     if limit:
         data_dict = {'limit': limit}
     else:
         data_dict = {}
     context = {'model': model, 'session': model.Session, 'user': toolkit.c.user}
-    activity_stream = recently_changed_packages_activity_list(context, data_dict)
-    return activity_stream
+    package_list = logic.get_action('current_package_list_with_resources')(context, data_dict)
+
+    return package_list
 
 
 def render_datetime_ukr(datetime_, date_format=None, with_hours=False):
