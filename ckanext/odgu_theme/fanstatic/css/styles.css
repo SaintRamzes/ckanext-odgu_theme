@@ -2,7 +2,8 @@
   text-align: right;
   margin: 0 45px 12px 0; }
 
-.custom-tab-wraper .custom-tab-content-item .page_primary_action, .custom-tab-wraper .custom-tab-content-item .content_action {
+.custom-tab-wraper .custom-tab-content-item .page_primary_action, .custom-tab-wraper .custom-tab-content-item .content_action,
+.custom-tab-wraper .custom-tab-content-item .dataset-catalog-page-vindata-file {
   margin: 0 0 12px 0; }
 .custom-tab-wraper .custom-tab-content .page_primary_action {
   margin: 0 0 12px 0; }
@@ -53,5 +54,66 @@
 .social-links a {
   color: #003094;
   font-weight: 700; }
+
+.organization-page .right-collumn-title {
+  color: #4A4A4A;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 31px;
+  padding: 0 0 15px 45px;
+  border-bottom: 1px solid #ddd; }
+
+.catalog-filters-list {
+  padding: 20px 45px 25px; }
+  .catalog-filters-list:not(:last-child) {
+    border-bottom: 1px solid #ddd; }
+  .catalog-filters-list__title {
+    color: #4A4A4A;
+    font-size: 21px;
+    line-height: 27px;
+    margin-bottom: 20px; }
+  .catalog-filters-list__item {
+    display: block;
+    color: #003094;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    margin-bottom: 15px; }
+  .catalog-filters-list__count {
+    display: inline-block;
+    background: rgba(0, 48, 148, 0.1);
+    font-size: 12px;
+    margin-left: 10px;
+    padding: 0 6px;
+    line-height: 20px;
+    border-radius: 20px;
+    min-width: 20px;
+    text-align: center; }
+  .catalog-filters-list__show-more {
+    border-bottom: #003094 1px dotted;
+    color: #003094;
+    display: inline-block;
+    cursor: pointer; }
+
+.document-link[data-format=html], .document-link[data-format*=html] {
+  background-color: #55a1ce; }
+.document-link[data-format=json], .document-link[data-format*=json] {
+  background-color: #ef7100; }
+.document-link[data-format=xml], .document-link[data-format*=xml] {
+  background-color: #ef7100; }
+.document-link[data-format=text], .document-link[data-format*=text] {
+  background-color: #74cbec; }
+.document-link[data-format=csv], .document-link[data-format*=csv] {
+  background-color: #dfb100; }
+.document-link[data-format=xls], .document-link[data-format*=xls] {
+  background-color: #2db55d; }
+.document-link[data-format=zip], .document-link[data-format*=zip] {
+  background-color: #686868; }
+.document-link[data-format=api], .document-link[data-format*=api] {
+  background-color: #ec96be; }
+.document-link[data-format=pdf], .document-link[data-format*=pdf] {
+  background-color: #e0051e; }
+.document-link[data-format=rdf], .document-link[data-format*=rdf], .document-link[data-format*=nquad], .document-link[data-format*=ntriples], .document-link[data-format*=turtle] {
+  background-color: #0b4498; }
 
 /*# sourceMappingURL=styles.css.map */
