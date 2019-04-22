@@ -95,25 +95,25 @@
     display: inline-block;
     cursor: pointer; }
 
-.document-link[data-format=html], .document-link[data-format*=html] {
+.dataset-catalog-page-vindata-file .document-link[data-format=html], .dataset-catalog-page-vindata-file .document-link[data-format*=html] {
   background-color: #55a1ce; }
-.document-link[data-format=json], .document-link[data-format*=json] {
+.dataset-catalog-page-vindata-file .document-link[data-format=json], .dataset-catalog-page-vindata-file .document-link[data-format*=json] {
   background-color: #ef7100; }
-.document-link[data-format=xml], .document-link[data-format*=xml] {
+.dataset-catalog-page-vindata-file .document-link[data-format=xml], .dataset-catalog-page-vindata-file .document-link[data-format*=xml] {
   background-color: #ef7100; }
-.document-link[data-format=text], .document-link[data-format*=text] {
+.dataset-catalog-page-vindata-file .document-link[data-format=text], .dataset-catalog-page-vindata-file .document-link[data-format*=text] {
   background-color: #74cbec; }
-.document-link[data-format=csv], .document-link[data-format*=csv] {
+.dataset-catalog-page-vindata-file .document-link[data-format=csv], .dataset-catalog-page-vindata-file .document-link[data-format*=csv] {
   background-color: #dfb100; }
-.document-link[data-format=xls], .document-link[data-format*=xls] {
+.dataset-catalog-page-vindata-file .document-link[data-format=xls], .dataset-catalog-page-vindata-file .document-link[data-format*=xls] {
   background-color: #2db55d; }
-.document-link[data-format=zip], .document-link[data-format*=zip] {
+.dataset-catalog-page-vindata-file .document-link[data-format=zip], .dataset-catalog-page-vindata-file .document-link[data-format*=zip] {
   background-color: #686868; }
-.document-link[data-format=api], .document-link[data-format*=api] {
+.dataset-catalog-page-vindata-file .document-link[data-format=api], .dataset-catalog-page-vindata-file .document-link[data-format*=api] {
   background-color: #ec96be; }
-.document-link[data-format=pdf], .document-link[data-format*=pdf] {
+.dataset-catalog-page-vindata-file .document-link[data-format=pdf], .dataset-catalog-page-vindata-file .document-link[data-format*=pdf] {
   background-color: #e0051e; }
-.document-link[data-format=rdf], .document-link[data-format*=rdf], .document-link[data-format*=nquad], .document-link[data-format*=ntriples], .document-link[data-format*=turtle] {
+.dataset-catalog-page-vindata-file .document-link[data-format=rdf], .dataset-catalog-page-vindata-file .document-link[data-format*=rdf], .dataset-catalog-page-vindata-file .document-link[data-format*=nquad], .dataset-catalog-page-vindata-file .document-link[data-format*=ntriples], .dataset-catalog-page-vindata-file .document-link[data-format*=turtle] {
   background-color: #0b4498; }
 
 /*# sourceMappingURL=styles.css.map */
