@@ -41,4 +41,17 @@
   right: -20px;
   top: -20px; }
 
+.resource-view {
+  position: relative; }
+  .resource-view .actions {
+    top: 15px;
+    right: 0; }
+
+.column-right .other-data-sets .other-data-sets-title {
+  padding: 0 45px 30px 20px; }
+
+.social-links a {
+  color: #003094;
+  font-weight: 700; }
+
 /*# sourceMappingURL=styles.css.map */

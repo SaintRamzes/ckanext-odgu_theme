@@ -48,18 +48,20 @@
                         </div>
                     {% endif %}
                     {% if not res.description and c.package.notes %}
-                        <h3>{{ _('From the dataset abstract') }}</h3>
-                        <blockquote>{{ h.markdown_extract(h.get_translated(c.package, 'notes')) }}</blockquote>
-                        <p>{% trans dataset=c.package.title, url=h.url_for(controller='package', action='read', id=c.package['name']) %}Source: <a href="{{ url }}">{{ dataset }}</a>{% endtrans %}
+                        <div class="dataset-decision">
+                            <h3>{{ _('From the dataset abstract') }}</h3>
+                            <blockquote>{{ h.markdown_extract(h.get_translated(c.package, 'notes')) }}</blockquote>
+                            <p>{% trans dataset=c.package.title, url=h.url_for(controller='package', action='read', id=c.package['name']) %}Source: <a href="{{ url }}">{{ dataset }}</a>{% endtrans %}</p>
+                        </div>
                     {% endif %}
                 {% endblock %}
-            {% block resource_read_url %}
-                {% if res.url and h.is_url(res.url) %}
-                    {#{{ _('URL:') }}#} <a class="data-resource-attached-link" href="{{ res.url }}" title="{{ res.url }}">{{ res.url }}</a>
-                {% elif res.url %}
-                    <p class="text-muted break-word">{{ _('URL:') }} {{ res.url }}</p>
-                {% endif %}
-            {% endblock %}
+                {% block resource_read_url %}
+                    {% if res.url and h.is_url(res.url) %}
+                        {#{{ _('URL:') }}#} <a class="data-resource-attached-link" href="{{ res.url }}" title="{{ res.url }}">{{ res.url }}</a>
+                    {% elif res.url %}
+                        <p class="text-muted break-word">{{ _('URL:') }} {{ res.url }}</p>
+                    {% endif %}
+                {% endblock %}
             {% endblock %}
 
             {% block resource_actions %}
@@ -117,12 +119,14 @@
 
                             </div>
                             {% if h.check_access('package_update', {'id':pkg.id }) %}
-                                {% link_for _('Manage'), controller='package', action='resource_edit', id=pkg.name, resource_id=res.id, class_='btn btn-default', icon='wrench' %}
+                                <div class="btn-group">
+                                    {% link_for _('Manage'), controller='package', action='resource_edit', id=pkg.name, resource_id=res.id, class_='btn btn-default', icon='wrench' %}
+                                </div>
                             {% endif %}
                         {% endif %}
                     {% endblock %}
-                    <span>Поширити в соцмережах — <a href="https://twitter.com/share?url={{ current_url }}" target="_blank"><i class="fa fa-twitter-square"></i> Twitter</a> та
-                        <a href="https://www.facebook.com/sharer.php?u={{ current_url }}" target="_blank"><i class="fa fa-facebook-square"></i> Facebook</a></span>
+                    <span class="social-links">Поширити в соцмережах — <a href="https://www.facebook.com/sharer.php?u={{ current_url }}" target="_blank"><i class="fa fa-lg fa-facebook-square"></i> Facebook</a> та
+                        <a href="https://twitter.com/share?url={{ current_url }}" target="_blank"><i class="fa fa-lg fa-twitter-square"></i> Twitter</a></span>
                 </div>
             {% endblock %}
 
@@ -245,14 +249,17 @@
         {% snippet "package/snippets/resources.html", pkg=pkg, active=res.id %}
     {% endblock %}
 
-    {#        <div class="organization-right">#}
-    {#            <div class="subscribers">Організація</div>#}
-    {#            <div class="organization-content"><a href="">Апарат міської ради та її виконавчого#}
-    {#                комітету</a></div>#}
-    {#        </div>#}
-
-    {% block resource_license %}
-        {% snippet "snippets/social.html" %}
+    {% block package_organization %}
+        {% if pkg.organization %}
+            {% set org = h.get_organization(pkg.organization.name) %}
+            {% snippet "package/snippets/organization.html", organization=org, has_context_title=true %}
+        {% endif %}
     {% endblock %}
+
+
+
+{#    {% block resource_license %}#}
+{#        {% snippet "snippets/social.html" %}#}
+{#    {% endblock %}#}
 {% endblock %}
 

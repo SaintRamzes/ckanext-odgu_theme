@@ -127,6 +127,18 @@ def get_tab(menu_item, title=None, img=None, **kw):
 
     return literal(u'<a class="custom-tab-header-item{}" href="{}">{}<div class="custom-tab-header-item-title">'
                    u'{}</div></a>'.format(active_class, link, img_lit, title))
+    # link, active = _make_menu_tab(menu_item, title, **kw)
+    # img_lit = ''
+    # active_class = ''
+    # if img:
+    #     img_lit = literal(u'<div class="custom-tab-header-item-icon"><img src="') + img + \
+    #               literal(u'"" alt="{}"></div>'.format(title))
+    # if active:
+    #     active_class = u' custom-tab-header-item-active'
+    # title_html = literal(u'<div class="custom-tab-header-item-title">{}</div>'.format(title))
+    # link_html = literal(u'<a class="custom-tab-header-item{}" href="'.format(active_class)) + link + \
+    #             literal(u'">{}{}</a>'.format(img_lit, title_html))
+    # return link_html
 
 
 def _make_menu_tab(menu_item, title, **kw):
