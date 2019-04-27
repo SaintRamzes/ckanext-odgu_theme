@@ -114,44 +114,240 @@
     .document-link
         &[data-format=html],
         &[data-format*=html]
-
             background-color: #55a1ce
-
         &[data-format=json],
         &[data-format*=json]
             background-color: #ef7100
-
         &[data-format=xml],
         &[data-format*=xml]
             background-color: #ef7100
-
         &[data-format=text],
         &[data-format*=text]
             background-color: #74cbec
-
         &[data-format=csv],
         &[data-format*=csv]
             background-color: #dfb100
-
         &[data-format=xls],
         &[data-format*=xls]
             background-color: #2db55d
-
         &[data-format=zip],
         &[data-format*=zip]
             background-color: #686868
-
         &[data-format=api],
         &[data-format*=api]
             background-color: #ec96be
-
         &[data-format=pdf],
         &[data-format*=pdf]
             background-color: #e0051e
-
         &[data-format=rdf],
         &[data-format*=rdf],
         &[data-format*=nquad],
         &[data-format*=ntriples],
         &[data-format*=turtle]
             background-color: #0b4498
+
+.blog-item
+    margin-bottom: 25px
+    padding-bottom: 25px
+    border-bottom: 1px solid #d5deed
+
+    .blog-title
+        a
+            line-height: 24px
+            display: block
+
+    .blog-date
+        color: #656565
+        margin-bottom: 5px
+        font-size: 88%
+        line-height: 24px
+
+
+.module-content
+    .pagination
+        &.pagination-centered
+            display: block
+            margin: 0
+
+//editor-content
+
+.editor-content
+    span
+        &.muted
+            color: #767676
+    > *
+        margin-bottom: 22px
+    p
+        font-size: 100%
+        font-family: "ProbaProRegular", "SourceSansPro"
+        color: #1D1D1B
+        line-height: 22px
+        word-wrap: break-word
+    h2, h3, h4, h5
+        color: #1D1D1B
+        font-family: "ProbaProBold", "SourceSansProBold"
+
+    h2
+        font-size: 1.5rem
+    h3
+        font-size: 1.25rem
+        margin-top: 40px
+        margin-bottom: 10px
+
+    table
+        thead
+            tr
+                vertical-align: top
+                border-bottom: 1px solid #e6e9eb
+                th
+                    color: #1D1D1B
+                    font-size: 1.125rem
+                    padding: 10px 20px
+        tbody
+            tr
+                vertical-align: top
+                td
+                    padding: 10px 20px
+                    > *
+                        margin-bottom: 15px
+                        &:last-child
+                            margin-bottom: 0
+                &:nth-child(even)
+                    background-color: #f4f7fa
+                &:nth-child(odd)
+                    background-color: inherit
+
+    pre
+        display: inline-block
+        font-size: 100%
+        font-family: "ProbaProRegular", "SourceSansPro"
+        color: #1D1D1B
+        line-height: 24px
+        border: 0
+        background-color: transparent 
+        &:first-child
+            float: left
+            margin-bottom: 0
+            @media screen and (max-width: 768px)
+                float: none
+                display: block
+                text-align: left
+        &:last-child
+            float: right
+            text-transform: uppercase
+            margin-right: 70px
+            margin-bottom: 0
+            @media screen and (max-width: 991px)
+                margin-right: 0
+            @media screen and (max-width: 768px)
+                float: none
+                display: block
+                text-align: left
+        &:after
+            content: ''
+            clear: both
+            display: table
+            height: 0
+
+    .MsoNormal
+        *
+            font-size: 16px
+
+    div
+        p
+            margin-bottom: 10px
+
+    img
+        margin: 0 auto
+        display: block
+        margin-bottom: 15px
+        margin-top: 5px
+        max-width: 100%
+        @media screen and (max-width: 768px)
+            width: 100%
+
+    > span
+        display: inline-block
+        color: #A0A0A0
+        font-size: 0.8125rem
+        font-family: "ProbaProRegular", "SourceSansPro"
+        margin-bottom: 20px
+
+    blockquote
+        padding-top: 20px
+        padding-bottom: 20px
+        border-top: 1px solid #e6e9eb
+        border-bottom: 1px solid #e6e9eb
+        font-size: 1.5rem
+        color: #1D1D1B
+        font-family: "ProbaProBold", "SourceSansProBold"
+        line-height: 30px
+        margin-bottom: 32px
+        p
+            color: #a7a9af
+            font-style: italic
+            margin-top: 14px
+            font-size: 87%
+            font-family: "ProbaProRegular", "SourceSansPro"
+
+    ul
+        list-style-type: none
+        position: relative
+        margin-top: 15px
+        margin-bottom: 30px
+        > li
+            padding-left: 35px
+            margin-bottom: 15px
+            position: relative
+            line-height: 22px
+            &::before
+                position: absolute
+                content: ''
+                left: 7px
+                top: 9px
+                height: 5px
+                width: 5px
+                -webkit-border-radius: 50%
+                -moz-border-radius: 50%
+                border-radius: 50%
+                background-color: #ADC9EA
+
+    ol
+        padding-left: 0
+        list-style-type: none
+        position: relative
+        margin-bottom: 2em
+        margin-top: 15px
+        counter-reset: num
+        > li
+            margin-bottom: 15px
+            padding-left: 30px
+            line-height: 22px
+            position: relative
+            &::before
+                content: counter(num) "."
+                counter-increment: num
+                color: #a9b7d5
+                left: 0
+                top: 0
+                position: absolute
+                font-family: "ProbaProBold", "SourceSansProBold"
+                font-size: 0.875rem
+
+    ul, ol
+        ul
+            padding-left: 60px
+
+        ol
+            padding-left: 60px
+            &:before
+                font-size: 95%
+
+
+    .highlight
+        display: inline-block
+        background-color: #f5f5f5
+        padding: 3px 4px
+        border-radius: 3px 3px 3px 3px
+        -moz-border-radius: 3px 3px 3px 3px
+        -webkit-border-radius: 3px 3px 3px 3px

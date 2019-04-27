@@ -116,4 +116,184 @@
 .dataset-catalog-page-vindata-file .document-link[data-format=rdf], .dataset-catalog-page-vindata-file .document-link[data-format*=rdf], .dataset-catalog-page-vindata-file .document-link[data-format*=nquad], .dataset-catalog-page-vindata-file .document-link[data-format*=ntriples], .dataset-catalog-page-vindata-file .document-link[data-format*=turtle] {
   background-color: #0b4498; }
 
+.blog-item {
+  margin-bottom: 25px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #d5deed; }
+  .blog-item .blog-title a {
+    line-height: 24px;
+    display: block; }
+  .blog-item .blog-date {
+    color: #656565;
+    margin-bottom: 5px;
+    font-size: 88%;
+    line-height: 24px; }
+
+.module-content .pagination.pagination-centered {
+  display: block;
+  margin: 0; }
+
+.editor-content span.muted {
+  color: #767676; }
+.editor-content > * {
+  margin-bottom: 22px; }
+.editor-content p {
+  font-size: 100%;
+  font-family: "ProbaProRegular", "SourceSansPro";
+  color: #1D1D1B;
+  line-height: 22px;
+  word-wrap: break-word; }
+.editor-content h2, .editor-content h3, .editor-content h4, .editor-content h5 {
+  color: #1D1D1B;
+  font-family: "ProbaProBold", "SourceSansProBold"; }
+.editor-content h2 {
+  font-size: 1.5rem; }
+.editor-content h3 {
+  font-size: 1.25rem;
+  margin-top: 40px;
+  margin-bottom: 10px; }
+.editor-content table thead tr {
+  vertical-align: top;
+  border-bottom: 1px solid #e6e9eb; }
+  .editor-content table thead tr th {
+    color: #1D1D1B;
+    font-size: 1.125rem;
+    padding: 10px 20px; }
+.editor-content table tbody tr {
+  vertical-align: top; }
+  .editor-content table tbody tr td {
+    padding: 10px 20px; }
+    .editor-content table tbody tr td > * {
+      margin-bottom: 15px; }
+      .editor-content table tbody tr td > *:last-child {
+        margin-bottom: 0; }
+  .editor-content table tbody tr:nth-child(even) {
+    background-color: #f4f7fa; }
+  .editor-content table tbody tr:nth-child(odd) {
+    background-color: inherit; }
+.editor-content pre {
+  display: inline-block;
+  font-size: 100%;
+  font-family: "ProbaProRegular", "SourceSansPro";
+  color: #1D1D1B;
+  line-height: 24px;
+  border: 0;
+  background-color: transparent; }
+  .editor-content pre:first-child {
+    float: left;
+    margin-bottom: 0; }
+    @media screen and (max-width: 768px) {
+      .editor-content pre:first-child {
+        float: none;
+        display: block;
+        text-align: left; } }
+  .editor-content pre:last-child {
+    float: right;
+    text-transform: uppercase;
+    margin-right: 70px;
+    margin-bottom: 0; }
+    @media screen and (max-width: 991px) {
+      .editor-content pre:last-child {
+        margin-right: 0; } }
+    @media screen and (max-width: 768px) {
+      .editor-content pre:last-child {
+        float: none;
+        display: block;
+        text-align: left; } }
+  .editor-content pre:after {
+    content: "";
+    clear: both;
+    display: table;
+    height: 0; }
+.editor-content .MsoNormal * {
+  font-size: 16px; }
+.editor-content div p {
+  margin-bottom: 10px; }
+.editor-content img {
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 15px;
+  margin-top: 5px;
+  max-width: 100%; }
+  @media screen and (max-width: 768px) {
+    .editor-content img {
+      width: 100%; } }
+.editor-content > span {
+  display: inline-block;
+  color: #A0A0A0;
+  font-size: 0.8125rem;
+  font-family: "ProbaProRegular", "SourceSansPro";
+  margin-bottom: 20px; }
+.editor-content blockquote {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: 1px solid #e6e9eb;
+  border-bottom: 1px solid #e6e9eb;
+  font-size: 1.5rem;
+  color: #1D1D1B;
+  font-family: "ProbaProBold", "SourceSansProBold";
+  line-height: 30px;
+  margin-bottom: 32px; }
+  .editor-content blockquote p {
+    color: #a7a9af;
+    font-style: italic;
+    margin-top: 14px;
+    font-size: 87%;
+    font-family: "ProbaProRegular", "SourceSansPro"; }
+.editor-content ul {
+  list-style-type: none;
+  position: relative;
+  margin-top: 15px;
+  margin-bottom: 30px; }
+  .editor-content ul > li {
+    padding-left: 35px;
+    margin-bottom: 15px;
+    position: relative;
+    line-height: 22px; }
+    .editor-content ul > li::before {
+      position: absolute;
+      content: "";
+      left: 7px;
+      top: 9px;
+      height: 5px;
+      width: 5px;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      border-radius: 50%;
+      background-color: #ADC9EA; }
+.editor-content ol {
+  padding-left: 0;
+  list-style-type: none;
+  position: relative;
+  margin-bottom: 2em;
+  margin-top: 15px;
+  counter-reset: num; }
+  .editor-content ol > li {
+    margin-bottom: 15px;
+    padding-left: 30px;
+    line-height: 22px;
+    position: relative; }
+    .editor-content ol > li::before {
+      content: counter(num) ".";
+      counter-increment: num;
+      color: #a9b7d5;
+      left: 0;
+      top: 0;
+      position: absolute;
+      font-family: "ProbaProBold", "SourceSansProBold";
+      font-size: 0.875rem; }
+.editor-content ul ul, .editor-content ol ul {
+  padding-left: 60px; }
+.editor-content ul ol, .editor-content ol ol {
+  padding-left: 60px; }
+  .editor-content ul ol:before, .editor-content ol ol:before {
+    font-size: 95%; }
+.editor-content .highlight {
+  display: inline-block;
+  background-color: #f5f5f5;
+  padding: 3px 4px;
+  border-radius: 3px 3px 3px 3px;
+  -moz-border-radius: 3px 3px 3px 3px;
+  -webkit-border-radius: 3px 3px 3px 3px; }
+
 /*# sourceMappingURL=styles.css.map */
