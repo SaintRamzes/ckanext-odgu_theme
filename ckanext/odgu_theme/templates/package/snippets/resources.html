@@ -23,7 +23,7 @@ Example:
                 {% block resources_list %}
                     {#                    <ul class="list-unstyled nav nav-simple">#}
                     {% for resource in resources %}
-                        {% if active != resource.id %}
+{#                        {% if active != resource.id %}#}
 
                             <div class="truncated-data-resources">
                                 <a href="{{ h.url_for(controller='package', action=action or 'resource_read', id=pkg.name, resource_id=resource.id) }}" class="document-link">{{ resource.format.lower() or 'data' }}</a>
@@ -38,7 +38,7 @@ Example:
                             {#                            {% link_for h.resource_display_name(resource)|truncate(25), controller='package', action=action or 'resource_read', id=pkg.name, resource_id=resource.id, inner_span=true %}#}
                             {#                        </li>#}
 
-                        {% endif %}
+{#                        {% endif %}#}
                     {% endfor %}
                     {#                    </ul>#}
                 {% endblock %}
