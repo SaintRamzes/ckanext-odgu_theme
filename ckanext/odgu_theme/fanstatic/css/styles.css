@@ -5,8 +5,10 @@
 .custom-tab-wraper .custom-tab-content-item .page_primary_action, .custom-tab-wraper .custom-tab-content-item .content_action,
 .custom-tab-wraper .custom-tab-content-item .dataset-catalog-page-vindata-file {
   margin: 0 0 12px 0; }
-.custom-tab-wraper .custom-tab-content .page_primary_action {
-  margin: 0 0 12px 0; }
+.custom-tab-wraper .custom-tab-content {
+  margin-bottom: 40px; }
+  .custom-tab-wraper .custom-tab-content .page_primary_action {
+    margin: 0 0 12px 0; }
 .custom-tab-wraper .custom-tab-header li {
   list-style-type: none;
   font-size: 18px;
@@ -319,5 +321,13 @@
   padding-left: 45px;
   padding-right: 45px;
   border-top: 1px solid #ddd; }
+
+.pagination-wrapper {
+  border: none;
+  padding-top: 0; }
+  .pagination-wrapper ul.pagination li.active a {
+    height: 28px; }
+  .pagination-wrapper ul.pagination li.disabled a {
+    color: transparent; }
 
 /*# sourceMappingURL=styles.css.map */
