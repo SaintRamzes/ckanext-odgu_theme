@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>Icons/icn-admin</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Icons/icn-admin" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M23.383,4.076 C23.757,4.23 24,4.596 24,5 L24,15 C24,15.553 23.553,16 23,16 L1,16 C0.447,16 0,15.553 0,15 L0,5 C0,4.596 0.243,4.23 0.617,4.076 C0.992,3.921 1.421,4.007 1.707,4.293 L6,8.586 L11.293,3.293 C11.684,2.902 12.316,2.902 12.707,3.293 L18,8.586 L22.293,4.293 C22.579,4.007 23.009,3.92 23.383,4.076 Z M22,14 L22,7.414 L18.707,10.707 C18.316,11.098 17.684,11.098 17.293,10.707 L12,5.414 L6.707,10.707 C6.316,11.098 5.684,11.098 5.293,10.707 L2,7.414 L2,14 L22,14 Z M23,18 C23.553,18 24,18.447 24,19 C24,19.553 23.553,20 23,20 L1,20 C0.447,20 0,19.553 0,19 C0,18.447 0.447,18 1,18 L23,18 Z" id="Combined-Shape" fill="#003094"></path>
+    </g>
+</svg>
