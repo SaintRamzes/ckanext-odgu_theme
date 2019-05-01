@@ -330,4 +330,25 @@
   .pagination-wrapper ul.pagination li.disabled a {
     color: transparent; }
 
+.data-resource-icon[data-format=html], .data-resource-icon[data-format*=html] {
+  background: url(/images/file-html.png) no-repeat center; }
+.data-resource-icon[data-format=json], .data-resource-icon[data-format*=json] {
+  background: url(/images/file-json.png) no-repeat center; }
+.data-resource-icon[data-format=xml], .data-resource-icon[data-format*=xml] {
+  background: url(/images/file-xml.png) no-repeat center; }
+.data-resource-icon[data-format=text], .data-resource-icon[data-format*=text] {
+  background: url(/images/file-txt.png) no-repeat center; }
+.data-resource-icon[data-format=csv], .data-resource-icon[data-format*=csv] {
+  background: url(/images/file-csv.png) no-repeat center; }
+.data-resource-icon[data-format=xls], .data-resource-icon[data-format*=xls] {
+  background: url(/images/file-xls.png) no-repeat center; }
+.data-resource-icon[data-format=zip], .data-resource-icon[data-format*=zip] {
+  background: url(/images/file-zip.png) no-repeat center; }
+.data-resource-icon[data-format=api], .data-resource-icon[data-format*=api] {
+  background: url(/images/file-api.png) no-repeat center; }
+.data-resource-icon[data-format=pdf], .data-resource-icon[data-format*=pdf] {
+  background: url(/images/file-pdf.png) no-repeat center; }
+.data-resource-icon[data-format=rdf], .data-resource-icon[data-format*=rdf] {
+  background: url(/images/file-rdf.png) no-repeat center; }
+
 /*# sourceMappingURL=styles.css.map */
