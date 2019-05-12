@@ -11,7 +11,7 @@
             <div class="column-4">
                 {% block footer_nav %}
                     {% block footer_links %}
-                        <a href="{{ h.url_for(controller='home', action='about') }}"><li>{{ _('About {0}').format(g.site_title) }}</li></a>
+                        <a href="{{ h.url_for(controller='home', action='about') }}"><li>{{ _('About site') }}</li></a>
                     {% endblock %}
 
                     {% block footer_links_ckan %}

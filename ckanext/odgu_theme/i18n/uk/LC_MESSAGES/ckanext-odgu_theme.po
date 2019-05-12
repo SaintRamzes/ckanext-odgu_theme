@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ckanext-odgu_theme 0.0.1\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2019-03-28 01:02+0200\n"
+"POT-Creation-Date: 2019-05-12 21:05+0300\n"
 "PO-Revision-Date: 2019-03-26 15:33+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: uk\n"
@@ -20,155 +20,318 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.3.4\n"
 
-#: ckanext/odgu_theme/helpers.py:160
+#: ckanext/odgu_theme/helpers.py:278
 msgid "January {}"
 msgstr "{} Січня"
 
-#: ckanext/odgu_theme/helpers.py:164
+#: ckanext/odgu_theme/helpers.py:282
 msgid "February {}"
 msgstr "{} Лютого"
 
-#: ckanext/odgu_theme/helpers.py:168
+#: ckanext/odgu_theme/helpers.py:286
 msgid "March {}"
 msgstr "{} Березня"
 
-#: ckanext/odgu_theme/helpers.py:172
+#: ckanext/odgu_theme/helpers.py:290
 msgid "April {}"
 msgstr "{} Квітня"
 
-#: ckanext/odgu_theme/helpers.py:176
+#: ckanext/odgu_theme/helpers.py:294
 msgid "May {}"
 msgstr "{} Травня"
 
-#: ckanext/odgu_theme/helpers.py:180
+#: ckanext/odgu_theme/helpers.py:298
 msgid "June {}"
 msgstr "{} Червня"
 
-#: ckanext/odgu_theme/helpers.py:184
+#: ckanext/odgu_theme/helpers.py:302
 msgid "July {}"
 msgstr "{} Липня"
 
-#: ckanext/odgu_theme/helpers.py:188
+#: ckanext/odgu_theme/helpers.py:306
 msgid "August {}"
 msgstr "{} Серпня"
 
-#: ckanext/odgu_theme/helpers.py:192
+#: ckanext/odgu_theme/helpers.py:310
 msgid "September {}"
 msgstr "{} Вересня"
 
-#: ckanext/odgu_theme/helpers.py:196
+#: ckanext/odgu_theme/helpers.py:314
 msgid "October {}"
 msgstr "{} Жовтня"
 
-#: ckanext/odgu_theme/helpers.py:200
+#: ckanext/odgu_theme/helpers.py:318
 msgid "November {}"
 msgstr "{} Листопада"
 
-#: ckanext/odgu_theme/helpers.py:204
+#: ckanext/odgu_theme/helpers.py:322
 msgid "December {}"
 msgstr "{} Грудня"
 
-#: ckanext/odgu_theme/helpers.py:222
+#: ckanext/odgu_theme/helpers.py:340
 msgid "{month_day}, {year}, {hour:02}:{min:02}"
 msgstr "{month_day} {year}, {hour:02}:{min:02}"
 
-#: ckanext/odgu_theme/helpers.py:224
+#: ckanext/odgu_theme/helpers.py:342
 msgid "{month_day}, {year}"
 msgstr "{month_day} {year}"
+
+#: ckanext/odgu_theme/datastore/templates/ajax_snippets/api_info.html:21
+#: ckanext/odgu_theme/templates/ajax_snippets/api_info.html:21
+msgid "CKAN Data API"
+msgstr "CKAN Data API"
+
+#: ckanext/odgu_theme/datastore/templates/ajax_snippets/api_info.html:25
+#: ckanext/odgu_theme/templates/ajax_snippets/api_info.html:25
+msgid "Access resource data via a web API with powerful query support"
+msgstr "Доступ до даних ресурсу через веб API з потужною підтримкою запитів"
+
+#: ckanext/odgu_theme/datastore/templates/ajax_snippets/api_info.html:26
+#: ckanext/odgu_theme/templates/ajax_snippets/api_info.html:26
+msgid ""
+" Further information in the <a                             "
+"href=\"http://docs.ckan.org/en/latest/maintaining/datastore.html\" "
+"target=\"_blank\">main CKAN Data API and DataStore documentation</a>.</p>"
+" "
+msgstr ""
+" Додаткову інформацію можна знайти в <a                             "
+"href=\"http://docs.ckan.org/en/latest/maintaining/datastore.html\" "
+"target=\"_blank\">основній документації CKAN Data API та "
+"DataStore</a>.</p> "
+
+#: ckanext/odgu_theme/datastore/templates/ajax_snippets/api_info.html:35
+#: ckanext/odgu_theme/templates/ajax_snippets/api_info.html:35
+msgid "Endpoints"
+msgstr "Точки входу"
+
+#: ckanext/odgu_theme/datastore/templates/ajax_snippets/api_info.html:39
+#: ckanext/odgu_theme/templates/ajax_snippets/api_info.html:39
+msgid ""
+"The Data API can be accessed via the following actions of the CKAN action"
+" API."
+msgstr ""
+"Доступ до API даних можна отримати через такі дії за допомогою API дій "
+"CKAN."
+
+#: ckanext/odgu_theme/datastore/templates/ajax_snippets/api_info.html:44
+#: ckanext/odgu_theme/templates/ajax_snippets/api_info.html:44
+msgid "Create"
+msgstr "Створити"
+
+#: ckanext/odgu_theme/datastore/templates/ajax_snippets/api_info.html:48
+#: ckanext/odgu_theme/templates/ajax_snippets/api_info.html:48
+msgid "Update / Insert"
+msgstr "Оновити / Вставити"
+
+#: ckanext/odgu_theme/datastore/templates/ajax_snippets/api_info.html:52
+#: ckanext/odgu_theme/templates/ajax_snippets/api_info.html:52
+msgid "Query"
+msgstr "Запит"
+
+#: ckanext/odgu_theme/datastore/templates/ajax_snippets/api_info.html:56
+#: ckanext/odgu_theme/templates/ajax_snippets/api_info.html:56
+msgid "Query (via SQL)"
+msgstr "Запит (через SQL)"
+
+#: ckanext/odgu_theme/datastore/templates/ajax_snippets/api_info.html:68
+#: ckanext/odgu_theme/templates/ajax_snippets/api_info.html:68
+msgid "Querying"
+msgstr "Запит"
+
+#: ckanext/odgu_theme/datastore/templates/ajax_snippets/api_info.html:72
+#: ckanext/odgu_theme/templates/ajax_snippets/api_info.html:72
+msgid "Query example (first 5 results)"
+msgstr "Приклад запиту (перші 5 результатів)"
+
+#: ckanext/odgu_theme/datastore/templates/ajax_snippets/api_info.html:77
+#: ckanext/odgu_theme/templates/ajax_snippets/api_info.html:77
+msgid "Query example (results containing 'jones')"
+msgstr "Приклад запиту (результати, що містять 'jones')"
+
+#: ckanext/odgu_theme/datastore/templates/ajax_snippets/api_info.html:82
+#: ckanext/odgu_theme/templates/ajax_snippets/api_info.html:82
+msgid "Query example (via SQL statement)"
+msgstr "Приклад запиту (за допомогою SQL)"
+
+#: ckanext/odgu_theme/datastore/templates/ajax_snippets/api_info.html:93
+#: ckanext/odgu_theme/templates/ajax_snippets/api_info.html:93
+msgid "Example: Javascript"
+msgstr "Приклад: Javascript"
+
+#: ckanext/odgu_theme/datastore/templates/ajax_snippets/api_info.html:97
+#: ckanext/odgu_theme/templates/ajax_snippets/api_info.html:97
+msgid "A simple ajax (JSONP) request to the data API using jQuery."
+msgstr "Простий ajax (JSONP) запрос до API даних з використанням jQuery."
+
+#: ckanext/odgu_theme/datastore/templates/ajax_snippets/api_info.html:118
+#: ckanext/odgu_theme/templates/ajax_snippets/api_info.html:118
+msgid "Example: Python"
+msgstr "Приклад: Python"
+
+#: ckanext/odgu_theme/datastore/templates/datastore/dictionary.html:20
+#: ckanext/odgu_theme/templates/datastore/dictionary.html:20
+#: ckanext/odgu_theme/templates/group/member_new.html:66
+msgid "Save"
+msgstr "Зберегти"
+
+#: ckanext/odgu_theme/datastore/templates/datastore/snippets/dictionary_form.html:3
+#: ckanext/odgu_theme/templates/datastore/snippets/dictionary_form.html:3
+msgid "Field {num}."
+msgstr "Поле {num}"
+
+#: ckanext/odgu_theme/datastore/templates/datastore/snippets/dictionary_form.html:12
+#: ckanext/odgu_theme/templates/datastore/snippets/dictionary_form.html:12
+msgid "Type Override"
+msgstr "Тип Перевизначення"
+
+#: ckanext/odgu_theme/datastore/templates/datastore/snippets/dictionary_form.html:20
+#: ckanext/odgu_theme/datastore/templates/package/resource_read.html:21
+#: ckanext/odgu_theme/templates/datastore/snippets/dictionary_form.html:20
+msgid "Label"
+msgstr "Мітка"
+
+#: ckanext/odgu_theme/datastore/templates/datastore/snippets/dictionary_form.html:24
+#: ckanext/odgu_theme/datastore/templates/package/resource_read.html:22
+#: ckanext/odgu_theme/templates/datastore/snippets/dictionary_form.html:24
+#: ckanext/odgu_theme/templates/group/snippets/group_form.html:19
+#: ckanext/odgu_theme/templates/organization/snippets/organization_form.html:19
+#: ckanext/odgu_theme/templates/package/snippets/package_basic_fields.html:19
+#: ckanext/odgu_theme/templates/package/snippets/resource_form.html:34
+#: ckanext/odgu_theme/templates/package/snippets/view_form.html:9
+msgid "Description"
+msgstr "Опис"
+
+#: ckanext/odgu_theme/datastore/templates/package/resource_edit_base.html:6
+#: ckanext/odgu_theme/datastore/templates/package/resource_read.html:14
+msgid "Data Dictionary"
+msgstr "Словник даних"
+
+#: ckanext/odgu_theme/datastore/templates/package/resource_read.html:19
+msgid "Column"
+msgstr "Колонка"
+
+#: ckanext/odgu_theme/datastore/templates/package/resource_read.html:20
+msgid "Type"
+msgstr "Тип"
+
+#: ckanext/odgu_theme/datastore/templates/package/snippets/data_api_button.html:7
+#: ckanext/odgu_theme/templates/package/snippets/data_api_button.html:7
+#: ckanext/odgu_theme/templates/tests/mock_json_resource_preview_template.html:7
+#: ckanext/odgu_theme/templates/tests/mock_resource_preview_template.html:7
+msgid "Loading..."
+msgstr "Завантаження..."
+
+#: ckanext/odgu_theme/datastore/templates/package/snippets/data_api_button.html:9
+#: ckanext/odgu_theme/templates/package/snippets/data_api_button.html:9
+msgid "Data API"
+msgstr "API даних"
 
 #: ckanext/odgu_theme/templates/error_document_template.html:3
 #, python-format
 msgid "Error %(error_code)s"
-msgstr ""
+msgstr "Помилка %(error_code)s"
 
-#: ckanext/odgu_theme/templates/footer.html:9
-msgid "About {0}"
-msgstr ""
+#: ckanext/odgu_theme/templates/footer.html:14
+msgid "About site"
+msgstr "Про портал"
 
-#: ckanext/odgu_theme/templates/footer.html:15
+#: ckanext/odgu_theme/templates/footer.html:19
 msgid "CKAN API"
-msgstr ""
+msgstr "CKAN API"
 
-#: ckanext/odgu_theme/templates/footer.html:16
+#: ckanext/odgu_theme/templates/footer.html:20
 msgid "CKAN Association"
-msgstr ""
+msgstr "Асоціація CKAN"
 
-#: ckanext/odgu_theme/templates/footer.html:24
-msgid ""
-"<strong>Powered by</strong> <a class=\"hide-text ckan-footer-logo\" "
-"href=\"http://ckan.org\">CKAN</a>"
-msgstr ""
+#: ckanext/odgu_theme/templates/footer.html:27
+msgid "Powered by"
+msgstr "Створено за допомогою"
 
-#: ckanext/odgu_theme/templates/header.html:25
-#: ckanext/odgu_theme/templates/home/snippets/header.html:25
-msgid "Sysadmin settings"
-msgstr ""
-
-#: ckanext/odgu_theme/templates/header.html:27
-#: ckanext/odgu_theme/templates/home/snippets/header.html:27
-msgid "Admin"
-msgstr ""
-
-#: ckanext/odgu_theme/templates/header.html:33
-#: ckanext/odgu_theme/templates/home/snippets/header.html:33
+#: ckanext/odgu_theme/templates/header.html:126
+#: ckanext/odgu_theme/templates/header.html:133
+#: ckanext/odgu_theme/templates/header.html:134
+#: ckanext/odgu_theme/templates/home/snippets/header.html:24
+#: ckanext/odgu_theme/templates/home/snippets/header.html:31
+#: ckanext/odgu_theme/templates/home/snippets/header.html:32
 msgid "View profile"
-msgstr ""
+msgstr "Перглянути профіль"
 
-#: ckanext/odgu_theme/templates/header.html:40
-#: ckanext/odgu_theme/templates/home/snippets/header.html:40
+#: ckanext/odgu_theme/templates/header.html:134
+#: ckanext/odgu_theme/templates/home/snippets/header.html:32
+msgid "Profile"
+msgstr "Профіль"
+
+#: ckanext/odgu_theme/templates/header.html:139
+#: ckanext/odgu_theme/templates/header.html:140
+#: ckanext/odgu_theme/templates/home/snippets/header.html:37
+#: ckanext/odgu_theme/templates/home/snippets/header.html:38
+msgid "Sysadmin settings"
+msgstr "Налаштування системного адміністратора"
+
+#: ckanext/odgu_theme/templates/admin/base.html:8
+#: ckanext/odgu_theme/templates/header.html:140
+#: ckanext/odgu_theme/templates/home/snippets/header.html:38
+msgid "Admin"
+msgstr "Адмін"
+
+#: ckanext/odgu_theme/templates/header.html:147
+#: ckanext/odgu_theme/templates/home/snippets/header.html:45
 #, python-format
 msgid "Dashboard (%(num)d new item)"
 msgid_plural "Dashboard (%(num)d new items)"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "Панель керування (%(num)d новий елемент)"
+msgstr[1] "Панель керування (%(num)d нові елементи)"
+msgstr[2] "Панель керування (%(num)d нових елементів)"
 
-#: ckanext/odgu_theme/templates/header.html:43
-#: ckanext/odgu_theme/templates/home/snippets/header.html:43
+#: ckanext/odgu_theme/templates/header.html:150
+#: ckanext/odgu_theme/templates/home/snippets/header.html:48
 #: ckanext/odgu_theme/templates/user/dashboard.html:6
 msgid "Dashboard"
-msgstr ""
+msgstr "Панель керування"
 
-#: ckanext/odgu_theme/templates/header.html:50
-#: ckanext/odgu_theme/templates/home/snippets/header.html:50
+#: ckanext/odgu_theme/templates/header.html:156
+#: ckanext/odgu_theme/templates/header.html:157
+#: ckanext/odgu_theme/templates/home/snippets/header.html:54
+#: ckanext/odgu_theme/templates/home/snippets/header.html:55
 #: ckanext/odgu_theme/templates/user/dashboard.html:16
 msgid "Edit settings"
-msgstr ""
+msgstr "Змінити налаштування"
 
-#: ckanext/odgu_theme/templates/header.html:52
-#: ckanext/odgu_theme/templates/home/snippets/header.html:52
+#: ckanext/odgu_theme/templates/header.html:157
+#: ckanext/odgu_theme/templates/home/snippets/header.html:55
 msgid "Settings"
-msgstr ""
+msgstr "Налаштування"
 
-#: ckanext/odgu_theme/templates/header.html:57
-#: ckanext/odgu_theme/templates/header.html:59
-#: ckanext/odgu_theme/templates/home/snippets/header.html:57
-#: ckanext/odgu_theme/templates/home/snippets/header.html:59
+#: ckanext/odgu_theme/templates/header.html:162
+#: ckanext/odgu_theme/templates/header.html:163
+#: ckanext/odgu_theme/templates/home/snippets/header.html:60
+#: ckanext/odgu_theme/templates/home/snippets/header.html:61
 msgid "Log out"
-msgstr ""
+msgstr "Вийти"
 
-#: ckanext/odgu_theme/templates/header.html:69
+#: ckanext/odgu_theme/templates/header.html:171
 #: ckanext/odgu_theme/templates/home/snippets/header.html:69
+#: ckanext/odgu_theme/templates/package/snippets/info.html:31
 #: ckanext/odgu_theme/templates/user/logout_first.html:14
 msgid "Log in"
-msgstr ""
+msgstr "Увійти"
 
-#: ckanext/odgu_theme/templates/header.html:71
+#: ckanext/odgu_theme/templates/header.html:173
 #: ckanext/odgu_theme/templates/home/snippets/header.html:71
 #: ckanext/odgu_theme/templates/user/new.html:3
 msgid "Register"
-msgstr ""
+msgstr "Зареєструватись"
 
 #: ckanext/odgu_theme/templates/group/read_base.html:17
 #: ckanext/odgu_theme/templates/group/snippets/info.html:36
-#: ckanext/odgu_theme/templates/header.html:128
-#: ckanext/odgu_theme/templates/home/snippets/header.html:117
+#: ckanext/odgu_theme/templates/header.html:185
+#: ckanext/odgu_theme/templates/home/snippets/header.html:87
 #: ckanext/odgu_theme/templates/organization/bulk_process.html:20
 #: ckanext/odgu_theme/templates/organization/edit_base.html:23
 #: ckanext/odgu_theme/templates/organization/read_base.html:17
 #: ckanext/odgu_theme/templates/package/base.html:7
 #: ckanext/odgu_theme/templates/package/base.html:18
-#: ckanext/odgu_theme/templates/package/base.html:22
+#: ckanext/odgu_theme/templates/package/base.html:28
 #: ckanext/odgu_theme/templates/package/search.html:4
 #: ckanext/odgu_theme/templates/package/snippets/new_package_breadcrumb.html:1
 #: ckanext/odgu_theme/templates/revision/diff.html:11
@@ -180,10 +343,10 @@ msgstr ""
 #: ckanext/odgu_theme/templates/user/read_base.html:19
 #: ckanext/odgu_theme/templates/user/read_base.html:53
 msgid "Datasets"
-msgstr ""
+msgstr "Набори даних"
 
-#: ckanext/odgu_theme/templates/header.html:128
-#: ckanext/odgu_theme/templates/home/snippets/header.html:117
+#: ckanext/odgu_theme/templates/header.html:185
+#: ckanext/odgu_theme/templates/home/snippets/header.html:87
 #: ckanext/odgu_theme/templates/organization/edit_base.html:5
 #: ckanext/odgu_theme/templates/organization/edit_base.html:8
 #: ckanext/odgu_theme/templates/organization/index.html:3
@@ -193,7 +356,7 @@ msgstr ""
 #: ckanext/odgu_theme/templates/organization/read_base.html:6
 #: ckanext/odgu_theme/templates/package/base.html:15
 msgid "Organizations"
-msgstr ""
+msgstr "Організації"
 
 #: ckanext/odgu_theme/templates/group/base_form_page.html:6
 #: ckanext/odgu_theme/templates/group/edit.html:4
@@ -205,107 +368,111 @@ msgstr ""
 #: ckanext/odgu_theme/templates/group/members.html:3
 #: ckanext/odgu_theme/templates/group/read_base.html:3
 #: ckanext/odgu_theme/templates/group/read_base.html:6
-#: ckanext/odgu_theme/templates/header.html:128
-#: ckanext/odgu_theme/templates/home/snippets/header.html:117
+#: ckanext/odgu_theme/templates/header.html:185
+#: ckanext/odgu_theme/templates/home/snippets/header.html:87
 #: ckanext/odgu_theme/templates/package/group_list.html:5
-#: ckanext/odgu_theme/templates/package/read_base.html:20
 #: ckanext/odgu_theme/templates/revision/diff.html:16
 #: ckanext/odgu_theme/templates/revision/read.html:84
 msgid "Groups"
-msgstr ""
+msgstr "Групи"
 
 #: ckanext/odgu_theme/templates/admin/config.html:25
 #: ckanext/odgu_theme/templates/group/about.html:3
 #: ckanext/odgu_theme/templates/group/read_base.html:19
-#: ckanext/odgu_theme/templates/header.html:128
+#: ckanext/odgu_theme/templates/header.html:185
 #: ckanext/odgu_theme/templates/home/about.html:3
 #: ckanext/odgu_theme/templates/home/about.html:6
 #: ckanext/odgu_theme/templates/home/about.html:16
-#: ckanext/odgu_theme/templates/home/snippets/header.html:117
+#: ckanext/odgu_theme/templates/home/snippets/header.html:87
 #: ckanext/odgu_theme/templates/organization/about.html:3
 #: ckanext/odgu_theme/templates/organization/read_base.html:19
 #: ckanext/odgu_theme/templates/user/edit_user_form.html:14
 msgid "About"
-msgstr ""
+msgstr "Детальніше"
 
 #: ckanext/odgu_theme/templates/page.html:6
 msgid "Skip to content"
-msgstr ""
+msgstr "Перейти до вмісту"
+
+#: ckanext/odgu_theme/templates/activity_streams/activity_stream_items.html:16
+#: ckanext/odgu_theme/templates/home/activity_stream_items.html:24
+msgid "No activities are within this activity stream"
+msgstr "Ця стрічка активності не має записів"
 
 #: ckanext/odgu_theme/templates/admin/base.html:3
 msgid "Administration"
-msgstr ""
+msgstr "Адміністрація"
 
-#: ckanext/odgu_theme/templates/admin/base.html:8
+#: ckanext/odgu_theme/templates/admin/base.html:13
 msgid "Sysadmins"
-msgstr ""
+msgstr "Сисадміни"
 
-#: ckanext/odgu_theme/templates/admin/base.html:9
+#: ckanext/odgu_theme/templates/admin/base.html:14
 msgid "Config"
-msgstr ""
+msgstr "Налаштування"
 
-#: ckanext/odgu_theme/templates/admin/base.html:10
+#: ckanext/odgu_theme/templates/admin/base.html:15
 #: ckanext/odgu_theme/templates/admin/trash.html:29
 msgid "Trash"
-msgstr ""
+msgstr "Кошик"
 
 #: ckanext/odgu_theme/templates/admin/config.html:14
 msgid "Site Title"
-msgstr ""
+msgstr "Заголовок сайту"
 
 #: ckanext/odgu_theme/templates/admin/config.html:16
 msgid "Style"
-msgstr ""
+msgstr "Стиль"
 
 #: ckanext/odgu_theme/templates/admin/config.html:18
-msgid "Site Tag Line"
-msgstr ""
+msgid "Site Subtitle"
+msgstr "Підзаголовок сайту"
 
 #: ckanext/odgu_theme/templates/admin/config.html:23
 #: ckanext/odgu_theme/templates/macros/autoform.html:62
 msgid "Site logo"
-msgstr ""
+msgstr "Логотип сайту"
 
 #: ckanext/odgu_theme/templates/admin/config.html:25
 msgid "About page text"
-msgstr ""
+msgstr "Текст сторінки про проект"
 
 #: ckanext/odgu_theme/templates/admin/config.html:27
 msgid "Intro Text"
-msgstr ""
+msgstr "Вступний текст"
 
 #: ckanext/odgu_theme/templates/admin/config.html:27
 msgid "Text on home page"
-msgstr ""
+msgstr "Текст на домашній сторінці"
 
 #: ckanext/odgu_theme/templates/admin/config.html:29
 msgid "Custom CSS"
-msgstr ""
+msgstr "Довільний CSS"
 
 #: ckanext/odgu_theme/templates/admin/config.html:29
 msgid "Customisable css inserted into the page header"
-msgstr ""
+msgstr "Код сss, інтегрований в головну сторінку"
 
 #: ckanext/odgu_theme/templates/admin/config.html:31
 msgid "Homepage"
-msgstr ""
+msgstr "Головна сторінка"
 
 #: ckanext/odgu_theme/templates/admin/config.html:35
 #: ckanext/odgu_theme/templates/admin/confirm_reset.html:7
 msgid "Are you sure you want to reset the config?"
-msgstr ""
+msgstr "Ви впевнені, що хочете скинути налаштування?"
 
 #: ckanext/odgu_theme/templates/admin/config.html:35
 msgid "Reset"
-msgstr ""
+msgstr "Скинути"
 
 #: ckanext/odgu_theme/templates/admin/config.html:36
 msgid "Update Config"
-msgstr ""
+msgstr "Оновити налаштування"
 
 #: ckanext/odgu_theme/templates/admin/config.html:45
 msgid "CKAN config options"
-msgstr ""
+msgstr "Опції налаштувань CKAN"
 
 #: ckanext/odgu_theme/templates/admin/config.html:52
 #, python-format
@@ -327,11 +494,27 @@ msgid ""
 "<p><strong>Homepage:</strong> This is for choosing a predefined layout "
 "for the modules that appear on your homepage.</p> "
 msgstr ""
+"<p><strong>Назва сайту:</strong> Це назва цього примірника CKAN.</p> "
+"<p><strong>Стиль:</strong> Виберіть зі списку простих варіацій головної "
+"кольорової схеми, щоб швидко отримати працюючу тему.</p> "
+"<p><strong>Логотип сайту:</strong> Це логотип, що відображається у "
+"заголовку усіх шаблонів примірника CKAN.</p> <p><strong>Про нас:</strong>"
+" Цей текст буде відображатись на <a href=\"%(about_url)s\">сторінці з "
+"інформацією про сайт</a> цього примірника CKAN.</p> <p><strong>Вступний "
+"текст:</strong> \n"
+"Цей текст буде відображатись на <a href=\"%(home_url)s\">головній "
+"сторінці</a> цього примірника CKAN як привітання для відвідувачів.</p> "
+"<p><strong>Користувацький CSS:</strong> Це блок CSS, що з’явиться у "
+"<code>&lt;head&gt;</code> тегу кожної сторінки. Якщо ви хочете змінити "
+"шаблон більше, ми рекомендуємо <a href=\"%(docs_url)s\" "
+"target=\"_blank\">читати документацію</a>.</p> <p><strong>Головна "
+"сторінка:</strong> Тут можна вибрати наперед визначене розташування "
+"модулів, що будуть відображатись на головній сторінці.</p>"
 
 #: ckanext/odgu_theme/templates/admin/confirm_reset.html:3
 #: ckanext/odgu_theme/templates/admin/confirm_reset.html:10
 msgid "Confirm Reset"
-msgstr ""
+msgstr "Скинути пароль"
 
 #: ckanext/odgu_theme/templates/admin/confirm_reset.html:9
 #: ckanext/odgu_theme/templates/group/confirm_delete.html:14
@@ -341,11 +524,11 @@ msgstr ""
 #: ckanext/odgu_theme/templates/package/confirm_delete.html:15
 #: ckanext/odgu_theme/templates/package/confirm_delete_resource.html:14
 msgid "Cancel"
-msgstr ""
+msgstr "Закрити"
 
 #: ckanext/odgu_theme/templates/admin/index.html:15
 msgid "Administer CKAN"
-msgstr ""
+msgstr "Адмініструвати CKAN"
 
 #: ckanext/odgu_theme/templates/admin/index.html:20
 #, python-format
@@ -355,109 +538,114 @@ msgid ""
 "the CKAN <a href=\"%(docs_url)s\" target=\"_blank\">sysadmin "
 "guide</a></p> "
 msgstr ""
+"<p>Як користувач з правами системного адміністратора ви маєте повний "
+"контроль над цим примірником CKAN. \n"
+"Працюйте обережно!</p> <p>Для детальніших пояснень роботи з "
+"функціональністю CKAN, дивіться <a href=\"%(docs_url)s\" "
+"target=\"_blank\">документацію для сисадмінів</a>.</p>"
 
 #: ckanext/odgu_theme/templates/admin/trash.html:20
 msgid "Purge"
-msgstr ""
+msgstr "Чистка"
 
 #: ckanext/odgu_theme/templates/admin/trash.html:32
 msgid " <p>Purge deleted datasets forever and irreversibly.</p> "
-msgstr ""
+msgstr "<p>Чистка видаляє всі набори даних назавжди і безповоротно.</p>"
 
 #: ckanext/odgu_theme/templates/dataviewer/snippets/data_preview.html:9
 msgid "This resource can not be previewed at the moment."
-msgstr ""
+msgstr "На даний момент попередній перегляд недоступний для цього ресурсу."
 
 #: ckanext/odgu_theme/templates/dataviewer/snippets/data_preview.html:11
-#: ckanext/odgu_theme/templates/package/resource_read.html:133
+#: ckanext/odgu_theme/templates/package/resource_read.html:166
 #: ckanext/odgu_theme/templates/package/snippets/resource_view.html:34
 msgid "Click here for more information."
-msgstr ""
+msgstr "Клікніть тут, щоб отримати детальнішу інформацію. "
 
 #: ckanext/odgu_theme/templates/dataviewer/snippets/data_preview.html:18
 #: ckanext/odgu_theme/templates/package/snippets/resource_view.html:41
 msgid "Download resource"
-msgstr ""
+msgstr "Завантажити ресурс"
 
 #: ckanext/odgu_theme/templates/dataviewer/snippets/data_preview.html:23
 #: ckanext/odgu_theme/templates/package/snippets/resource_view.html:64
 msgid "Your browser does not support iframes."
-msgstr ""
+msgstr "Ваш браузер не підтримує фрейми."
 
 #: ckanext/odgu_theme/templates/dataviewer/snippets/no_preview.html:3
 msgid "No preview available."
-msgstr ""
+msgstr "Попередній перегляд недоступний."
 
 #: ckanext/odgu_theme/templates/dataviewer/snippets/no_preview.html:5
 msgid "More details..."
-msgstr ""
+msgstr "Детальніше..."
 
 #: ckanext/odgu_theme/templates/dataviewer/snippets/no_preview.html:12
 #, python-format
 msgid "No handler defined for data type: %(type)s."
-msgstr ""
+msgstr "Немає обробника для цього типу даних: %(type)s."
 
 #: ckanext/odgu_theme/templates/development/snippets/form.html:5
 msgid "Standard"
-msgstr ""
+msgstr "Стандарт"
 
 #: ckanext/odgu_theme/templates/development/snippets/form.html:5
 msgid "Standard Input"
-msgstr ""
+msgstr "Стандартний ввід"
 
 #: ckanext/odgu_theme/templates/development/snippets/form.html:6
 msgid "Medium"
-msgstr ""
+msgstr "Середній"
 
 #: ckanext/odgu_theme/templates/development/snippets/form.html:6
 msgid "Medium Width Input"
-msgstr ""
+msgstr "Середня ширина вводу"
 
 #: ckanext/odgu_theme/templates/development/snippets/form.html:7
 msgid "Full"
-msgstr ""
+msgstr "Повний"
 
 #: ckanext/odgu_theme/templates/development/snippets/form.html:7
 msgid "Full Width Input"
-msgstr ""
+msgstr "Повна ширина вводу"
 
 #: ckanext/odgu_theme/templates/development/snippets/form.html:8
 msgid "Large"
-msgstr ""
+msgstr "Великий"
 
 #: ckanext/odgu_theme/templates/development/snippets/form.html:8
 msgid "Large Input"
-msgstr ""
+msgstr "Великий ввід"
 
 #: ckanext/odgu_theme/templates/development/snippets/form.html:9
 msgid "Prepend"
-msgstr ""
+msgstr "Додати префікс"
 
 #: ckanext/odgu_theme/templates/development/snippets/form.html:9
 msgid "Prepend Input"
-msgstr ""
+msgstr "Додати ввід як префікс "
 
 #: ckanext/odgu_theme/templates/development/snippets/form.html:13
 msgid "Custom Field (empty)"
-msgstr ""
+msgstr "Довільне поле (порожнє)"
 
 #: ckanext/odgu_theme/templates/development/snippets/form.html:19
 #: ckanext/odgu_theme/templates/snippets/custom_form_fields.html:20
 #: ckanext/odgu_theme/templates/snippets/custom_form_fields.html:37
 msgid "Custom Field"
-msgstr ""
+msgstr "Довільне поле"
 
 #: ckanext/odgu_theme/templates/development/snippets/form.html:22
 msgid "Markdown"
-msgstr ""
+msgstr "Зниження"
 
 #: ckanext/odgu_theme/templates/development/snippets/form.html:23
 msgid "Textarea"
-msgstr ""
+msgstr "Textarea"
 
 #: ckanext/odgu_theme/templates/development/snippets/form.html:24
 msgid "Select"
-msgstr ""
+msgstr "Select"
 
 #: ckanext/odgu_theme/templates/group/activity_stream.html:3
 #: ckanext/odgu_theme/templates/group/activity_stream.html:6
@@ -467,27 +655,27 @@ msgstr ""
 #: ckanext/odgu_theme/templates/organization/read_base.html:18
 #: ckanext/odgu_theme/templates/package/activity.html:3
 #: ckanext/odgu_theme/templates/package/activity.html:6
-#: ckanext/odgu_theme/templates/package/read_base.html:21
+#: ckanext/odgu_theme/templates/package/read_base.html:56
 #: ckanext/odgu_theme/templates/user/activity_stream.html:3
 #: ckanext/odgu_theme/templates/user/activity_stream.html:6
 #: ckanext/odgu_theme/templates/user/read_base.html:20
 msgid "Activity Stream"
-msgstr ""
+msgstr "Стрічка активності"
 
 #: ckanext/odgu_theme/templates/group/admins.html:3
 #: ckanext/odgu_theme/templates/group/admins.html:6
 #: ckanext/odgu_theme/templates/organization/admins.html:3
 #: ckanext/odgu_theme/templates/organization/admins.html:6
 msgid "Administrators"
-msgstr ""
+msgstr "Адміністратори"
 
 #: ckanext/odgu_theme/templates/group/base_form_page.html:7
 msgid "Add a Group"
-msgstr ""
+msgstr "Додати групу"
 
 #: ckanext/odgu_theme/templates/group/base_form_page.html:11
 msgid "Group Form"
-msgstr ""
+msgstr "Форма групи"
 
 #: ckanext/odgu_theme/templates/group/confirm_delete.html:3
 #: ckanext/odgu_theme/templates/group/confirm_delete.html:15
@@ -502,16 +690,16 @@ msgstr ""
 #: ckanext/odgu_theme/templates/package/confirm_delete_resource.html:3
 #: ckanext/odgu_theme/templates/package/confirm_delete_resource.html:15
 msgid "Confirm Delete"
-msgstr ""
+msgstr "Підтвердіть видалення"
 
 #: ckanext/odgu_theme/templates/group/confirm_delete.html:11
 msgid "Are you sure you want to delete group - {name}?"
-msgstr ""
+msgstr "Ви впевнені, що хочете видалити групу - {name}?"
 
 #: ckanext/odgu_theme/templates/group/confirm_delete_member.html:11
 #: ckanext/odgu_theme/templates/organization/confirm_delete_member.html:11
 msgid "Are you sure you want to delete member - {name}?"
-msgstr ""
+msgstr "Ви впевнені, що хочете видалити учасника - {name}?"
 
 #: ckanext/odgu_theme/templates/group/edit.html:7
 #: ckanext/odgu_theme/templates/group/edit_base.html:3
@@ -520,23 +708,23 @@ msgstr ""
 #: ckanext/odgu_theme/templates/organization/edit_base.html:11
 #: ckanext/odgu_theme/templates/organization/read_base.html:12
 #: ckanext/odgu_theme/templates/package/read_base.html:14
-#: ckanext/odgu_theme/templates/package/resource_read.html:31
+#: ckanext/odgu_theme/templates/package/resource_read.html:123
 #: ckanext/odgu_theme/templates/user/edit.html:8
 #: ckanext/odgu_theme/templates/user/edit_base.html:3
 #: ckanext/odgu_theme/templates/user/read_base.html:14
 msgid "Manage"
-msgstr ""
+msgstr "Управління"
 
 #: ckanext/odgu_theme/templates/group/edit.html:12
 msgid "Edit Group"
-msgstr ""
+msgstr "Редагувати групу"
 
 #: ckanext/odgu_theme/templates/group/edit_base.html:16
 #: ckanext/odgu_theme/templates/organization/edit_base.html:17
-#: ckanext/odgu_theme/templates/package/resource_read.html:38
+#: ckanext/odgu_theme/templates/package/resource_read.html:91
 #: ckanext/odgu_theme/templates/package/resource_views.html:4
 msgid "View"
-msgstr ""
+msgstr "Переглянути"
 
 #: ckanext/odgu_theme/templates/group/edit_base.html:20
 #: ckanext/odgu_theme/templates/group/members.html:28
@@ -547,23 +735,22 @@ msgstr ""
 #: ckanext/odgu_theme/templates/package/edit_base.html:11
 #: ckanext/odgu_theme/templates/package/resource_edit.html:3
 #: ckanext/odgu_theme/templates/package/resource_edit_base.html:12
-#: ckanext/odgu_theme/templates/package/snippets/resource_item.html:56
 msgid "Edit"
-msgstr ""
+msgstr "Редагувати"
 
 #: ckanext/odgu_theme/templates/group/edit_base.html:21
 #: ckanext/odgu_theme/templates/group/members.html:3
 #: ckanext/odgu_theme/templates/organization/edit_base.html:24
 #: ckanext/odgu_theme/templates/organization/members.html:3
 msgid "Members"
-msgstr ""
+msgstr "Учасники"
 
 #: ckanext/odgu_theme/templates/group/followers.html:3
 #: ckanext/odgu_theme/templates/group/followers.html:6
 #: ckanext/odgu_theme/templates/group/snippets/info.html:32
 #: ckanext/odgu_theme/templates/package/followers.html:3
 #: ckanext/odgu_theme/templates/package/followers.html:6
-#: ckanext/odgu_theme/templates/package/snippets/info.html:24
+#: ckanext/odgu_theme/templates/package/snippets/info.html:22
 #: ckanext/odgu_theme/templates/snippets/context/group.html:13
 #: ckanext/odgu_theme/templates/snippets/context/user.html:15
 #: ckanext/odgu_theme/templates/snippets/organization.html:55
@@ -571,67 +758,67 @@ msgstr ""
 #: ckanext/odgu_theme/templates/user/followers.html:7
 #: ckanext/odgu_theme/templates/user/read_base.html:49
 msgid "Followers"
-msgstr ""
+msgstr "Підписники"
 
 #: ckanext/odgu_theme/templates/group/history.html:3
 #: ckanext/odgu_theme/templates/group/history.html:6
 #: ckanext/odgu_theme/templates/package/history.html:3
 #: ckanext/odgu_theme/templates/package/history.html:6
 msgid "History"
-msgstr ""
+msgstr "Історія"
 
 #: ckanext/odgu_theme/templates/group/index.html:13
 #: ckanext/odgu_theme/templates/user/dashboard_groups.html:7
 msgid "Add Group"
-msgstr ""
+msgstr "Додати групу"
 
 #: ckanext/odgu_theme/templates/group/index.html:20
 msgid "Search groups..."
-msgstr ""
+msgstr "Пошук груп..."
 
 #: ckanext/odgu_theme/templates/group/index.html:20
 #: ckanext/odgu_theme/templates/group/read.html:14
 #: ckanext/odgu_theme/templates/organization/bulk_process.html:97
 #: ckanext/odgu_theme/templates/organization/index.html:20
 #: ckanext/odgu_theme/templates/organization/read.html:20
-#: ckanext/odgu_theme/templates/package/search.html:30
+#: ckanext/odgu_theme/templates/package/search.html:32
 #: ckanext/odgu_theme/templates/snippets/search_form.html:4
 #: ckanext/odgu_theme/templates/snippets/simple_search.html:10
 #: ckanext/odgu_theme/templates/snippets/sort_by.html:15
 msgid "Name Ascending"
-msgstr ""
+msgstr "Назвою (від А до Я)"
 
 #: ckanext/odgu_theme/templates/group/index.html:20
 #: ckanext/odgu_theme/templates/group/read.html:15
 #: ckanext/odgu_theme/templates/organization/bulk_process.html:98
 #: ckanext/odgu_theme/templates/organization/index.html:20
 #: ckanext/odgu_theme/templates/organization/read.html:21
-#: ckanext/odgu_theme/templates/package/search.html:31
+#: ckanext/odgu_theme/templates/package/search.html:33
 #: ckanext/odgu_theme/templates/snippets/search_form.html:4
 #: ckanext/odgu_theme/templates/snippets/simple_search.html:10
 #: ckanext/odgu_theme/templates/snippets/sort_by.html:16
 msgid "Name Descending"
-msgstr ""
+msgstr "Назвою (від Я до А)"
 
 #: ckanext/odgu_theme/templates/group/index.html:29
 msgid "There are currently no groups for this site"
-msgstr ""
+msgstr "На даний момент немає груп для цього сайту"
 
 #: ckanext/odgu_theme/templates/group/index.html:31
 #: ckanext/odgu_theme/templates/organization/index.html:31
 msgid "How about creating one?"
-msgstr ""
+msgstr "Не хочете створити?"
 
 #: ckanext/odgu_theme/templates/group/member_new.html:8
 #: ckanext/odgu_theme/templates/organization/member_new.html:10
 msgid "Back to all members"
-msgstr ""
+msgstr "Повернутись до всіх учасників"
 
 #: ckanext/odgu_theme/templates/group/member_new.html:10
 #: ckanext/odgu_theme/templates/organization/member_new.html:7
 #: ckanext/odgu_theme/templates/organization/member_new.html:12
 msgid "Edit Member"
-msgstr ""
+msgstr "Редагувати учасника"
 
 #: ckanext/odgu_theme/templates/group/member_new.html:10
 #: ckanext/odgu_theme/templates/group/member_new.html:70
@@ -641,46 +828,48 @@ msgstr ""
 #: ckanext/odgu_theme/templates/organization/member_new.html:72
 #: ckanext/odgu_theme/templates/organization/members.html:8
 msgid "Add Member"
-msgstr ""
+msgstr "Додати учасника"
 
 #: ckanext/odgu_theme/templates/group/member_new.html:19
 #: ckanext/odgu_theme/templates/organization/member_new.html:21
 msgid "Existing User"
-msgstr ""
+msgstr "Існуючий користувач"
 
 #: ckanext/odgu_theme/templates/group/member_new.html:22
 #: ckanext/odgu_theme/templates/organization/member_new.html:24
 msgid "If you wish to add an existing user, search for their username below."
-msgstr ""
+msgstr "Якщо ви хочете додати існуючого користувача, знайдіть його ім’я внизу."
 
 #: ckanext/odgu_theme/templates/group/member_new.html:41
 #: ckanext/odgu_theme/templates/organization/member_new.html:43
 msgid "or"
-msgstr ""
+msgstr "або"
 
 #: ckanext/odgu_theme/templates/group/member_new.html:47
 #: ckanext/odgu_theme/templates/organization/member_new.html:49
 msgid "New User"
-msgstr ""
+msgstr "Новий користувач"
 
 #: ckanext/odgu_theme/templates/group/member_new.html:50
 #: ckanext/odgu_theme/templates/organization/member_new.html:52
 msgid "If you wish to invite a new user, enter their email address."
 msgstr ""
+"Якщо ви хочете запровити нового користувача, введіть їхню адресу "
+"електронної пошти тут."
 
 #: ckanext/odgu_theme/templates/group/member_new.html:61
 #: ckanext/odgu_theme/templates/group/members.html:15
 #: ckanext/odgu_theme/templates/organization/member_new.html:63
 #: ckanext/odgu_theme/templates/organization/members.html:20
 msgid "Role"
-msgstr ""
+msgstr "Роль"
 
 #: ckanext/odgu_theme/templates/group/member_new.html:64
 #: ckanext/odgu_theme/templates/group/members.html:31
 #: ckanext/odgu_theme/templates/organization/member_new.html:66
 #: ckanext/odgu_theme/templates/organization/members.html:36
 msgid "Are you sure you want to delete this member?"
-msgstr ""
+msgstr "Ви впевнені, що хочете видалити цього учасника?"
 
 #: ckanext/odgu_theme/templates/group/member_new.html:64
 #: ckanext/odgu_theme/templates/group/members.html:31
@@ -689,22 +878,18 @@ msgstr ""
 #: ckanext/odgu_theme/templates/organization/member_new.html:66
 #: ckanext/odgu_theme/templates/organization/members.html:36
 #: ckanext/odgu_theme/templates/organization/snippets/organization_form.html:37
-#: ckanext/odgu_theme/templates/package/edit_view.html:19
+#: ckanext/odgu_theme/templates/package/edit_view.html:21
 #: ckanext/odgu_theme/templates/package/snippets/package_form.html:39
 #: ckanext/odgu_theme/templates/package/snippets/resource_form.html:67
 #: ckanext/odgu_theme/templates/revision/read.html:24
 #: ckanext/odgu_theme/templates/user/edit_user_form.html:45
 msgid "Delete"
-msgstr ""
-
-#: ckanext/odgu_theme/templates/group/member_new.html:66
-msgid "Save"
-msgstr ""
+msgstr "Видалити"
 
 #: ckanext/odgu_theme/templates/group/member_new.html:83
 #: ckanext/odgu_theme/templates/organization/member_new.html:85
 msgid "What are roles?"
-msgstr ""
+msgstr "Що таке роль?"
 
 #: ckanext/odgu_theme/templates/group/member_new.html:86
 msgid ""
@@ -712,134 +897,129 @@ msgid ""
 " organization members.</p> <p><strong>Member:</strong> Can add/remove "
 "datasets from groups</p> "
 msgstr ""
+"<p><strong>Адміністратор:</strong> Може редагувати інформацію про групи, "
+"а також управляти членами організації.</p> <p><strong>Член:</strong> Може"
+" додавати/видаляти набори даних з груп. </p>"
 
 #: ckanext/odgu_theme/templates/group/members.html:14
 #: ckanext/odgu_theme/templates/organization/members.html:19
 msgid "User"
-msgstr ""
+msgstr "Користувач"
 
 #: ckanext/odgu_theme/templates/group/new.html:3
 #: ckanext/odgu_theme/templates/group/new.html:5
 #: ckanext/odgu_theme/templates/group/new.html:7
 msgid "Create a Group"
-msgstr ""
+msgstr "Створити групу"
 
 #: ckanext/odgu_theme/templates/group/new_group_form.html:17
 msgid "Update Group"
-msgstr ""
+msgstr "Оновити групу"
 
 #: ckanext/odgu_theme/templates/group/new_group_form.html:19
 msgid "Create Group"
-msgstr ""
+msgstr "Створити групу"
 
 #: ckanext/odgu_theme/templates/group/read.html:13
 #: ckanext/odgu_theme/templates/organization/read.html:19
-#: ckanext/odgu_theme/templates/package/search.html:29
+#: ckanext/odgu_theme/templates/package/search.html:31
 #: ckanext/odgu_theme/templates/snippets/sort_by.html:14
 msgid "Relevance"
-msgstr ""
+msgstr "Актуальність"
 
 #: ckanext/odgu_theme/templates/group/read.html:16
 #: ckanext/odgu_theme/templates/organization/bulk_process.html:99
 #: ckanext/odgu_theme/templates/organization/read.html:22
-#: ckanext/odgu_theme/templates/package/search.html:32
+#: ckanext/odgu_theme/templates/package/search.html:34
 #: ckanext/odgu_theme/templates/package/snippets/resource_form.html:53
 #: ckanext/odgu_theme/templates/snippets/sort_by.html:17
 msgid "Last Modified"
-msgstr ""
+msgstr "Востаннє внесеними змінами"
 
 #: ckanext/odgu_theme/templates/group/read.html:17
 #: ckanext/odgu_theme/templates/organization/read.html:23
-#: ckanext/odgu_theme/templates/package/search.html:33
-#: ckanext/odgu_theme/templates/snippets/package_item.html:50
+#: ckanext/odgu_theme/templates/package/search.html:35
+#: ckanext/odgu_theme/templates/snippets/package_item.html:48
 #: ckanext/odgu_theme/templates/snippets/popular.html:3
 #: ckanext/odgu_theme/templates/snippets/sort_by.html:19
 msgid "Popular"
-msgstr ""
+msgstr "Популярністю"
 
 #: ckanext/odgu_theme/templates/group/read.html:19
 #: ckanext/odgu_theme/templates/organization/read.html:25
 #: ckanext/odgu_theme/templates/snippets/search_form.html:3
 msgid "Search datasets..."
-msgstr ""
+msgstr "Пошук по наборах даних..."
 
 #: ckanext/odgu_theme/templates/group/snippets/feeds.html:3
 msgid "Datasets in group: {group}"
-msgstr ""
+msgstr "Набори даних у групі: {group}"
 
 #: ckanext/odgu_theme/templates/group/snippets/feeds.html:4
 #: ckanext/odgu_theme/templates/organization/snippets/feeds.html:4
 msgid "Recent Revision History"
-msgstr ""
+msgstr "Остання історія змін"
 
 #: ckanext/odgu_theme/templates/group/snippets/group_form.html:10
 #: ckanext/odgu_theme/templates/organization/snippets/organization_form.html:10
 #: ckanext/odgu_theme/templates/package/snippets/resource_form.html:30
 msgid "Name"
-msgstr ""
+msgstr "Назва"
 
 #: ckanext/odgu_theme/templates/group/snippets/group_form.html:10
 msgid "My Group"
-msgstr ""
+msgstr "Моя група"
 
 #: ckanext/odgu_theme/templates/group/snippets/group_form.html:17
 #: ckanext/odgu_theme/templates/organization/snippets/organization_form.html:17
 #: ckanext/odgu_theme/templates/package/snippets/package_basic_fields.html:13
 #: ckanext/odgu_theme/templates/package/snippets/resource_form.html:26
 msgid "URL"
-msgstr ""
-
-#: ckanext/odgu_theme/templates/group/snippets/group_form.html:19
-#: ckanext/odgu_theme/templates/organization/snippets/organization_form.html:19
-#: ckanext/odgu_theme/templates/package/snippets/package_basic_fields.html:19
-#: ckanext/odgu_theme/templates/package/snippets/resource_form.html:34
-#: ckanext/odgu_theme/templates/package/snippets/view_form.html:9
-msgid "Description"
-msgstr ""
+msgstr "URL"
 
 #: ckanext/odgu_theme/templates/group/snippets/group_form.html:19
 msgid "A little information about my group..."
-msgstr ""
+msgstr "Коротко про мою групу..."
 
 #: ckanext/odgu_theme/templates/group/snippets/group_form.html:37
 msgid "Are you sure you want to delete this Group?"
-msgstr ""
+msgstr "Ви впевнені, що хочете видалити цю групу?"
 
 #: ckanext/odgu_theme/templates/group/snippets/group_form.html:40
 msgid "Save Group"
-msgstr ""
+msgstr "Зберегти групу"
 
 #: ckanext/odgu_theme/templates/group/snippets/group_item.html:32
 #: ckanext/odgu_theme/templates/organization/snippets/organization_item.html:31
 msgid "{num} Dataset"
 msgid_plural "{num} Datasets"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "{num} набір даних"
+msgstr[1] "{num} набори даних"
+msgstr[2] "{num} наборів даних"
 
 #: ckanext/odgu_theme/templates/group/snippets/group_item.html:34
 #: ckanext/odgu_theme/templates/organization/snippets/organization_item.html:33
 msgid "0 Datasets"
-msgstr ""
+msgstr "0 наборів даних"
 
 #: ckanext/odgu_theme/templates/group/snippets/group_item.html:38
 #: ckanext/odgu_theme/templates/group/snippets/group_item.html:39
 msgid "View {name}"
-msgstr ""
+msgstr "Переглянути {name}"
 
 #: ckanext/odgu_theme/templates/group/snippets/group_item.html:43
 #: ckanext/odgu_theme/templates/macros/form.html:241
-#: ckanext/odgu_theme/templates/snippets/search_form.html:69
+#: ckanext/odgu_theme/templates/snippets/search_form.html:66
 msgid "Remove"
-msgstr ""
+msgstr "Видалити"
 
 #: ckanext/odgu_theme/templates/group/snippets/group_item.html:43
 msgid "Remove dataset from this group"
-msgstr ""
+msgstr "Видалити набір даних з цієї групи"
 
 #: ckanext/odgu_theme/templates/group/snippets/helper.html:4
 msgid "What are Groups?"
-msgstr ""
+msgstr "Що таке група?"
 
 #: ckanext/odgu_theme/templates/group/snippets/helper.html:8
 msgid ""
@@ -848,26 +1028,32 @@ msgid ""
 "on a particular theme, or as a very simple way to help people find and "
 "search your own published datasets. "
 msgstr ""
+"Ви можете використовувати групи CKAN для створення та управління наборами"
+" даних. Використовуйте їх для каталогізування наборів даних для "
+"конкретного проекту чи команди, на певну тему або як найпростіший спосіб "
+"допомогти людям шукати та знаходити ваші власні опубліковані набори "
+"даних."
 
 #: ckanext/odgu_theme/templates/group/snippets/history_revisions.html:10
 #: ckanext/odgu_theme/templates/package/snippets/history_revisions.html:10
 msgid "Compare"
-msgstr ""
+msgstr "Порівняти"
 
 #: ckanext/odgu_theme/templates/group/snippets/info.html:16
 #: ckanext/odgu_theme/templates/organization/bulk_process.html:72
-#: ckanext/odgu_theme/templates/package/read.html:21
+#: ckanext/odgu_theme/templates/package/read_base.html:27
+#: ckanext/odgu_theme/templates/package/snippets/organization.html:31
 #: ckanext/odgu_theme/templates/package/snippets/package_basic_fields.html:118
 #: ckanext/odgu_theme/templates/snippets/organization.html:37
-#: ckanext/odgu_theme/templates/snippets/package_item.html:42
+#: ckanext/odgu_theme/templates/snippets/package_item.html:33
 msgid "Deleted"
-msgstr ""
+msgstr "Видалено"
 
 #: ckanext/odgu_theme/templates/group/snippets/info.html:24
 #: ckanext/odgu_theme/templates/package/snippets/package_context.html:7
 #: ckanext/odgu_theme/templates/snippets/organization.html:45
 msgid "read more"
-msgstr ""
+msgstr "детальніше"
 
 #: ckanext/odgu_theme/templates/group/snippets/revisions_table.html:7
 #: ckanext/odgu_theme/templates/package/snippets/revisions_table.html:7
@@ -876,47 +1062,43 @@ msgstr ""
 #: ckanext/odgu_theme/templates/revision/read.html:39
 #: ckanext/odgu_theme/templates/revision/snippets/revisions_list.html:4
 msgid "Revision"
-msgstr ""
+msgstr "Версія"
 
 #: ckanext/odgu_theme/templates/group/snippets/revisions_table.html:8
 #: ckanext/odgu_theme/templates/package/snippets/revisions_table.html:8
 #: ckanext/odgu_theme/templates/revision/read.html:53
 #: ckanext/odgu_theme/templates/revision/snippets/revisions_list.html:5
 msgid "Timestamp"
-msgstr ""
+msgstr "Час"
 
 #: ckanext/odgu_theme/templates/group/snippets/revisions_table.html:9
-#: ckanext/odgu_theme/templates/package/snippets/additional_info.html:25
-#: ckanext/odgu_theme/templates/package/snippets/additional_info.html:30
+#: ckanext/odgu_theme/templates/package/snippets/additional_info.html:19
+#: ckanext/odgu_theme/templates/package/snippets/additional_info.html:24
 #: ckanext/odgu_theme/templates/package/snippets/package_metadata_fields.html:14
 #: ckanext/odgu_theme/templates/package/snippets/revisions_table.html:9
 #: ckanext/odgu_theme/templates/revision/read.html:50
 #: ckanext/odgu_theme/templates/revision/snippets/revisions_list.html:6
 msgid "Author"
-msgstr ""
+msgstr "Автор"
 
 #: ckanext/odgu_theme/templates/group/snippets/revisions_table.html:10
 #: ckanext/odgu_theme/templates/package/snippets/revisions_table.html:10
 #: ckanext/odgu_theme/templates/revision/read.html:56
 #: ckanext/odgu_theme/templates/revision/snippets/revisions_list.html:8
 msgid "Log Message"
-msgstr ""
+msgstr "Повідомлення журналу"
 
 #: ckanext/odgu_theme/templates/home/activity_stream_items.html:10
 msgid "Load less"
-msgstr ""
+msgstr "Завантажити менше"
 
 #: ckanext/odgu_theme/templates/home/activity_stream_items.html:18
 msgid "Load more"
-msgstr ""
+msgstr "Завантажити більше"
 
-#: ckanext/odgu_theme/templates/home/activity_stream_items.html:24
-msgid "No activities are within this activity stream"
-msgstr ""
-
-#: ckanext/odgu_theme/templates/home/index.html:4
+#: ckanext/odgu_theme/templates/home/index.html:5
 msgid "Welcome"
-msgstr ""
+msgstr "Ласкаво просимо до"
 
 #: ckanext/odgu_theme/templates/home/snippets/about_text.html:1
 msgid ""
@@ -940,8 +1122,28 @@ msgid ""
 "overview: <a "
 "href=\"http://ckan.org/features/\">http://ckan.org/features/</a></p> "
 msgstr ""
+"<p>CKAN є провідною платформою інформаційних порталів з відкритим "
+"кодом.</p> <p>CKAN це повністю завершене програмне рішення, що дозволяє "
+"доступ та використання даних за допомогою інструментів для швидкої "
+"публікації, поширення, пошуку та будь-якої іншої роботи з даними (включно"
+" зі зберіганням даних та забезпечення потужних API). CKAN корисний тим, "
+"хто займається публікацєю даних (національні та регіональні уряди, "
+"компанії та організації) та хоче зробити ці дані відкритими та "
+"доступними.</p> <p>CKAN використовується урядами та користувацькими "
+"групами по всьому світу та є основою різноманітних офіційних та "
+"громадських порталів, включаючи портали для місцевих, національних та "
+"міжнародних урядів, таких як британський <a "
+"href=\"http://data.gov.uk\">data.gov.uk</a> та <a "
+"href=\"http://publicdata.eu/\">publicdata.eu</a> ЄС, бразильський <a "
+"href=\"http://dados.gov.br/\">dados.gov.br</a>, голандський та "
+"нідерландський урядові портали, а також міські та муніципальні сайти в "
+"США, Великобританії, Аргентині, Фінляндії та ін.</p> <p>CKAN: <a "
+"href=\"http://ckan.org/\">http://ckan.org/</a><br /> CKAN тур: <a "
+"href=\"http://ckan.org/tour/\">http://ckan.org/tour/</a><br /> Огляд "
+"можливостей: <a "
+"href=\"http://ckan.org/features/\">http://ckan.org/features/</a></p>"
 
-#: ckanext/odgu_theme/templates/home/snippets/group_item.html:5
+#: ckanext/odgu_theme/templates/home/snippets/group_item.html:6
 #, python-format
 msgid "%(gc)s dataset"
 msgid_plural "%(gc)s datasets"
@@ -951,25 +1153,25 @@ msgstr[2] "%(gc)s наборів даних"
 
 #: ckanext/odgu_theme/templates/home/snippets/promoted.html:8
 msgid "Welcome to CKAN"
-msgstr ""
+msgstr "Вітаємо у CKAN"
 
 #: ckanext/odgu_theme/templates/home/snippets/promoted.html:10
 msgid ""
 "This is a nice introductory paragraph about CKAN or the site in general. "
 "We don't have any copy to go here yet but soon we will "
-msgstr ""
+msgstr "Це вступний абзац про CKAN або сайт загалом."
 
 #: ckanext/odgu_theme/templates/home/snippets/promoted.html:19
 msgid "This is a featured section"
-msgstr ""
+msgstr "Це вибраний розділ"
 
 #: ckanext/odgu_theme/templates/home/snippets/search.html:2
 msgid "E.g. environment"
-msgstr ""
+msgstr "Наприклад, довкілля"
 
 #: ckanext/odgu_theme/templates/home/snippets/search.html:7
 msgid "<span>Search</span> among"
-msgstr ""
+msgstr "<span>Пошук</span> серед"
 
 #: ckanext/odgu_theme/templates/home/snippets/search.html:7
 #, python-format
@@ -995,37 +1197,37 @@ msgstr[0] "та %(count)s групи"
 msgstr[1] "та %(count)s груп"
 msgstr[2] "та %(count)s груп"
 
-#: ckanext/odgu_theme/templates/home/snippets/search.html:14
+#: ckanext/odgu_theme/templates/home/snippets/search.html:17
 msgid "Popular tags"
-msgstr ""
+msgstr "Популярні теги"
 
 #: ckanext/odgu_theme/templates/home/snippets/stats.html:5
 msgid "{0} statistics"
-msgstr ""
+msgstr "{0} статистика"
 
 #: ckanext/odgu_theme/templates/home/snippets/stats.html:11
 msgid "dataset"
-msgstr ""
+msgstr "набір даних"
 
 #: ckanext/odgu_theme/templates/home/snippets/stats.html:11
 msgid "datasets"
-msgstr ""
+msgstr "набори даних"
 
 #: ckanext/odgu_theme/templates/home/snippets/stats.html:17
 msgid "organization"
-msgstr ""
+msgstr "організація"
 
 #: ckanext/odgu_theme/templates/home/snippets/stats.html:17
 msgid "organizations"
-msgstr ""
+msgstr "організації"
 
 #: ckanext/odgu_theme/templates/home/snippets/stats.html:23
 msgid "group"
-msgstr ""
+msgstr "група"
 
 #: ckanext/odgu_theme/templates/home/snippets/stats.html:23
 msgid "groups"
-msgstr ""
+msgstr "групи"
 
 #: ckanext/odgu_theme/templates/macros/form.html:126
 #, python-format
@@ -1034,117 +1236,118 @@ msgid ""
 "data-target=\"popover\" data-content=\"%(markdown_tooltip)s\" data-"
 "html=\"true\">Markdown formatting</a> here"
 msgstr ""
+"Тут ви можете використовувати <a href=\"#markdown\" title=\"Markdown "
+"quick reference\" data-target=\"popover\" data-"
+"content=\"%(markdown_tooltip)s\" data-html=\"true\">Markdown "
+"форматування</a> "
 
 #: ckanext/odgu_theme/templates/macros/form.html:233
 msgid "Key"
-msgstr ""
+msgstr "Ключ"
 
 #: ckanext/odgu_theme/templates/macros/form.html:245
-#: ckanext/odgu_theme/templates/package/resource_read.html:167
-#: ckanext/odgu_theme/templates/package/snippets/additional_info.html:7
 #: ckanext/odgu_theme/templates/snippets/additional_info.html:12
 msgid "Value"
-msgstr ""
+msgstr "Значення"
 
 #: ckanext/odgu_theme/templates/macros/form.html:277
 msgid "This field is required"
-msgstr ""
+msgstr "Це поле обов’язкове"
 
 #: ckanext/odgu_theme/templates/macros/form.html:277
 msgid "Custom"
-msgstr ""
+msgstr "Звичайний"
 
 #: ckanext/odgu_theme/templates/macros/form.html:302
 msgid "The form contains invalid entries:"
-msgstr ""
+msgstr "Форма містить неправильні значення:"
 
 #: ckanext/odgu_theme/templates/macros/form.html:407
 msgid "Required field"
-msgstr ""
+msgstr "Обов’язкове поле"
 
 #: ckanext/odgu_theme/templates/macros/form.html:422
 msgid "http://example.com/my-image.jpg"
-msgstr ""
+msgstr "http://example.com/my-image.jpg"
 
 #: ckanext/odgu_theme/templates/macros/form.html:423
 msgid "Image URL"
-msgstr ""
+msgstr "URL зображення"
 
 #: ckanext/odgu_theme/templates/macros/form.html:424
 msgid "Image"
-msgstr ""
+msgstr "Зображення"
 
 #: ckanext/odgu_theme/templates/macros/form.html:438
 msgid "Clear Upload"
-msgstr ""
+msgstr "Очистити вкладення"
 
 #: ckanext/odgu_theme/templates/organization/base_form_page.html:5
 msgid "Organization Form"
-msgstr ""
+msgstr "Форма організації"
 
 #: ckanext/odgu_theme/templates/organization/bulk_process.html:3
 #: ckanext/odgu_theme/templates/organization/bulk_process.html:11
 msgid "Edit datasets"
-msgstr ""
+msgstr "Редагувати набори даних"
 
 #: ckanext/odgu_theme/templates/organization/bulk_process.html:16
 msgid " found for \"{query}\""
-msgstr ""
+msgstr "знайдено для \"{query}\""
 
 #: ckanext/odgu_theme/templates/organization/bulk_process.html:18
 msgid "Sorry no datasets found for \"{query}\""
-msgstr ""
+msgstr "Вибачте, не знайдено жодного набору даних за запитом \"{query}\""
 
 #: ckanext/odgu_theme/templates/organization/bulk_process.html:37
 msgid "Make public"
-msgstr ""
+msgstr "Зробити публічним"
 
 #: ckanext/odgu_theme/templates/organization/bulk_process.html:41
 msgid "Make private"
-msgstr ""
+msgstr "Зробити приватним"
 
 #: ckanext/odgu_theme/templates/organization/bulk_process.html:70
-#: ckanext/odgu_theme/templates/package/read.html:18
-#: ckanext/odgu_theme/templates/snippets/package_item.html:40
+#: ckanext/odgu_theme/templates/package/read_base.html:24
+#: ckanext/odgu_theme/templates/snippets/package_item.html:31
 msgid "Draft"
-msgstr ""
+msgstr "Чернетка"
 
 #: ckanext/odgu_theme/templates/organization/bulk_process.html:75
-#: ckanext/odgu_theme/templates/package/read.html:11
 #: ckanext/odgu_theme/templates/package/snippets/package_basic_fields.html:98
-#: ckanext/odgu_theme/templates/snippets/package_item.html:31
+#: ckanext/odgu_theme/templates/snippets/package_item.html:41
 #: ckanext/odgu_theme/templates/snippets/private.html:2
 #: ckanext/odgu_theme/templates/user/read_base.html:82
 #: ckanext/odgu_theme/templates/user/read_base.html:96
 msgid "Private"
-msgstr ""
+msgstr "Приватний"
 
 #: ckanext/odgu_theme/templates/organization/bulk_process.html:88
 msgid "This organization has no datasets associated to it"
-msgstr ""
+msgstr "Ця організація не має наборів даних"
 
 #: ckanext/odgu_theme/templates/organization/confirm_delete.html:11
 msgid "Are you sure you want to delete organization - {name}?"
-msgstr ""
+msgstr "Ви впевнені, що хочете видалити організацію - {name}?"
 
 #: ckanext/odgu_theme/templates/organization/edit.html:6
 #: ckanext/odgu_theme/templates/organization/snippets/info.html:13
 #: ckanext/odgu_theme/templates/organization/snippets/info.html:16
 msgid "Edit Organization"
-msgstr ""
+msgstr "Редагувати організацію"
 
 #: ckanext/odgu_theme/templates/organization/index.html:13
 #: ckanext/odgu_theme/templates/user/dashboard_organizations.html:7
 msgid "Add Organization"
-msgstr ""
+msgstr "Додати організацію"
 
 #: ckanext/odgu_theme/templates/organization/index.html:20
 msgid "Search organizations..."
-msgstr ""
+msgstr "Пошук організацій..."
 
 #: ckanext/odgu_theme/templates/organization/index.html:29
 msgid "There are currently no organizations for this site"
-msgstr ""
+msgstr "На даний момент немає організацій для цього сайту"
 
 #: ckanext/odgu_theme/templates/organization/member_new.html:33
 #: ckanext/odgu_theme/templates/user/edit_user_form.html:8
@@ -1155,15 +1358,15 @@ msgstr ""
 #: ckanext/odgu_theme/templates/user/request_reset.html:17
 #: ckanext/odgu_theme/templates/user/snippets/login_form.html:20
 msgid "Username"
-msgstr ""
+msgstr "Ім'я користувача"
 
 #: ckanext/odgu_theme/templates/organization/member_new.html:55
 msgid "Email address"
-msgstr ""
+msgstr "Email адреса"
 
 #: ckanext/odgu_theme/templates/organization/member_new.html:68
 msgid "Update Member"
-msgstr ""
+msgstr "Оновити члена"
 
 #: ckanext/odgu_theme/templates/organization/member_new.html:88
 msgid ""
@@ -1173,37 +1376,43 @@ msgid ""
 "<p><strong>Member:</strong> Can view the organization's private datasets,"
 " but not add new datasets.</p> "
 msgstr ""
+"<p><strong>Адміністратор:</strong> Може додавати/редагувати та видаляти "
+"набори даних, а також управляти членами організації.</p> "
+"<p><strong>Редактор:</strong> Може додавати та редагувати набори даних, "
+"але не може управляти членами організації.</p> <p><strong>Член:</strong> "
+"Може переглядати приватні набори даних організації, але не може додавати "
+"нові.</p>"
 
 #: ckanext/odgu_theme/templates/organization/members.html:14
 msgid "{count} member"
 msgid_plural "{count} members"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "{count} член"
+msgstr[1] "{count} члена"
+msgstr[2] "{count} членів"
 
 #: ckanext/odgu_theme/templates/organization/new.html:3
 #: ckanext/odgu_theme/templates/organization/new.html:5
 #: ckanext/odgu_theme/templates/organization/new.html:7
 #: ckanext/odgu_theme/templates/organization/new.html:12
 msgid "Create an Organization"
-msgstr ""
+msgstr "Створити організацію"
 
 #: ckanext/odgu_theme/templates/organization/new_organization_form.html:17
 msgid "Update Organization"
-msgstr ""
+msgstr "Оновити організацію"
 
 #: ckanext/odgu_theme/templates/organization/new_organization_form.html:19
 msgid "Create Organization"
-msgstr ""
+msgstr "Створити організацію"
 
 #: ckanext/odgu_theme/templates/organization/snippets/feeds.html:3
 msgid "Datasets in organization: {group}"
-msgstr ""
+msgstr "Набори даних в організації: {group}"
 
 #: ckanext/odgu_theme/templates/organization/snippets/help.html:4
 #: ckanext/odgu_theme/templates/organization/snippets/helper.html:4
 msgid "What are Organizations?"
-msgstr ""
+msgstr "Що таке організація?"
 
 #: ckanext/odgu_theme/templates/organization/snippets/help.html:7
 msgid ""
@@ -1214,6 +1423,13 @@ msgid ""
 "its members, giving individual users the right to publish datasets from "
 "that particular organisation (e.g. Office of National Statistics).</p> "
 msgstr ""
+"<p>Організації діють як видавничі відділи для наборів даних (наприклад, "
+"Міністерство охорони здоров'я). Це означає, що набори даних можуть бути "
+"опубліковані і належати відділу, а не окремому користувачеві. </p> <p>В "
+"організаціях адміністратори можуть призначати ролі і надавати права її "
+"членам, даючи окремим користувачам право публікувати даних від імені "
+"конкретної організації (наприклад, Управління національної "
+"статистики).</p>"
 
 #: ckanext/odgu_theme/templates/organization/snippets/helper.html:8
 msgid ""
@@ -1221,14 +1437,18 @@ msgid ""
 " datasets. Users can have different roles within an Organization, "
 "depending on their level of authorisation to create, edit and publish. "
 msgstr ""
+"Організації в CKAN використовуються для створення, управління і "
+"публікації колекцій наборів даних. Користувачі можуть мати різні ролі в "
+"рамках організації, залежно від рівня їх прав на створення, зміну та "
+"публікацію."
 
 #: ckanext/odgu_theme/templates/organization/snippets/organization_form.html:10
 msgid "My Organization"
-msgstr ""
+msgstr "Моя організація"
 
 #: ckanext/odgu_theme/templates/organization/snippets/organization_form.html:19
 msgid "A little information about my organization..."
-msgstr ""
+msgstr "Коротко про мою організацію..."
 
 #: ckanext/odgu_theme/templates/organization/snippets/organization_form.html:37
 msgid ""
@@ -1236,25 +1456,33 @@ msgid ""
 " be performed while public or private datasets belong to this "
 "organization."
 msgstr ""
+"Ви впевнені, що хочете видалити цю організацію? Примітка*: Неможливо "
+"видалити організацію в котрій наявні загальнодоступні або приватні набори"
+" данних."
 
 #: ckanext/odgu_theme/templates/organization/snippets/organization_form.html:40
 msgid "Save Organization"
-msgstr ""
+msgstr "Зберегти організацію"
 
 #: ckanext/odgu_theme/templates/organization/snippets/organization_item.html:42
 #: ckanext/odgu_theme/templates/organization/snippets/organization_item.html:43
 msgid "View {organization_name}"
-msgstr ""
+msgstr "Переглянути {organization_name}"
 
-#: ckanext/odgu_theme/templates/package/base.html:23
+#: ckanext/odgu_theme/templates/package/base.html:21
+#: ckanext/odgu_theme/templates/package/read_base.html:55
+msgid "Dataset"
+msgstr "Набір даних"
+
+#: ckanext/odgu_theme/templates/package/base.html:29
 #: ckanext/odgu_theme/templates/package/new.html:9
 #: ckanext/odgu_theme/templates/package/snippets/new_package_breadcrumb.html:2
 msgid "Create Dataset"
-msgstr ""
+msgstr "Створити набір даних"
 
 #: ckanext/odgu_theme/templates/package/base_form_page.html:22
 msgid "What are datasets?"
-msgstr ""
+msgstr "Що таке набір даних?"
 
 #: ckanext/odgu_theme/templates/package/base_form_page.html:25
 msgid ""
@@ -1262,88 +1490,91 @@ msgid ""
 "together with a description and other information, at a fixed URL. "
 "Datasets are what users see when searching for data. "
 msgstr ""
+"Набір даних CKAN це колекція інформаційних ресурсів (таких як файли), "
+"разом з описом та іншою інформацією, що доступні за фіксованою "
+"URL-адресою. Набори даних - це те, що користувачі бачать при пошуку "
+"даних."
 
 #: ckanext/odgu_theme/templates/package/confirm_delete.html:12
 msgid "Are you sure you want to delete dataset - {name}?"
-msgstr ""
+msgstr "Ви впевнені, що хочете видалити набір даних - {name}?"
 
 #: ckanext/odgu_theme/templates/package/confirm_delete_resource.html:11
 msgid "Are you sure you want to delete resource - {name}?"
-msgstr ""
+msgstr "Ви впевнені, що хочете видалити ресурс - {name}?"
 
 #: ckanext/odgu_theme/templates/package/edit_base.html:16
 msgid "View dataset"
-msgstr ""
+msgstr "Переглянути набір даних"
 
-#: ckanext/odgu_theme/templates/package/edit_base.html:20
+#: ckanext/odgu_theme/templates/package/edit_base.html:22
 msgid "Edit metadata"
-msgstr ""
+msgstr "Редагувати метадані"
 
-#: ckanext/odgu_theme/templates/package/edit_base.html:21
+#: ckanext/odgu_theme/templates/package/edit_base.html:23
 #: ckanext/odgu_theme/templates/package/resources.html:5
 #: ckanext/odgu_theme/templates/package/snippets/package_context.html:12
 #: ckanext/odgu_theme/templates/package/snippets/resources.html:20
 #: ckanext/odgu_theme/templates/snippets/context/dataset.html:13
 msgid "Resources"
-msgstr ""
+msgstr "Ресурси"
 
 #: ckanext/odgu_theme/templates/package/edit_view.html:3
 #: ckanext/odgu_theme/templates/package/edit_view.html:4
 #: ckanext/odgu_theme/templates/package/edit_view.html:8
-#: ckanext/odgu_theme/templates/package/edit_view.html:12
+#: ckanext/odgu_theme/templates/package/edit_view.html:13
 msgid "Edit view"
-msgstr ""
+msgstr "Редагувати представлення"
 
-#: ckanext/odgu_theme/templates/package/edit_view.html:20
+#: ckanext/odgu_theme/templates/package/edit_view.html:22
 #: ckanext/odgu_theme/templates/package/new_view.html:28
-#: ckanext/odgu_theme/templates/package/snippets/resource_item.html:32
 msgid "Preview"
-msgstr ""
+msgstr "Попередній перегляд"
 
-#: ckanext/odgu_theme/templates/package/edit_view.html:21
+#: ckanext/odgu_theme/templates/package/edit_view.html:23
 msgid "Update"
-msgstr ""
+msgstr "Оновити"
 
 #: ckanext/odgu_theme/templates/package/group_list.html:14
 msgid "Associate this group with this dataset"
-msgstr ""
+msgstr "Пов’язати цю групу з цим набором даних"
 
 #: ckanext/odgu_theme/templates/package/group_list.html:14
 msgid "Add to group"
-msgstr ""
+msgstr "Додати до групи"
 
 #: ckanext/odgu_theme/templates/package/group_list.html:23
 msgid "There are no groups associated with this dataset"
-msgstr ""
+msgstr "Немає груп пов’язаних з цим набором даних"
 
 #: ckanext/odgu_theme/templates/package/new_package_form.html:15
 msgid "Update Dataset"
-msgstr ""
+msgstr "Оновити набір даних"
 
 #: ckanext/odgu_theme/templates/package/new_resource.html:5
 msgid "Add data to the dataset"
-msgstr ""
+msgstr "Додати дані до набору даних"
 
 #: ckanext/odgu_theme/templates/package/new_resource.html:11
 #: ckanext/odgu_theme/templates/package/new_resource_not_draft.html:8
 msgid "Add New Resource"
-msgstr ""
+msgstr "Додати новий ресурс"
 
 #: ckanext/odgu_theme/templates/package/new_resource_not_draft.html:3
 #: ckanext/odgu_theme/templates/package/new_resource_not_draft.html:4
 msgid "Add resource"
-msgstr ""
+msgstr "Додати ресурс"
 
 #: ckanext/odgu_theme/templates/package/new_resource_not_draft.html:16
 msgid "New resource"
-msgstr ""
+msgstr "Новий ресурс"
 
 #: ckanext/odgu_theme/templates/package/new_view.html:3
 #: ckanext/odgu_theme/templates/package/new_view.html:4
 #: ckanext/odgu_theme/templates/package/new_view.html:8
 #: ckanext/odgu_theme/templates/package/new_view.html:12
 msgid "Add view"
-msgstr ""
+msgstr "Додати представлення"
 
 #: ckanext/odgu_theme/templates/package/new_view.html:19
 msgid ""
@@ -1353,262 +1584,245 @@ msgid ""
 "#viewing-structured-data-the-data-explorer' target='_blank'>Data Explorer"
 " documentation</a>. "
 msgstr ""
+"Представлення провідника даних можуть бути повільними і ненадійними, якщо"
+" розширення DataStore не включене. Для отримання більш детальної "
+"інформації, будь ласка, читайте  <a "
+"href='http://docs.ckan.org/en/latest/maintaining/data-viewer.html"
+"#viewing-structured-data-the-data-explorer' target='_blank'>документацію "
+"провідника даних</a>."
 
 #: ckanext/odgu_theme/templates/package/new_view.html:29
 #: ckanext/odgu_theme/templates/package/snippets/resource_form.html:83
 msgid "Add"
-msgstr ""
+msgstr "Додати"
 
-#: ckanext/odgu_theme/templates/package/read_base.html:19
-msgid "Dataset"
-msgstr ""
-
-#: ckanext/odgu_theme/templates/package/read_base.html:32
+#: ckanext/odgu_theme/templates/package/read_base.html:87
 #, python-format
 msgid ""
 "This is an old revision of this dataset, as edited at %(timestamp)s. It "
 "may differ significantly from the <a href=\"%(url)s\">current "
 "revision</a>."
 msgstr ""
+"Це стара версія набору даних, датована %(timestamp)s. Вона може значно "
+"відрізнятись від <a href=\"%(url)s\">поточної версії</a>."
 
 #: ckanext/odgu_theme/templates/package/resource_edit_base.html:17
 msgid "All resources"
-msgstr ""
+msgstr "Усі ресурси"
 
 #: ckanext/odgu_theme/templates/package/resource_edit_base.html:19
 msgid "View resource"
-msgstr ""
+msgstr "Переглянути ресурс"
 
 #: ckanext/odgu_theme/templates/package/resource_edit_base.html:24
 #: ckanext/odgu_theme/templates/package/resource_edit_base.html:30
 msgid "Edit resource"
-msgstr ""
+msgstr "Редагувати ресурс"
 
 #: ckanext/odgu_theme/templates/package/resource_edit_base.html:26
 msgid "Views"
-msgstr ""
+msgstr "Представлення"
 
-#: ckanext/odgu_theme/templates/package/resource_read.html:40
-msgid "API Endpoint"
-msgstr ""
-
-#: ckanext/odgu_theme/templates/package/resource_read.html:42
-#: ckanext/odgu_theme/templates/package/snippets/resource_item.html:47
-msgid "Go to resource"
-msgstr ""
-
-#: ckanext/odgu_theme/templates/package/resource_read.html:44
-#: ckanext/odgu_theme/templates/package/snippets/resource_item.html:44
-msgid "Download"
-msgstr ""
-
-#: ckanext/odgu_theme/templates/package/resource_read.html:76
-#: ckanext/odgu_theme/templates/package/resource_read.html:78
-msgid "URL:"
-msgstr ""
-
-#: ckanext/odgu_theme/templates/package/resource_read.html:86
+#: ckanext/odgu_theme/templates/package/resource_read.html:52
 msgid "From the dataset abstract"
-msgstr ""
+msgstr "З опису набори даних"
 
-#: ckanext/odgu_theme/templates/package/resource_read.html:88
+#: ckanext/odgu_theme/templates/package/resource_read.html:54
 #, python-format
 msgid "Source: <a href=\"%(url)s\">%(dataset)s</a>"
-msgstr ""
+msgstr "Джерело: <a href=\"%(url)s\">%(dataset)s</a>"
 
-#: ckanext/odgu_theme/templates/package/resource_read.html:127
+#: ckanext/odgu_theme/templates/package/resource_read.html:62
+msgid "URL:"
+msgstr "URL:"
+
+#: ckanext/odgu_theme/templates/package/resource_read.html:93
+msgid "API Endpoint"
+msgstr "API Endpoint"
+
+#: ckanext/odgu_theme/templates/package/resource_read.html:95
+#: ckanext/odgu_theme/templates/package/snippets/resource_item.html:27
+msgid "Go to resource"
+msgstr "Перейти до ресурсу"
+
+#: ckanext/odgu_theme/templates/package/resource_read.html:97
+#: ckanext/odgu_theme/templates/package/snippets/resource_item.html:27
+msgid "Download"
+msgstr "Завантажити"
+
+#: ckanext/odgu_theme/templates/package/resource_read.html:160
 msgid "There are no views created for this resource yet."
-msgstr ""
+msgstr "Для цього ресурсу поки що немає жодного представлення."
 
-#: ckanext/odgu_theme/templates/package/resource_read.html:131
+#: ckanext/odgu_theme/templates/package/resource_read.html:164
 msgid "Not seeing the views you were expecting?"
-msgstr ""
+msgstr "Бачите не ті представлення, які очікували?"
 
-#: ckanext/odgu_theme/templates/package/resource_read.html:136
+#: ckanext/odgu_theme/templates/package/resource_read.html:169
 msgid "Here are some reasons you may not be seeing expected views:"
-msgstr ""
+msgstr "Ось можливі причини, чому ви не бачите очікуваних представлень:"
 
-#: ckanext/odgu_theme/templates/package/resource_read.html:138
+#: ckanext/odgu_theme/templates/package/resource_read.html:171
 msgid "No view has been created that is suitable for this resource"
-msgstr ""
+msgstr "Немає представлення, яке б підходило цьому ресурсу"
 
-#: ckanext/odgu_theme/templates/package/resource_read.html:139
+#: ckanext/odgu_theme/templates/package/resource_read.html:172
 msgid "The site administrators may not have enabled the relevant view plugins"
-msgstr ""
+msgstr "Адміністратори сайту можливо не увімкнули плагіни представлення"
 
-#: ckanext/odgu_theme/templates/package/resource_read.html:140
+#: ckanext/odgu_theme/templates/package/resource_read.html:173
 msgid ""
 "If a view requires the DataStore, the DataStore plugin may not be "
 "enabled, or the data may not have been pushed to the DataStore, or the "
 "DataStore hasn't finished processing the data yet"
 msgstr ""
+"Якщо представлення вимагає DataStore, можливо плагін DataStore не "
+"включений, або дані не переміщені в DataStore, або DataStore ще не встиг "
+"завершити обробку даних."
 
-#: ckanext/odgu_theme/templates/package/resource_read.html:162
+#: ckanext/odgu_theme/templates/package/resource_read.html:197
 msgid "Additional Information"
-msgstr ""
+msgstr "Додаткова інформація"
 
-#: ckanext/odgu_theme/templates/package/resource_read.html:166
-#: ckanext/odgu_theme/templates/package/snippets/additional_info.html:6
-#: ckanext/odgu_theme/templates/revision/diff.html:43
-#: ckanext/odgu_theme/templates/snippets/additional_info.html:11
-msgid "Field"
-msgstr ""
-
-#: ckanext/odgu_theme/templates/package/resource_read.html:172
+#: ckanext/odgu_theme/templates/package/resource_read.html:207
 msgid "Data last updated"
-msgstr ""
+msgstr "Останнє оновлення даних"
 
-#: ckanext/odgu_theme/templates/package/resource_read.html:173
-#: ckanext/odgu_theme/templates/package/resource_read.html:177
-#: ckanext/odgu_theme/templates/package/resource_read.html:181
-#: ckanext/odgu_theme/templates/package/resource_read.html:185
+#: ckanext/odgu_theme/templates/package/resource_read.html:208
+#: ckanext/odgu_theme/templates/package/resource_read.html:212
+#: ckanext/odgu_theme/templates/package/resource_read.html:216
+#: ckanext/odgu_theme/templates/package/resource_read.html:220
 msgid "unknown"
-msgstr ""
+msgstr "невідомо"
 
-#: ckanext/odgu_theme/templates/package/resource_read.html:176
+#: ckanext/odgu_theme/templates/package/resource_read.html:211
 msgid "Metadata last updated"
-msgstr ""
+msgstr "Останнє оновлення метаданих"
 
-#: ckanext/odgu_theme/templates/package/resource_read.html:180
-#: ckanext/odgu_theme/templates/package/snippets/additional_info.html:70
+#: ckanext/odgu_theme/templates/package/resource_read.html:215
+#: ckanext/odgu_theme/templates/package/snippets/additional_info.html:64
 msgid "Created"
-msgstr ""
+msgstr "Створено"
 
-#: ckanext/odgu_theme/templates/package/resource_read.html:184
+#: ckanext/odgu_theme/templates/package/resource_read.html:219
 #: ckanext/odgu_theme/templates/package/snippets/resource_form.html:39
 #: ckanext/odgu_theme/templates/package/snippets/resource_info.html:16
 msgid "Format"
-msgstr ""
+msgstr "Формат"
 
-#: ckanext/odgu_theme/templates/package/resource_read.html:188
+#: ckanext/odgu_theme/templates/package/resource_read.html:223
 #: ckanext/odgu_theme/templates/package/snippets/package_basic_fields.html:30
 #: ckanext/odgu_theme/templates/snippets/license.html:21
 msgid "License"
-msgstr ""
+msgstr "Ліцензія"
 
 #: ckanext/odgu_theme/templates/package/resource_views.html:10
 msgid "New view"
-msgstr ""
+msgstr "Нове представлення"
 
 #: ckanext/odgu_theme/templates/package/resource_views.html:27
 msgid "This resource has no views"
-msgstr ""
+msgstr "Цей ресурс немає представлень"
 
 #: ckanext/odgu_theme/templates/package/resources.html:8
 msgid "Add new resource"
-msgstr ""
+msgstr "Додати новий ресурс"
 
 #: ckanext/odgu_theme/templates/package/resources.html:20
-#: ckanext/odgu_theme/templates/package/snippets/resources_list.html:26
+#: ckanext/odgu_theme/templates/package/snippets/resources_list.html:47
 #, python-format
 msgid ""
 " <p class=\"empty\">This dataset has no data, <a href=\"%(url)s\">why not"
 " add some?</a></p> "
 msgstr ""
-
-#: ckanext/odgu_theme/templates/package/search.html:52
-msgid "API"
-msgstr ""
-
-#: ckanext/odgu_theme/templates/package/search.html:53
-msgid "API Docs"
-msgstr ""
-
-#: ckanext/odgu_theme/templates/package/search.html:55
-msgid "full {format} dump"
-msgstr ""
-
-#: ckanext/odgu_theme/templates/package/search.html:56
-#, python-format
-msgid ""
-" You can also access this registry using the %(api_link)s (see "
-"%(api_doc_link)s) or download a %(dump_link)s. "
-msgstr ""
-
-#: ckanext/odgu_theme/templates/package/search.html:60
-#, python-format
-msgid ""
-" You can also access this registry using the %(api_link)s (see "
-"%(api_doc_link)s). "
-msgstr ""
+"<p class=\"empty\">Цей набір даних пустий, <a href=\"%(url)s\">чому б не "
+"додати даних?</a></p>"
 
 #: ckanext/odgu_theme/templates/package/view_edit_base.html:9
 msgid "All views"
-msgstr ""
+msgstr "Всі представлення"
 
 #: ckanext/odgu_theme/templates/package/view_edit_base.html:12
 msgid "View view"
-msgstr ""
+msgstr "Переглянути представлення"
 
 #: ckanext/odgu_theme/templates/package/view_edit_base.html:37
 msgid "View preview"
-msgstr ""
+msgstr "Переглянути попередній перегляд"
 
 #: ckanext/odgu_theme/templates/package/snippets/additional_info.html:2
 #: ckanext/odgu_theme/templates/snippets/additional_info.html:7
 msgid "Additional Info"
-msgstr ""
+msgstr "Додаткова інформація"
 
-#: ckanext/odgu_theme/templates/package/snippets/additional_info.html:14
+#: ckanext/odgu_theme/templates/package/snippets/additional_info.html:8
 #: ckanext/odgu_theme/templates/package/snippets/package_metadata_fields.html:6
 msgid "Source"
-msgstr ""
+msgstr "Джерело"
 
-#: ckanext/odgu_theme/templates/package/snippets/additional_info.html:37
-#: ckanext/odgu_theme/templates/package/snippets/additional_info.html:42
+#: ckanext/odgu_theme/templates/package/snippets/additional_info.html:31
+#: ckanext/odgu_theme/templates/package/snippets/additional_info.html:36
 #: ckanext/odgu_theme/templates/package/snippets/package_metadata_fields.html:20
 msgid "Maintainer"
-msgstr ""
+msgstr "Відповідальна особа"
 
-#: ckanext/odgu_theme/templates/package/snippets/additional_info.html:49
+#: ckanext/odgu_theme/templates/package/snippets/additional_info.html:43
 #: ckanext/odgu_theme/templates/package/snippets/package_metadata_fields.html:10
 msgid "Version"
-msgstr ""
+msgstr "Версія"
 
-#: ckanext/odgu_theme/templates/package/snippets/additional_info.html:56
+#: ckanext/odgu_theme/templates/package/snippets/additional_info.html:50
 #: ckanext/odgu_theme/templates/package/snippets/package_basic_fields.html:114
 #: ckanext/odgu_theme/templates/user/read_base.html:91
 msgid "State"
-msgstr ""
+msgstr "Стан"
 
-#: ckanext/odgu_theme/templates/package/snippets/additional_info.html:62
+#: ckanext/odgu_theme/templates/package/snippets/additional_info.html:56
 msgid "Last Updated"
-msgstr ""
+msgstr "Останнє оновлення"
 
 #: ckanext/odgu_theme/templates/package/snippets/cannot_create_package.html:10
 msgid "Before you can create a dataset you need to create an organization."
-msgstr ""
+msgstr "Перед тим як створити набір даних ви повинні створити організацію."
 
 #: ckanext/odgu_theme/templates/package/snippets/cannot_create_package.html:13
 msgid "Create a new organization"
-msgstr ""
+msgstr "Створити нову організацію"
 
 #: ckanext/odgu_theme/templates/package/snippets/cannot_create_package.html:18
 msgid "There are no organizations to which you can assign this dataset."
-msgstr ""
+msgstr "Нема організацій до яких ви можете долучити цей набір даних."
 
 #: ckanext/odgu_theme/templates/package/snippets/cannot_create_package.html:19
 msgid ""
 "Ask a system administrator to create an organization before you can "
 "continue."
 msgstr ""
+"Зверніться до системного адміністратора з проханням створити організацію "
+"перед тим як продовжити."
+
+#: ckanext/odgu_theme/templates/package/snippets/organization.html:23
+#: ckanext/odgu_theme/templates/package/snippets/package_basic_fields.html:76
+#: ckanext/odgu_theme/templates/snippets/organization.html:23
+msgid "Organization"
+msgstr "Організація"
 
 #: ckanext/odgu_theme/templates/package/snippets/package_basic_fields.html:4
 #: ckanext/odgu_theme/templates/package/snippets/view_form.html:8
 msgid "Title"
-msgstr ""
+msgstr "Заголовок"
 
 #: ckanext/odgu_theme/templates/package/snippets/package_basic_fields.html:4
 msgid "eg. A descriptive title"
-msgstr ""
+msgstr "наприклад Вичерпний заголовок"
 
 #: ckanext/odgu_theme/templates/package/snippets/package_basic_fields.html:13
 msgid "eg. my-dataset"
-msgstr ""
+msgstr "наприклад мій-набір-даних"
 
 #: ckanext/odgu_theme/templates/package/snippets/package_basic_fields.html:19
 msgid "eg. Some useful notes about the data"
-msgstr ""
+msgstr "Деякі корисні замітки про дані"
 
 #: ckanext/odgu_theme/templates/package/snippets/package_basic_fields.html:24
 #: ckanext/odgu_theme/templates/snippets/context/dataset.html:17
@@ -1616,38 +1830,35 @@ msgstr ""
 #: ckanext/odgu_theme/templates/tag/index.html:6
 #: ckanext/odgu_theme/templates/tag/index.html:12
 msgid "Tags"
-msgstr ""
+msgstr "Теги"
 
 #: ckanext/odgu_theme/templates/package/snippets/package_basic_fields.html:24
 msgid "eg. economy, mental health, government"
-msgstr ""
+msgstr "наприклад економіка, психічне здоров'я, уряд"
 
 #: ckanext/odgu_theme/templates/package/snippets/package_basic_fields.html:45
 msgid ""
 " License definitions and additional information can be found at <a "
 "href=\"http://opendefinition.org/licenses/\">opendefinition.org</a> "
 msgstr ""
-
-#: ckanext/odgu_theme/templates/package/snippets/package_basic_fields.html:76
-#: ckanext/odgu_theme/templates/snippets/organization.html:23
-msgid "Organization"
-msgstr ""
+"Визначення ліцензії та додаткова інформація може бути знайдена на <a "
+"href=\"http://opendefinition.org/licenses/\">opendefinition.org</a>"
 
 #: ckanext/odgu_theme/templates/package/snippets/package_basic_fields.html:80
 msgid "No organization"
-msgstr ""
+msgstr "Немає організації"
 
 #: ckanext/odgu_theme/templates/package/snippets/package_basic_fields.html:95
 msgid "Visibility"
-msgstr ""
+msgstr "Видимість"
 
 #: ckanext/odgu_theme/templates/package/snippets/package_basic_fields.html:98
 msgid "Public"
-msgstr ""
+msgstr "Загальнодоступний"
 
 #: ckanext/odgu_theme/templates/package/snippets/package_basic_fields.html:117
 msgid "Active"
-msgstr ""
+msgstr "Активний"
 
 #: ckanext/odgu_theme/templates/package/snippets/package_form.html:28
 msgid ""
@@ -1658,495 +1869,501 @@ msgid ""
 "href=\"http://opendatacommons.org/licenses/odbl/1-0/\">Open Database "
 "License</a>."
 msgstr ""
+"<i>Ліцензія даних</i>, яку ви вибрали вище стосується лише змісту "
+"будь-яких файлів ресурсів, які ви додаєте до цього набору даних. "
+"Відправляючи цю форму, ви погоджуєтеся випускати значення "
+"<i>метаданих</i>, які ви вводите у форму під ліцензією відкритої бази "
+"даних (<a href=\"http://opendatacommons.org/licenses/odbl/1-0/\">Open "
+"Database License</a>)."
 
 #: ckanext/odgu_theme/templates/package/snippets/package_form.html:39
 msgid "Are you sure you want to delete this dataset?"
-msgstr ""
+msgstr "Ви впевнені, що хочете видалити цей набір даних"
 
 #: ckanext/odgu_theme/templates/package/snippets/package_form.html:43
 msgid "Next: Add Data"
-msgstr ""
+msgstr "Далі: Додати дані"
 
 #: ckanext/odgu_theme/templates/package/snippets/package_metadata_fields.html:6
 msgid "http://example.com/dataset.json"
-msgstr ""
+msgstr "http://example.com/dataset.json"
 
 #: ckanext/odgu_theme/templates/package/snippets/package_metadata_fields.html:10
 msgid "1.0"
-msgstr ""
+msgstr "1.0"
 
 #: ckanext/odgu_theme/templates/package/snippets/package_metadata_fields.html:14
 #: ckanext/odgu_theme/templates/package/snippets/package_metadata_fields.html:20
 #: ckanext/odgu_theme/templates/user/new_user_form.html:6
 msgid "Joe Bloggs"
-msgstr ""
+msgstr "Joe Bloggs"
 
 #: ckanext/odgu_theme/templates/package/snippets/package_metadata_fields.html:16
 msgid "Author Email"
-msgstr ""
+msgstr "E-mail автора"
 
 #: ckanext/odgu_theme/templates/package/snippets/package_metadata_fields.html:16
 #: ckanext/odgu_theme/templates/package/snippets/package_metadata_fields.html:22
 #: ckanext/odgu_theme/templates/user/new_user_form.html:7
 msgid "joe@example.com"
-msgstr ""
+msgstr "joe@example.com"
 
 #: ckanext/odgu_theme/templates/package/snippets/package_metadata_fields.html:22
 msgid "Maintainer Email"
-msgstr ""
+msgstr "Email відповідальної особи"
 
 #: ckanext/odgu_theme/templates/package/snippets/resource_edit_form.html:12
 msgid "Update Resource"
-msgstr ""
+msgstr "Оновити ресурс"
 
 #: ckanext/odgu_theme/templates/package/snippets/resource_form.html:26
 msgid "Data"
-msgstr ""
+msgstr "Дані"
 
 #: ckanext/odgu_theme/templates/package/snippets/resource_form.html:26
 msgid "http://example.com/external-data.csv"
-msgstr ""
+msgstr "http://example.com/external-data.csv"
 
 #: ckanext/odgu_theme/templates/package/snippets/resource_form.html:30
 msgid "eg. January 2011 Gold Prices"
-msgstr ""
+msgstr "наприклад January 2011 Gold Prices"
 
 #: ckanext/odgu_theme/templates/package/snippets/resource_form.html:34
 msgid "Some useful notes about the data"
-msgstr ""
+msgstr "Корисні нотатки про дані"
 
 #: ckanext/odgu_theme/templates/package/snippets/resource_form.html:39
 msgid "eg. CSV, XML or JSON"
-msgstr ""
+msgstr "наприклад CSV, XML або JSON"
 
 #: ckanext/odgu_theme/templates/package/snippets/resource_form.html:42
 msgid "This will be guessed automatically. Leave blank if you wish"
-msgstr ""
+msgstr "Це буде додано автоматично, можете залишити пустим"
 
 #: ckanext/odgu_theme/templates/package/snippets/resource_form.html:53
 msgid "eg. 2012-06-05"
-msgstr ""
+msgstr "наприклад 2012-06-05"
 
 #: ckanext/odgu_theme/templates/package/snippets/resource_form.html:55
 msgid "File Size"
-msgstr ""
+msgstr "Розмір файлу"
 
 #: ckanext/odgu_theme/templates/package/snippets/resource_form.html:55
 msgid "eg. 1024"
-msgstr ""
+msgstr "наприклад 1024"
 
 #: ckanext/odgu_theme/templates/package/snippets/resource_form.html:57
 #: ckanext/odgu_theme/templates/package/snippets/resource_form.html:59
 msgid "MIME Type"
-msgstr ""
+msgstr "MIME тип"
 
 #: ckanext/odgu_theme/templates/package/snippets/resource_form.html:57
 #: ckanext/odgu_theme/templates/package/snippets/resource_form.html:59
 msgid "eg. application/json"
-msgstr ""
+msgstr "наприклад application/json"
 
 #: ckanext/odgu_theme/templates/package/snippets/resource_form.html:67
 msgid "Are you sure you want to delete this resource?"
-msgstr ""
+msgstr "Ви впевнені, що хочете видалити цей ресурс?"
 
 #: ckanext/odgu_theme/templates/package/snippets/resource_form.html:73
 msgid "Previous"
-msgstr ""
+msgstr "Попередній"
 
 #: ckanext/odgu_theme/templates/package/snippets/resource_form.html:76
 msgid "Save & add another"
-msgstr ""
+msgstr "Зберегти і додати ще один"
 
 #: ckanext/odgu_theme/templates/package/snippets/resource_form.html:79
 msgid "Finish"
-msgstr ""
+msgstr "Завершити"
 
 #: ckanext/odgu_theme/templates/package/snippets/resource_help.html:2
 msgid "What's a resource?"
-msgstr ""
+msgstr "Що таке ресурс?"
 
 #: ckanext/odgu_theme/templates/package/snippets/resource_help.html:4
 msgid "A resource can be any file or link to a file containing useful data."
 msgstr ""
+"Ресурсом може бути будь-який файл або посилання на файл, що містить "
+"корисні дані."
 
-#: ckanext/odgu_theme/templates/package/snippets/resource_item.html:23
+#: ckanext/odgu_theme/templates/package/snippets/resource_item.html:29
 msgid "Explore"
-msgstr ""
-
-#: ckanext/odgu_theme/templates/package/snippets/resource_item.html:35
-msgid "More information"
-msgstr ""
+msgstr "Дослідити"
 
 #: ckanext/odgu_theme/templates/package/snippets/resource_view.html:10
 msgid "Fullscreen"
-msgstr ""
+msgstr "Повний екран"
 
 #: ckanext/odgu_theme/templates/package/snippets/resource_view.html:18
 msgid "Embed"
-msgstr ""
+msgstr "Вставити"
 
 #: ckanext/odgu_theme/templates/package/snippets/resource_view.html:32
 msgid "This resource view is not available at the moment."
-msgstr ""
+msgstr "Це представлення ресурсу недоступне на даний момент."
 
 #: ckanext/odgu_theme/templates/package/snippets/resource_view.html:74
 msgid "Embed resource view"
-msgstr ""
+msgstr "Приєднати представлення ресурсу"
 
 #: ckanext/odgu_theme/templates/package/snippets/resource_view.html:77
 msgid ""
 "You can copy and paste the embed code into a CMS or blog software that "
 "supports raw HTML"
 msgstr ""
+"Ви можете скопіювати і вставити embed код в CMS або програмне "
+"забезпечення для блогу, що підтримує чистий HTML"
 
 #: ckanext/odgu_theme/templates/package/snippets/resource_view.html:80
 msgid "Width"
-msgstr ""
+msgstr "Ширина"
 
 #: ckanext/odgu_theme/templates/package/snippets/resource_view.html:83
 msgid "Height"
-msgstr ""
+msgstr "Висота"
 
 #: ckanext/odgu_theme/templates/package/snippets/resource_view.html:86
 msgid "Code"
-msgstr ""
+msgstr "Код"
 
-#: ckanext/odgu_theme/templates/package/snippets/resource_views_list.html:8
+#: ckanext/odgu_theme/templates/package/snippets/resource_views_list.html:10
+#: ckanext/odgu_theme/templates/package/snippets/resource_views_list.html:12
+#: ckanext/odgu_theme/templates/package/snippets/resource_views_list_old.html:8
 msgid "Resource Preview"
-msgstr ""
+msgstr "Попередній перегляд ресурсу"
 
-#: ckanext/odgu_theme/templates/package/snippets/resources_list.html:13
+#: ckanext/odgu_theme/templates/package/snippets/resources_list.html:34
 msgid "Data and Resources"
-msgstr ""
+msgstr "Дані та ресурси"
 
-#: ckanext/odgu_theme/templates/package/snippets/resources_list.html:30
+#: ckanext/odgu_theme/templates/package/snippets/resources_list.html:51
 msgid "This dataset has no data"
-msgstr ""
+msgstr "Цей набір даних пустий"
 
 #: ckanext/odgu_theme/templates/package/snippets/revisions_table.html:24
 #, python-format
 msgid "Read dataset as of %s"
-msgstr ""
+msgstr "Читати набір даних як %s"
 
 #: ckanext/odgu_theme/templates/package/snippets/stages.html:23
 #: ckanext/odgu_theme/templates/package/snippets/stages.html:25
 msgid "Create dataset"
-msgstr ""
+msgstr "Створити набір даних"
 
 #: ckanext/odgu_theme/templates/package/snippets/stages.html:30
 #: ckanext/odgu_theme/templates/package/snippets/stages.html:34
 #: ckanext/odgu_theme/templates/package/snippets/stages.html:36
 msgid "Add data"
-msgstr ""
+msgstr "Додати дані"
 
 #: ckanext/odgu_theme/templates/package/snippets/view_form.html:8
 msgid "eg. My View"
-msgstr ""
+msgstr "наприклад, Моє представлення"
 
 #: ckanext/odgu_theme/templates/package/snippets/view_form.html:9
 msgid "eg. Information about my view"
-msgstr ""
+msgstr "наприклад, Інформація про моє представлення"
 
 #: ckanext/odgu_theme/templates/package/snippets/view_form_filters.html:16
 msgid "Add Filter"
-msgstr ""
+msgstr "Додати фільтр"
 
 #: ckanext/odgu_theme/templates/package/snippets/view_form_filters.html:28
 msgid "Remove Filter"
-msgstr ""
+msgstr "Видалити фільтр"
 
 #: ckanext/odgu_theme/templates/package/snippets/view_form_filters.html:46
 msgid "Filters"
-msgstr ""
+msgstr "Фільтри"
 
 #: ckanext/odgu_theme/templates/package/snippets/view_help.html:2
 msgid "What's a view?"
-msgstr ""
+msgstr "Що таке представлення?"
 
 #: ckanext/odgu_theme/templates/package/snippets/view_help.html:4
 msgid "A view is a representation of the data held against a resource"
-msgstr ""
+msgstr "Представлення це відображення даних ресурсу"
 
 #: ckanext/odgu_theme/templates/revision/diff.html:6
 msgid "Differences"
-msgstr ""
+msgstr "Відмінності"
 
 #: ckanext/odgu_theme/templates/revision/diff.html:13
 #: ckanext/odgu_theme/templates/revision/diff.html:18
 #: ckanext/odgu_theme/templates/revision/diff.html:23
 msgid "Revision Differences"
-msgstr ""
+msgstr "Історія відмінностей"
+
+#: ckanext/odgu_theme/templates/revision/diff.html:43
+#: ckanext/odgu_theme/templates/snippets/additional_info.html:11
+msgid "Field"
+msgstr "Поле"
 
 #: ckanext/odgu_theme/templates/revision/diff.html:44
 msgid "Difference"
-msgstr ""
+msgstr "Різниця"
 
 #: ckanext/odgu_theme/templates/revision/diff.html:54
 msgid "No Differences"
-msgstr ""
+msgstr "Відмінностей немає"
 
 #: ckanext/odgu_theme/templates/revision/list.html:3
 #: ckanext/odgu_theme/templates/revision/list.html:6
 #: ckanext/odgu_theme/templates/revision/list.html:10
 msgid "Revision History"
-msgstr ""
+msgstr "Історія змін"
 
 #: ckanext/odgu_theme/templates/revision/list.html:6
 #: ckanext/odgu_theme/templates/revision/read.html:8
 msgid "Revisions"
-msgstr ""
+msgstr "Версії"
 
 #: ckanext/odgu_theme/templates/revision/read.html:30
 msgid "Undelete"
-msgstr ""
+msgstr "Відмінити видалення"
 
 #: ckanext/odgu_theme/templates/revision/read.html:64
 msgid "Changes"
-msgstr ""
+msgstr "Зміни"
 
 #: ckanext/odgu_theme/templates/revision/read.html:74
 msgid "Datasets' Tags"
-msgstr ""
+msgstr "Теги наборів даних"
 
 #: ckanext/odgu_theme/templates/revision/snippets/revisions_list.html:7
 msgid "Entity"
-msgstr ""
+msgstr "Сутність"
 
 #: ckanext/odgu_theme/templates/snippets/activity_item.html:3
 msgid "New activity item"
-msgstr ""
+msgstr "Новий запис активності"
 
 #: ckanext/odgu_theme/templates/snippets/add_dataset.html:6
 msgid "Add Dataset"
-msgstr ""
+msgstr "Додати набір даних"
 
 #: ckanext/odgu_theme/templates/snippets/datapusher_status.html:8
 msgid "Datapusher status: {status}."
-msgstr ""
+msgstr "Статус Datapusher: {status}."
 
 #: ckanext/odgu_theme/templates/snippets/disqus_trackback.html:2
 msgid "Trackback URL"
-msgstr ""
+msgstr "Трекбек URL (зворотні посилання)"
 
-#: ckanext/odgu_theme/templates/snippets/facet_list.html:82
+#: ckanext/odgu_theme/templates/snippets/facet_list.html:90
 msgid "Show More {facet_type}"
-msgstr ""
+msgstr "Показати більше {facet_type}"
 
-#: ckanext/odgu_theme/templates/snippets/facet_list.html:85
+#: ckanext/odgu_theme/templates/snippets/facet_list.html:93
 msgid "Show Only Popular {facet_type}"
-msgstr ""
+msgstr "Показати лише популярні {facet_type}"
 
-#: ckanext/odgu_theme/templates/snippets/facet_list.html:89
+#: ckanext/odgu_theme/templates/snippets/facet_list.html:105
 msgid "There are no {facet_type} that match this search"
-msgstr ""
+msgstr "Немає {facet_type}, які б підходили пошуковому запиту"
 
-#: ckanext/odgu_theme/templates/snippets/follow_button.html:9
+#: ckanext/odgu_theme/templates/snippets/follow_button.html:7
 msgid "Unfollow"
-msgstr ""
+msgstr "Відписатися"
 
-#: ckanext/odgu_theme/templates/snippets/follow_button.html:14
+#: ckanext/odgu_theme/templates/snippets/follow_button.html:11
 msgid "Follow"
-msgstr ""
+msgstr "Підписатися"
 
-#: ckanext/odgu_theme/templates/snippets/home_breadcrumb_item.html:2
+#: ckanext/odgu_theme/templates/snippets/home_breadcrumb_item.html:3
 msgid "Home"
-msgstr ""
-
-#: ckanext/odgu_theme/templates/snippets/language_selector.html:3
-msgid "Language"
-msgstr ""
+msgstr "Головна"
 
 #: ckanext/odgu_theme/templates/snippets/language_selector.html:11
-#: ckanext/odgu_theme/templates/snippets/search_form.html:42
+#: ckanext/odgu_theme/templates/snippets/search_form.html:47
 #: ckanext/odgu_theme/templates/snippets/simple_search.html:15
 #: ckanext/odgu_theme/templates/snippets/sort_by.html:22
 msgid "Go"
-msgstr ""
+msgstr "Перейти"
 
 #: ckanext/odgu_theme/templates/snippets/license.html:14
 msgid "No License Provided"
-msgstr ""
+msgstr "Не вказано ліцензію"
 
 #: ckanext/odgu_theme/templates/snippets/license.html:28
 msgid "This dataset satisfies the Open Definition."
-msgstr ""
+msgstr "Цей набір даних відповідає вимогам Open Definition."
 
 #: ckanext/odgu_theme/templates/snippets/organization.html:48
 msgid "There is no description for this organization"
-msgstr ""
+msgstr "Ця організація не має опису"
 
-#: ckanext/odgu_theme/templates/snippets/package_item.html:57
+#: ckanext/odgu_theme/templates/snippets/package_item.html:56
 msgid "This dataset has no description"
-msgstr ""
+msgstr "Цей набір даних не має опису"
 
-#: ckanext/odgu_theme/templates/snippets/search_form.html:33
+#: ckanext/odgu_theme/templates/snippets/search_form.html:38
 #: ckanext/odgu_theme/templates/snippets/simple_search.html:8
 #: ckanext/odgu_theme/templates/snippets/sort_by.html:12
 msgid "Order by"
-msgstr ""
+msgstr "Сортувати за"
 
-#: ckanext/odgu_theme/templates/snippets/search_form.html:74
+#: ckanext/odgu_theme/templates/snippets/search_form.html:71
 msgid "Filter Results"
-msgstr ""
+msgstr "Фільтрувати результати"
 
-#: ckanext/odgu_theme/templates/snippets/search_form.html:81
+#: ckanext/odgu_theme/templates/snippets/search_form.html:80
 msgid " <p class=\"extra\">Please try another search.</p> "
-msgstr ""
+msgstr " <p class=\"extra\">Попробуйте пошукати ще.</p> "
 
-#: ckanext/odgu_theme/templates/snippets/search_form.html:87
+#: ckanext/odgu_theme/templates/snippets/search_form.html:88
 msgid ""
 " <p id=\"search-error\"><strong>There was an error while "
 "searching.</strong> Please try again.</p> "
 msgstr ""
+"<p id=\"search-error\"><strong>Виникла помилка під час "
+"пошуку.</strong>Спробуйте ще раз.</p>"
 
 #: ckanext/odgu_theme/templates/snippets/search_result_text.html:15
 msgid "{number} dataset found for \"{query}\""
 msgid_plural "{number} datasets found for \"{query}\""
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "{number} набір даних знайдений за запитом \"{query}\""
+msgstr[1] "{number} набори даних знайдено за запитом \"{query}\""
+msgstr[2] "{number} наборів даних знайдено за запитом \"{query}\""
 
 #: ckanext/odgu_theme/templates/snippets/search_result_text.html:16
 msgid "No datasets found for \"{query}\""
-msgstr ""
+msgstr "Не було знайдено жодного набору даних для \"{query}\""
 
 #: ckanext/odgu_theme/templates/snippets/search_result_text.html:17
 msgid "{number} dataset found"
 msgid_plural "{number} datasets found"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "{number} набір даних знайдено"
+msgstr[1] "{number} набори даних знайдено"
+msgstr[2] "{number} наборів даних знайдено"
 
 #: ckanext/odgu_theme/templates/snippets/search_result_text.html:18
 msgid "No datasets found"
-msgstr ""
+msgstr "Не було знайдено жодного набору даних "
 
 #: ckanext/odgu_theme/templates/snippets/search_result_text.html:21
 msgid "{number} group found for \"{query}\""
 msgid_plural "{number} groups found for \"{query}\""
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "{number} групу знайдено за запитом \"{query}\""
+msgstr[1] "{number} групи знайдено за запитом \"{query}\""
+msgstr[2] "{number} груп знайдено за запитом \"{query}\""
 
 #: ckanext/odgu_theme/templates/snippets/search_result_text.html:22
 msgid "No groups found for \"{query}\""
-msgstr ""
+msgstr "Не було знайдено жодної групи для \"{query}\""
 
 #: ckanext/odgu_theme/templates/snippets/search_result_text.html:23
 msgid "{number} group found"
 msgid_plural "{number} groups found"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "{number} групу знайдено"
+msgstr[1] "{number} групи знайдено"
+msgstr[2] "{number} груп знайдено"
 
 #: ckanext/odgu_theme/templates/snippets/search_result_text.html:24
 msgid "No groups found"
-msgstr ""
+msgstr "Не було знайдено жодної групи"
 
 #: ckanext/odgu_theme/templates/snippets/search_result_text.html:27
 msgid "{number} organization found for \"{query}\""
 msgid_plural "{number} organizations found for \"{query}\""
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "{number} організацію знайдено за запитом \"{query}\""
+msgstr[1] "{number} організації знайдено за запитом \"{query}\""
+msgstr[2] "{number} організацій знайдено за запитом \"{query}\""
 
 #: ckanext/odgu_theme/templates/snippets/search_result_text.html:28
 msgid "No organizations found for \"{query}\""
-msgstr ""
+msgstr "Не було знайдено жодної організації для \"{query}\""
 
 #: ckanext/odgu_theme/templates/snippets/search_result_text.html:29
 msgid "{number} organization found"
 msgid_plural "{number} organizations found"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "{number} організацію знайдено"
+msgstr[1] "{number} організації знайдено"
+msgstr[2] "{number} організацій знайдено"
 
 #: ckanext/odgu_theme/templates/snippets/search_result_text.html:30
 msgid "No organizations found"
-msgstr ""
+msgstr "Не було знайдено жодної організації"
 
 #: ckanext/odgu_theme/templates/snippets/simple_search.html:5
 #: ckanext/odgu_theme/templates/user/snippets/user_search.html:6
 msgid "Search"
-msgstr ""
+msgstr "Пошук"
 
 #: ckanext/odgu_theme/templates/snippets/social.html:5
 msgid "Social"
-msgstr ""
+msgstr "Соціальні мережі"
 
 #: ckanext/odgu_theme/templates/snippets/subscribe.html:2
 msgid "Subscribe"
-msgstr ""
+msgstr "Підписатися"
 
 #: ckanext/odgu_theme/templates/snippets/subscribe.html:4
 #: ckanext/odgu_theme/templates/user/edit_user_form.html:12
 #: ckanext/odgu_theme/templates/user/new_user_form.html:7
 #: ckanext/odgu_theme/templates/user/read_base.html:82
 msgid "Email"
-msgstr ""
+msgstr "Email"
 
 #: ckanext/odgu_theme/templates/snippets/subscribe.html:5
 msgid "RSS"
-msgstr ""
+msgstr "RSS"
 
 #: ckanext/odgu_theme/templates/snippets/context/user.html:23
 #: ckanext/odgu_theme/templates/user/read_base.html:57
 msgid "Edits"
-msgstr ""
+msgstr "Редагування"
 
 #: ckanext/odgu_theme/templates/tag/index.html:33
 #: ckanext/odgu_theme/templates/tag/index.html:34
 msgid "Search Tags"
-msgstr ""
-
-#: ckanext/odgu_theme/templates/tests/mock_json_resource_preview_template.html:7
-#: ckanext/odgu_theme/templates/tests/mock_resource_preview_template.html:7
-msgid "Loading..."
-msgstr ""
+msgstr "Пошук тегів"
 
 #: ckanext/odgu_theme/templates/user/dashboard.html:19
 #: ckanext/odgu_theme/templates/user/dashboard.html:37
 msgid "News feed"
-msgstr ""
+msgstr "Стрічка новин"
 
 #: ckanext/odgu_theme/templates/user/dashboard.html:20
 #: ckanext/odgu_theme/templates/user/dashboard_datasets.html:12
 msgid "My Datasets"
-msgstr ""
+msgstr "Мої набори даних"
 
 #: ckanext/odgu_theme/templates/user/dashboard.html:21
 #: ckanext/odgu_theme/templates/user/dashboard_organizations.html:12
 msgid "My Organizations"
-msgstr ""
+msgstr "Мої Організації"
 
 #: ckanext/odgu_theme/templates/user/dashboard.html:22
 #: ckanext/odgu_theme/templates/user/dashboard_groups.html:12
 msgid "My Groups"
-msgstr ""
+msgstr "Мої Групи"
 
 #: ckanext/odgu_theme/templates/user/dashboard.html:39
 msgid "Activity from items that I'm following"
-msgstr ""
+msgstr "Активність елементів, на які я підписаний(а)"
 
 #: ckanext/odgu_theme/templates/user/dashboard_datasets.html:17
 #: ckanext/odgu_theme/templates/user/read.html:20
 msgid "You haven't created any datasets."
-msgstr ""
+msgstr "Ви ще не створювали жодного набору даних."
 
 #: ckanext/odgu_theme/templates/user/dashboard_datasets.html:19
 #: ckanext/odgu_theme/templates/user/dashboard_groups.html:22
 #: ckanext/odgu_theme/templates/user/dashboard_organizations.html:23
 #: ckanext/odgu_theme/templates/user/read.html:22
 msgid "Create one now?"
-msgstr ""
+msgstr "Створити один зараз?"
 
 #: ckanext/odgu_theme/templates/user/dashboard_groups.html:20
 msgid "You are not a member of any groups."
-msgstr ""
+msgstr "Ви не є членом жодної групи."
 
 #: ckanext/odgu_theme/templates/user/dashboard_organizations.html:21
 msgid "You are not a member of any organizations."
-msgstr ""
+msgstr "Ви не є членом жодної організації."
 
 #: ckanext/odgu_theme/templates/user/edit.html:6
 #: ckanext/odgu_theme/templates/user/edit_base.html:3
@@ -2156,53 +2373,55 @@ msgstr ""
 #: ckanext/odgu_theme/templates/user/read_base.html:8
 #: ckanext/odgu_theme/templates/user/snippets/user_search.html:2
 msgid "Users"
-msgstr ""
+msgstr "Користувачі"
 
 #: ckanext/odgu_theme/templates/user/edit.html:17
 msgid "Account Info"
-msgstr ""
+msgstr "Інформація про акаунт"
 
 #: ckanext/odgu_theme/templates/user/edit.html:19
 msgid ""
 " Your profile lets other CKAN users know about who you are and what you "
 "do. "
 msgstr ""
+"Ваш профіль дозволяє іншим користувачам CKAN дізнатись про те, хто ви і "
+"чим займаєтесь."
 
 #: ckanext/odgu_theme/templates/user/edit_user_form.html:7
 msgid "Change details"
-msgstr ""
+msgstr "Деталі змін"
 
 #: ckanext/odgu_theme/templates/user/edit_user_form.html:10
 msgid "Full name"
-msgstr ""
+msgstr "Повне ім'я"
 
 #: ckanext/odgu_theme/templates/user/edit_user_form.html:10
 msgid "eg. Joe Bloggs"
-msgstr ""
+msgstr "наприклад Joe Bloggs"
 
 #: ckanext/odgu_theme/templates/user/edit_user_form.html:12
 msgid "eg. joe@example.com"
-msgstr ""
+msgstr "наприклад joe@example.com"
 
 #: ckanext/odgu_theme/templates/user/edit_user_form.html:14
 msgid "A little information about yourself"
-msgstr ""
+msgstr "Коротко про себе"
 
 #: ckanext/odgu_theme/templates/user/edit_user_form.html:17
 msgid "Subscribe to notification emails"
-msgstr ""
+msgstr "Отримувати сповіщення на електронну пошту"
 
 #: ckanext/odgu_theme/templates/user/edit_user_form.html:26
 msgid "Change password"
-msgstr ""
+msgstr "Змінити пароль"
 
 #: ckanext/odgu_theme/templates/user/edit_user_form.html:29
 msgid "Sysadmin Password"
-msgstr ""
+msgstr "Пароль системного адміністратора"
 
 #: ckanext/odgu_theme/templates/user/edit_user_form.html:29
 msgid "Old Password"
-msgstr ""
+msgstr "Старий пароль"
 
 #: ckanext/odgu_theme/templates/user/edit_user_form.html:37
 #: ckanext/odgu_theme/templates/user/logout_first.html:11
@@ -2210,222 +2429,228 @@ msgstr ""
 #: ckanext/odgu_theme/templates/user/perform_reset.html:25
 #: ckanext/odgu_theme/templates/user/snippets/login_form.html:22
 msgid "Password"
-msgstr ""
+msgstr "Пароль"
 
 #: ckanext/odgu_theme/templates/user/edit_user_form.html:39
 msgid "Confirm Password"
-msgstr ""
+msgstr "Підтвердіть пароль"
 
 #: ckanext/odgu_theme/templates/user/edit_user_form.html:45
 msgid "Are you sure you want to delete this User?"
-msgstr ""
+msgstr "Ви впевнені, що хочете видалити цього користувача?"
 
 #: ckanext/odgu_theme/templates/user/edit_user_form.html:50
 msgid "Are you sure you want to regenerate the API key?"
-msgstr ""
+msgstr "Ви впевнені, що хочете згенерувати новий ключ API?"
 
 #: ckanext/odgu_theme/templates/user/edit_user_form.html:50
 msgid "Regenerate API Key"
-msgstr ""
+msgstr "Перегенерувати ключ API"
 
 #: ckanext/odgu_theme/templates/user/edit_user_form.html:54
 msgid "Update Profile"
-msgstr ""
+msgstr "Оновити профіль"
 
 #: ckanext/odgu_theme/templates/user/list.html:3
 #: ckanext/odgu_theme/templates/user/snippets/user_search.html:11
 msgid "All Users"
-msgstr ""
+msgstr "Всі користувачі"
 
 #: ckanext/odgu_theme/templates/user/login.html:3
 #: ckanext/odgu_theme/templates/user/login.html:6
 #: ckanext/odgu_theme/templates/user/login.html:12
 #: ckanext/odgu_theme/templates/user/snippets/login_form.html:28
 msgid "Login"
-msgstr ""
+msgstr "Увійти"
 
 #: ckanext/odgu_theme/templates/user/login.html:25
 msgid "Need an Account?"
-msgstr ""
+msgstr "Потрібен акаунт?"
 
 #: ckanext/odgu_theme/templates/user/login.html:27
 msgid "Then sign right up, it only takes a minute."
-msgstr ""
+msgstr "Тоді зареєструйтесь прямо зараз – це займе всього хвилину."
 
 #: ckanext/odgu_theme/templates/user/login.html:30
 msgid "Create an Account"
-msgstr ""
+msgstr "Створити акаунт"
 
 #: ckanext/odgu_theme/templates/user/login.html:42
 msgid "Forgotten your password?"
-msgstr ""
+msgstr "Забули свій пароль?"
 
 #: ckanext/odgu_theme/templates/user/login.html:44
 msgid "No problem, use our password recovery form to reset it."
-msgstr ""
+msgstr "Жодної проблеми. Скористайтеся відновленням пароля для його поновлення. "
 
 #: ckanext/odgu_theme/templates/user/login.html:47
 msgid "Forgot your password?"
-msgstr ""
+msgstr "Забули свій пароль?"
 
 #: ckanext/odgu_theme/templates/user/logout.html:3
 #: ckanext/odgu_theme/templates/user/logout.html:9
 msgid "Logged Out"
-msgstr ""
+msgstr "Вийшов"
 
 #: ckanext/odgu_theme/templates/user/logout.html:11
 msgid "You are now logged out."
-msgstr ""
+msgstr "Ви вийшли з системи."
 
 #: ckanext/odgu_theme/templates/user/logout_first.html:9
 msgid "You're already logged in as {user}."
-msgstr ""
+msgstr "Ви увійшли в систему як {user}."
 
 #: ckanext/odgu_theme/templates/user/logout_first.html:9
 msgid "Logout"
-msgstr ""
+msgstr "Вийти"
 
 #: ckanext/odgu_theme/templates/user/logout_first.html:12
 #: ckanext/odgu_theme/templates/user/snippets/login_form.html:24
 msgid "Remember me"
-msgstr ""
+msgstr "Запам'ятати мене"
 
 #: ckanext/odgu_theme/templates/user/logout_first.html:20
 msgid "You're already logged in"
-msgstr ""
+msgstr "Ви уже увійшли в систему"
 
 #: ckanext/odgu_theme/templates/user/logout_first.html:22
 msgid "You need to log out before you can log in with another account."
-msgstr ""
+msgstr "Вам потрібно вийти з системи, щоб увійти через інший акаунт."
 
 #: ckanext/odgu_theme/templates/user/logout_first.html:23
 msgid "Log out now"
-msgstr ""
+msgstr "Вийти зараз"
 
 #: ckanext/odgu_theme/templates/user/new.html:6
 msgid "Registration"
-msgstr ""
+msgstr "Реєстрація"
 
 #: ckanext/odgu_theme/templates/user/new.html:14
 msgid "Register for an Account"
-msgstr ""
+msgstr "Зареєструвати акаунт"
 
 #: ckanext/odgu_theme/templates/user/new.html:26
 msgid "Why Sign Up?"
-msgstr ""
+msgstr "Навіщо реєструватись?"
 
 #: ckanext/odgu_theme/templates/user/new.html:28
 msgid "Create datasets, groups and other exciting things"
 msgstr ""
+"Щоб мати можливість створювати набори даних, групи та робити інші "
+"захоплюючі речі"
 
 #: ckanext/odgu_theme/templates/user/new_user_form.html:5
 msgid "username"
-msgstr ""
+msgstr "ім'я користувача"
 
 #: ckanext/odgu_theme/templates/user/new_user_form.html:6
 msgid "Full Name"
-msgstr ""
+msgstr "Повне ім'я"
 
 #: ckanext/odgu_theme/templates/user/new_user_form.html:9
 #: ckanext/odgu_theme/templates/user/perform_reset.html:26
 msgid "Confirm"
-msgstr ""
+msgstr "Підтвердити"
 
 #: ckanext/odgu_theme/templates/user/new_user_form.html:19
 msgid "Create Account"
-msgstr ""
+msgstr "Створити акаунт"
 
 #: ckanext/odgu_theme/templates/user/perform_reset.html:4
 #: ckanext/odgu_theme/templates/user/perform_reset.html:15
 msgid "Reset Your Password"
-msgstr ""
+msgstr "Скинути пароль"
 
 #: ckanext/odgu_theme/templates/user/perform_reset.html:7
 #: ckanext/odgu_theme/templates/user/request_reset.html:6
 msgid "Password Reset"
-msgstr ""
+msgstr "Оновлення пароля"
 
 #: ckanext/odgu_theme/templates/user/perform_reset.html:21
 msgid "You can also change username. It can not be modified later."
 msgstr ""
+"Ви також можете змінити ім'я користувача. Пізніше, ви не зможете його "
+"змінити."
 
 #: ckanext/odgu_theme/templates/user/perform_reset.html:29
 msgid "Update Password"
-msgstr ""
+msgstr "Оновити пароль"
 
 #: ckanext/odgu_theme/templates/user/perform_reset.html:43
 #: ckanext/odgu_theme/templates/user/request_reset.html:36
 msgid "How does this work?"
-msgstr ""
+msgstr "Як це працює?"
 
 #: ckanext/odgu_theme/templates/user/perform_reset.html:45
 msgid "Simply enter a new password and we'll update your account"
-msgstr ""
+msgstr "Просто введіть новий пароль і ми оновимо Ваш акаунт"
 
 #: ckanext/odgu_theme/templates/user/read.html:27
 msgid "User hasn't created any datasets."
-msgstr ""
+msgstr "Користувач ще не створював жодного набору даних."
 
 #: ckanext/odgu_theme/templates/user/read_base.html:39
 msgid "You have not provided a biography."
-msgstr ""
+msgstr "Ви не вказали свою біографію."
 
 #: ckanext/odgu_theme/templates/user/read_base.html:41
 msgid "This user has no biography."
-msgstr ""
+msgstr "Цей користувач не вказував свою біографію."
 
 #: ckanext/odgu_theme/templates/user/read_base.html:73
 msgid "Open ID"
-msgstr ""
+msgstr "Open ID"
 
 #: ckanext/odgu_theme/templates/user/read_base.html:82
 #: ckanext/odgu_theme/templates/user/read_base.html:96
 msgid "This means only you can see this"
-msgstr ""
+msgstr "Це означає, що тільки ви можете це бачити"
 
 #: ckanext/odgu_theme/templates/user/read_base.html:87
 msgid "Member Since"
-msgstr ""
+msgstr "Учасник починаючи з "
 
 #: ckanext/odgu_theme/templates/user/read_base.html:96
 msgid "API Key"
-msgstr ""
+msgstr "Ключ API"
 
 #: ckanext/odgu_theme/templates/user/request_reset.html:3
 #: ckanext/odgu_theme/templates/user/request_reset.html:13
 msgid "Reset your password"
-msgstr ""
+msgstr "Відновити Ваш пароль."
 
 #: ckanext/odgu_theme/templates/user/request_reset.html:22
 msgid "Request Reset"
-msgstr ""
+msgstr "Скидання пароля"
 
 #: ckanext/odgu_theme/templates/user/request_reset.html:38
 msgid ""
 "Enter your username into the box and we will send you an email with a "
 "link to enter a new password."
 msgstr ""
+"Введіть ім'я користувача в поле і ми надішлемо вам лист з посиланням для "
+"введення нового пароля."
 
 #: ckanext/odgu_theme/templates/user/snippets/followee_dropdown.html:15
 #: ckanext/odgu_theme/templates/user/snippets/followee_dropdown.html:16
 msgid "Activity from:"
-msgstr ""
+msgstr "Активність від:"
 
 #: ckanext/odgu_theme/templates/user/snippets/followee_dropdown.html:23
 msgid "Search list..."
-msgstr ""
+msgstr "Пошуковий список..."
 
 #: ckanext/odgu_theme/templates/user/snippets/followee_dropdown.html:44
 msgid "You are not following anything"
-msgstr ""
+msgstr "Ви ні на що не підписані"
 
 #: ckanext/odgu_theme/templates/user/snippets/followers.html:9
 msgid "No followers"
-msgstr ""
+msgstr "Підписників немає"
 
 #: ckanext/odgu_theme/templates/user/snippets/user_search.html:5
 msgid "Search Users"
-msgstr ""
+msgstr "Шукати користувача"
 
 #~ msgid " наборів даних"
 #~ msgstr ""
@@ -2453,4 +2678,32 @@ msgstr ""
 
 #~ msgid "{month} {day}, {year}"
 #~ msgstr ""
+
+#~ msgid ""
+#~ msgstr ""
+
+#~ msgid "API"
+#~ msgstr ""
+
+#~ msgid "API Docs"
+#~ msgstr ""
+
+#~ msgid "full {format} dump"
+#~ msgstr ""
+
+#~ msgid "More information"
+#~ msgstr ""
+
+#~ msgid "Language"
+#~ msgstr ""
+
+#~ msgid "About {0}"
+#~ msgstr ""
+
+#~ msgid "Site Tag Line"
+#~ msgstr ""
+
+# | msgid "Description"
+#~ msgid "Site Description"
+#~ msgstr "Опис"
 

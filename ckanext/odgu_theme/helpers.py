@@ -121,9 +121,9 @@ def get_tab(menu_item, title=None, img=None, **kw):
     img_lit = ''
     active_class = ''
     if img:
-        img_lit = literal('<div class="custom-tab-header-item-icon"><img src="{}" alt="{}"></div>'.format(img, title))
+        img_lit = literal(u'<div class="custom-tab-header-item-icon"><img src="{}" alt="{}"></div>'.format(img, title))
     if active:
-        active_class = ' custom-tab-header-item-active'
+        active_class = u' custom-tab-header-item-active'
 
     return literal(u'<a class="custom-tab-header-item{}" href="{}">{}<div class="custom-tab-header-item-title">'
                    u'{}</div></a>'.format(active_class, link, img_lit, title))
