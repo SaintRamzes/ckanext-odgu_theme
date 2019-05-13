@@ -3,6 +3,5 @@
     <div class="data-dictionary-table-item">{{ field.id }}</div>
     <div class="data-dictionary-table-item">{{ field.type }}</div>
     <div class="data-dictionary-table-item">{{ h.get_translated(field.get('info', {}), 'label') }}</div>
-    <div class="data-dictionary-table-item">{{ h.render_markdown(
-    h.get_translated(field.get('info', {}), 'notes')) }}</div>
+    <div class="data-dictionary-table-item">{{ h.render_markdown(h.get_translated(field.get('info', {}), 'notes')) }}</div>
 </div>

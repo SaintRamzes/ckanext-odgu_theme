@@ -8,7 +8,7 @@
     <div class="data-resource-name-content">
         {% block resource_item_title %}
             <a href="{{ url }}" title="{{ res.name or res.description }}">
-                {{ h.resource_display_name(res) | truncate(50) }}
+                {{ h.resource_display_name(res) | truncate(40) }}
                 {{ h.popular('views', res.tracking_summary.total, min=10) }}
             </a>
         {% endblock %}

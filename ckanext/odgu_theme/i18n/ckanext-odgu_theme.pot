@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ckanext-odgu_theme 0.0.1\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2019-05-12 21:05+0300\n"
+"POT-Creation-Date: 2019-05-13 22:51+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -409,11 +409,11 @@ msgid "Site Title"
 msgstr ""
 
 #: ckanext/odgu_theme/templates/admin/config.html:16
-msgid "Style"
+msgid "Site Subtitle"
 msgstr ""
 
 #: ckanext/odgu_theme/templates/admin/config.html:18
-msgid "Site Subtitle"
+msgid "Style"
 msgstr ""
 
 #: ckanext/odgu_theme/templates/admin/config.html:23
@@ -1054,6 +1054,10 @@ msgstr ""
 msgid "Welcome"
 msgstr ""
 
+#: ckanext/odgu_theme/templates/home/index.html:26
+msgid "Open Data partners"
+msgstr ""
+
 #: ckanext/odgu_theme/templates/home/snippets/about_text.html:1
 msgid ""
 " <p>CKAN is the world’s leading open-source data portal platform.</p> <p>CKAN"
@@ -1616,7 +1620,7 @@ msgid "Add new resource"
 msgstr ""
 
 #: ckanext/odgu_theme/templates/package/resources.html:20
-#: ckanext/odgu_theme/templates/package/snippets/resources_list.html:47
+#: ckanext/odgu_theme/templates/package/snippets/resources_list.html:27
 #, python-format
 msgid ""
 " <p class=\"empty\">This dataset has no data, <a href=\"%(url)s\">why not add"
@@ -1902,11 +1906,11 @@ msgstr ""
 msgid "Resource Preview"
 msgstr ""
 
-#: ckanext/odgu_theme/templates/package/snippets/resources_list.html:34
+#: ckanext/odgu_theme/templates/package/snippets/resources_list.html:14
 msgid "Data and Resources"
 msgstr ""
 
-#: ckanext/odgu_theme/templates/package/snippets/resources_list.html:51
+#: ckanext/odgu_theme/templates/package/snippets/resources_list.html:31
 msgid "This dataset has no data"
 msgstr ""
 
@@ -2240,7 +2244,7 @@ msgid "Account Info"
 msgstr ""
 
 #: ckanext/odgu_theme/templates/user/edit.html:19
-msgid " Your profile lets other CKAN users know about who you are and what you do. "
+msgid "Your profile lets other CKAN users know about who you are and what you do."
 msgstr ""
 
 #: ckanext/odgu_theme/templates/user/edit_user_form.html:7

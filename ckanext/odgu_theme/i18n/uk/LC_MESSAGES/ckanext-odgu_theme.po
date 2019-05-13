@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ckanext-odgu_theme 0.0.1\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2019-05-12 21:05+0300\n"
+"POT-Creation-Date: 2019-05-13 22:51+0300\n"
 "PO-Revision-Date: 2019-03-26 15:33+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: uk\n"
@@ -421,12 +421,12 @@ msgid "Site Title"
 msgstr "Заголовок сайту"
 
 #: ckanext/odgu_theme/templates/admin/config.html:16
-msgid "Style"
-msgstr "Стиль"
-
-#: ckanext/odgu_theme/templates/admin/config.html:18
 msgid "Site Subtitle"
 msgstr "Підзаголовок сайту"
+
+#: ckanext/odgu_theme/templates/admin/config.html:18
+msgid "Style"
+msgstr "Стиль"
 
 #: ckanext/odgu_theme/templates/admin/config.html:23
 #: ckanext/odgu_theme/templates/macros/autoform.html:62
@@ -1100,6 +1100,10 @@ msgstr "Завантажити більше"
 msgid "Welcome"
 msgstr "Ласкаво просимо до"
 
+#: ckanext/odgu_theme/templates/home/index.html:26
+msgid "Open Data partners"
+msgstr "Партнери відкритих даних"
+
 #: ckanext/odgu_theme/templates/home/snippets/about_text.html:1
 msgid ""
 " <p>CKAN is the world’s leading open-source data portal platform.</p> "
@@ -1729,7 +1733,7 @@ msgid "Add new resource"
 msgstr "Додати новий ресурс"
 
 #: ckanext/odgu_theme/templates/package/resources.html:20
-#: ckanext/odgu_theme/templates/package/snippets/resources_list.html:47
+#: ckanext/odgu_theme/templates/package/snippets/resources_list.html:27
 #, python-format
 msgid ""
 " <p class=\"empty\">This dataset has no data, <a href=\"%(url)s\">why not"
@@ -2034,11 +2038,11 @@ msgstr "Код"
 msgid "Resource Preview"
 msgstr "Попередній перегляд ресурсу"
 
-#: ckanext/odgu_theme/templates/package/snippets/resources_list.html:34
+#: ckanext/odgu_theme/templates/package/snippets/resources_list.html:14
 msgid "Data and Resources"
 msgstr "Дані та ресурси"
 
-#: ckanext/odgu_theme/templates/package/snippets/resources_list.html:51
+#: ckanext/odgu_theme/templates/package/snippets/resources_list.html:31
 msgid "This dataset has no data"
 msgstr "Цей набір даних пустий"
 
@@ -2380,9 +2384,7 @@ msgid "Account Info"
 msgstr "Інформація про акаунт"
 
 #: ckanext/odgu_theme/templates/user/edit.html:19
-msgid ""
-" Your profile lets other CKAN users know about who you are and what you "
-"do. "
+msgid "Your profile lets other CKAN users know about who you are and what you do."
 msgstr ""
 "Ваш профіль дозволяє іншим користувачам CKAN дізнатись про те, хто ви і "
 "чим займаєтесь."
@@ -2705,5 +2707,5 @@ msgstr "Шукати користувача"
 
 # | msgid "Description"
 #~ msgid "Site Description"
-#~ msgstr "Опис"
+#~ msgstr ""
 

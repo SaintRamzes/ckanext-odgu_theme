@@ -351,4 +351,12 @@
 .data-resource-icon[data-format=rdf], .data-resource-icon[data-format*=rdf] {
   background: url(/images/file-rdf.png) no-repeat center; }
 
+.flash-messages {
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%; }
+  .flash-messages .alert {
+    border-radius: 0;
+    margin-bottom: 0; }
+
 /*# sourceMappingURL=styles.css.map */

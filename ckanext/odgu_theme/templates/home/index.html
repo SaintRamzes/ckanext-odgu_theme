@@ -22,6 +22,33 @@
                     {% snippet 'home/snippets/featured_group.html' %}
                 {% endblock %}
                 {% block recent_posts %}{% endblock %}
+                <div class="data-partners">
+                    <div class="data-partners-title">{{ _("Open Data partners") }}</div>
+                    <div class="data-partners-card">
+                        <div class="data-partners__img">
+                            <a href="vmr.gov.ua">
+                                <img src="/images/img-vinflag.png" alt="Вінницька міська рада" title="Вінницька міська рада">
+                            </a>
+                        </div>
+                        <a class="data-partners__title" href="vmr.gov.ua">Вінницька міська рада</a>
+                    </div>
+                    <div class="data-partners-card">
+                        <div class="data-partners__img">
+                            <a href="data.gov.ua">
+                                <img src="/images/img-datagovua.png" alt="Портал відкритих даних" title="Портал відкритих даних">
+                            </a>
+                        </div>
+                        <a class="data-partners__title" href="data.gov.ua">Портал відкритих даних</a>
+                    </div>
+                    <div class="data-partners-card">
+                        <div class="data-partners__img">
+                            <a href="e.gov.ua">
+                                <img src="/images/img-agency.png" alt="Державне агентство з питань електронного урядування" title="Державне агентство з питань електронного урядування">
+                            </a>
+                        </div>
+                        <a class="data-partners__title" href="e.gov.ua">Державне агентство з питань електронного урядування</a>
+                    </div>
+                </div>
             </div>
             <div class="column-right">
                 {% block activity_list %}
