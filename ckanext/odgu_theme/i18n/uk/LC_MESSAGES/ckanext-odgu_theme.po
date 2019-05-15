@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ckanext-odgu_theme 0.0.1\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2019-05-13 23:15+0300\n"
+"POT-Creation-Date: 2019-05-16 00:19+0300\n"
 "PO-Revision-Date: 2019-03-26 15:33+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: uk\n"
@@ -376,19 +376,9 @@ msgstr "Організації"
 msgid "Groups"
 msgstr "Групи"
 
-#: ckanext/odgu_theme/templates/admin/config.html:25
-#: ckanext/odgu_theme/templates/group/about.html:3
-#: ckanext/odgu_theme/templates/group/read_base.html:19
-#: ckanext/odgu_theme/templates/header.html:185
-#: ckanext/odgu_theme/templates/home/about.html:3
-#: ckanext/odgu_theme/templates/home/about.html:6
-#: ckanext/odgu_theme/templates/home/about.html:16
-#: ckanext/odgu_theme/templates/home/snippets/header.html:87
-#: ckanext/odgu_theme/templates/organization/about.html:3
-#: ckanext/odgu_theme/templates/organization/read_base.html:19
-#: ckanext/odgu_theme/templates/user/edit_user_form.html:14
-msgid "About"
-msgstr "Детальніше"
+#: ckanext/odgu_theme/templates/header.html:187
+msgid "InfoHub"
+msgstr "ІнфоХаб"
 
 #: ckanext/odgu_theme/templates/page.html:6
 msgid "Skip to content"
@@ -432,6 +422,19 @@ msgstr "Стиль"
 #: ckanext/odgu_theme/templates/macros/autoform.html:62
 msgid "Site logo"
 msgstr "Логотип сайту"
+
+#: ckanext/odgu_theme/templates/admin/config.html:25
+#: ckanext/odgu_theme/templates/group/about.html:3
+#: ckanext/odgu_theme/templates/group/read_base.html:19
+#: ckanext/odgu_theme/templates/home/about.html:3
+#: ckanext/odgu_theme/templates/home/about.html:6
+#: ckanext/odgu_theme/templates/home/about.html:16
+#: ckanext/odgu_theme/templates/home/snippets/header.html:87
+#: ckanext/odgu_theme/templates/organization/about.html:3
+#: ckanext/odgu_theme/templates/organization/read_base.html:19
+#: ckanext/odgu_theme/templates/user/edit_user_form.html:14
+msgid "About"
+msgstr "Детальніше"
 
 #: ckanext/odgu_theme/templates/admin/config.html:25
 msgid "About page text"
@@ -531,6 +534,7 @@ msgid "Administer CKAN"
 msgstr "Адмініструвати CKAN"
 
 #: ckanext/odgu_theme/templates/admin/index.html:20
+#, python-format
 msgid ""
 "<p>As a sysadmin user you have full control over this CKAN instance. "
 "Proceed with care!</p> <p>For guidance on using sysadmin features, see "
