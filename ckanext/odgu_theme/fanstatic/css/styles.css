@@ -359,4 +359,7 @@
     border-radius: 0;
     margin-bottom: 0; }
 
+.media-grid .media-item {
+  width: 225px; }
+
 /*# sourceMappingURL=styles.css.map */
