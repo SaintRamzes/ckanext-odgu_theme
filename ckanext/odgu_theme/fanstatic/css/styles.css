@@ -361,5 +361,7 @@
 
 .media-grid .media-item {
   width: 225px; }
+  .media-grid .media-item .media-image {
+    margin: 0 auto 5px; }
 
 /*# sourceMappingURL=styles.css.map */
