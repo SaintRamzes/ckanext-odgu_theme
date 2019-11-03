@@ -6,27 +6,41 @@
                 {% block footer_lang %}
                     {% snippet "snippets/language_selector.html" %}
                 {% endblock %}
+                {% block footer_attribution %}
+                    <span>{{ _('Powered by') }} <a class="hide-text ckan-footer-logo" href="http://ckan.org"><img
+                            src="/images/img-CKAN-Logo.png" alt="CKAN"></a></span>
+                {% endblock %}
             </div>
-            <div class="column-4"></div>
+
             <div class="column-4">
                 {% block footer_nav %}
                     {% block footer_links %}
-                        <a href="{{ h.url_for(controller='home', action='about') }}"><li>{{ _('About site') }}</li></a>
+                        <a href="{{ h.url_for(controller='home', action='about') }}">
+                            <li>{{ _('About site') }}</li>
+                        </a>
                     {% endblock %}
 
                     {% block footer_links_ckan %}
                         {% set api_url = 'http://docs.ckan.org/en/{0}/api/'.format(g.ckan_doc_version) %}
-                        <a href="{{ api_url }}"><li>{{ _('CKAN API') }}</li></a>
-                        <a href="http://www.ckan.org/"><li>{{ _('CKAN Association') }}</li></a>
-                        <a href="http://www.opendefinition.org/okd/"><li><img src="{{ h.url_for_static('/base/images/od_80x15_blue.png') }}" alt="Open Data"></li></a>
+                        <a href="{{ api_url }}">
+                            <li>{{ _('CKAN API') }}</li>
+                        </a>
+                        <a href="http://www.ckan.org/">
+                            <li>{{ _('CKAN Association') }}</li>
+                        </a>
+                        <a href="http://www.opendefinition.org/okd/">
+                            <li><img src="{{ h.url_for_static('/base/images/od_80x15_blue.png') }}" alt="Open Data">
+                            </li>
+                        </a>
                     {% endblock %}
                 {% endblock %}
             </div>
-            <div class="column-4">
-                {% block footer_attribution %}
-                    <span>{{ _('Powered by') }} <a class="hide-text ckan-footer-logo" href="http://ckan.org"><img src="/images/img-CKAN-Logo.png" alt="CKAN"></a></span>
-                {% endblock %}
-
+            <div class="column-8">
+                The website is created within the Transparency and Accountability in Public Administration and Services
+                Program/TAPAS. This website is made possible by the generous support of the American people through the
+                United States Agency for International Development (USAID) alongside UK aid from the UK government. The
+                contents do not necessarily reflect the views of USAID or the United States Government and the UK
+                government’s official policies.
             </div>
         {% endblock %}
     </div>

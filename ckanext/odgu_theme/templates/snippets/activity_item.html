@@ -3,7 +3,7 @@
         <span class="new" title="{{ _('New activity item') }}">{{ _('New activity item') }}</span>
     {% endif %}
     <div class="activity-string-item-icon">
-        <img src="/images/icn-datasource.svg" alt="{{ activity.icon }}">
+        <img src="/images/icn-{{ activity.icon }}.svg" alt="{{ activity.icon }}">
     </div>
 
     {{ h.literal(activity.msg.format(**activity.data)) }}

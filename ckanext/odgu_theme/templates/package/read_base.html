@@ -111,7 +111,7 @@
     {% endblock %}
 
     {% block package_groups %}
-        {% snippet 'package/snippets/groups.html', groups=pkg.groups %}
+        {% snippet 'package/snippets/groups.html', groups=pkg.groups, name=pkg.name %}
     {% endblock %}
 
     {#    {% block package_social %}#}

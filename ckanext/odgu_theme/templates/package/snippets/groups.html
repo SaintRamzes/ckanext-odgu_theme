@@ -1,6 +1,6 @@
 {% if groups %}
     <div class="group-subject-wraper">
-        <div class="subscribers">Входить до груп</div>
+        <div class="subscribers"><a class="edit" href="{{ h.url_for('dataset_groups', _('Groups'), id=name) }}">Входить до груп</a></div>
         {% for group in groups %}
             {% snippet "home/snippets/group_item.html", group=group %}
         {% endfor %}
