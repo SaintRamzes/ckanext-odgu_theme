@@ -370,6 +370,8 @@
     color: #4a4a4a; }
   .group-subject-wraper .subscribers a.edit:active, .group-subject-wraper .subscribers a.edit:visited {
     text-decoration: none; }
+.group-subject-wraper p.empty {
+  padding: 0 20px 20px; }
 
 .column-8 {
   width: calc(50% - 10px); }
