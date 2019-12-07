@@ -184,6 +184,9 @@
                     {% block header_site_navigation_tabs %}
                         {{ h.build_main(('search', _('Datasets')), ('organizations_index', _('Organizations')), ('group_index', _('Groups'))) }}
                         <div class="main-menu__item">
+                            <a href="{{ h.url_for(controller='ckanext.pages.controller:PagesController', action='pages_show', page='/hackathon') }}">{{ _("HackaThon") }}</a>
+                        </div>
+                        <div class="main-menu__item">
                             <a href="{{ h.url_for(controller='ckanext.pages.controller:PagesController', action='pages_show', page='/infohub') }}">{{ _("InfoHub") }}</a>
                         </div>
                     {% endblock %}
